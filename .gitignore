@@ -4,3 +4,4 @@ composer.lock
 /runtime
 /.phpintel
 /public/uploads
+/application/database.php
