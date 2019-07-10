@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>童安天下-安全教育-知识库</title>
+    <meta name="author" content="童安天下" />
+    <meta name="copyright" content="童安天下" />
+    <meta name="description" content="童安天下" />
+    <meta id="viewport" name="viewport" content="width=750" />
+    <link rel="stylesheet" href="../content/style/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../content/plugins/iconfonts/iconfont.css" type="text/css" />
+    <link rel="stylesheet" href="../content/plugins/jqweui/lib/weui.min.css" type="text/css" />
+    <link rel="stylesheet" href="../content/plugins/jqweui/css/jquery-weui.min.css" type="text/css" />
+    <link rel="stylesheet" href="../content/style/common.css" type="text/css" />
+    <link rel="stylesheet" href="../content/style/safetyeducation/safetyeducation.css" type="text/css" />
+    <link rel="shortcut icon" href="../content/images/ico.ico" type="image/x-icon" />
+    <script src="../content/scripts/mobile-util.js"></script>
+    <style>
+        .weui-cells_radio {
+            padding: 30px 40px;
+        }
+        
+        .weui-check_label {
+            font-size: 28px;
+            line-height: 80px;
+        }
+        
+        .weui-cells_radio .weui-check:checked+.weui-icon-checked:before {
+            font-size: 30px;
+        }
+        
+        .video_full {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            background: rgba(0, 0, 0, 1);
+        }
+        
+        .video_close {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            background: rgba(0, 0, 0, .4);
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            z-index: 100;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head"></header>
+
+    <!-- 主要内容 -->
+    <div class="main">
+        <div class="safe_cont">
+            <div class="safe_cont_t">
+                <ul class="safe_nav">
+                    <li>
+                        <a href="index.html">推荐</a>
+                    </li>
+                    <li>
+                        <a href="subject.html">安全专题</a>
+                    </li>
+                    <li>
+                        <a href="paradise.html">亲子乐园</a>
+                    </li>
+                    <li class="active">
+                        <a href="repository.html">知识库</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="article_box">
+                <ul class="subject_nav">
+                    <li>
+                        <a href="javascript:;">
+                            <div class="subnav_img">
+                                <img src="../content/images/safetyeducation/icon_rep1.png" alt="">
+                            </div>
+                            <h3>儿童故事</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="subnav_img">
+                                <img src="../content/images/safetyeducation/icon_rep2.png" alt="">
+                            </div>
+                            <h3>宝宝学堂</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="subnav_img">
+                                <img src="../content/images/safetyeducation/icon_rep3.png" alt="">
+                            </div>
+                            <h3>家长大学</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="subnav_img">
+                                <img src="../content/images/safetyeducation/icon_rep4.png" alt="">
+                            </div>
+                            <h3>动漫卡通</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="subnav_img">
+                                <img src="../content/images/safetyeducation/icon_rep5.png" alt="">
+                            </div>
+                            <h3>手工制作</h3>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="video_list">
+                    <li>
+                        <div class="video_cont">
+                            <div class="videoitem">
+                                <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                    <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="video_txt">
+                            <h2>等腰三角形讲解</h2>
+                            <p>如何求等腰三角形的周长以及如何求等腰三角形的周长以及</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="video_cont">
+                            <div class="videoitem">
+                                <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                    <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="video_txt">
+                            <h2>等腰三角形讲解</h2>
+                            <p>如何求等腰三角形的周长以及如何求等腰三角形的周长以及</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="video_cont">
+                            <div class="videoitem">
+                                <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                    <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="video_txt">
+                            <h2>等腰三角形讲解</h2>
+                            <p>如何求等腰三角形的周长以及如何求等腰三角形的周长以及</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="video_cont">
+                            <div class="videoitem">
+                                <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                    <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="video_txt">
+                            <h2>等腰三角形讲解</h2>
+                            <p>如何求等腰三角形的周长以及如何求等腰三角形的周长以及</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <script src="../content/scripts/jquery.min.js"></script>
+    <script src="../content/plugins/jqweui/js/jquery-weui.min.js"></script>
+    <script src="../content/scripts/juqery.cookie.js"></script>
+    <script src="../content/scripts/API.js"></script>
+    <script src="../content/scripts/commom.js"></script>
+    <script>
+        $(function() {
+
+        })
+
+        // 播放器大小控制
+        function full_video(video_obj) {
+            video_obj.addClass("video_full");
+            $(document.body).append("<span class='video_close' onclick='videoclose()'>X</span>");
+        }
+
+        function videoclose() {
+            $("video").get(0).pause();
+            $("video").eq(0).removeClass("video_full");
+            $(".video_close").hide();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>童安天下-智能门禁打卡</title>
+    <meta name="author" content="童安天下" />
+    <meta name="copyright" content="童安天下" />
+    <meta name="description" content="童安天下" />
+    <meta id="viewport" name="viewport" content="width=750" />
+    <link rel="stylesheet" href="../content/style/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../content/plugins/iconfonts/iconfont.css" type="text/css" />
+    <link rel="stylesheet" href="../content/plugins/jqweui/lib/weui.min.css" type="text/css" />
+    <link rel="stylesheet" href="../content/plugins/jqweui/css/jquery-weui.min.css" type="text/css" />
+    <link rel="stylesheet" href="../content/plugins/layui/css/layui.css" type="text/css" />
+    <link rel="stylesheet" href="../content/style/common.css" type="text/css" />
+    <link rel="stylesheet" href="../content/style/find.css" type="text/css" />
+    <link rel="shortcut icon" href="../content/images/ico.ico" type="image/x-icon" />
+    <script src="../content/scripts/mobile-util.js"></script>
+    <style>
+        .weui-cells_radio {
+            padding: 30px 40px;
+        }
+        
+        .weui-check_label {
+            font-size: 28px;
+            line-height: 80px;
+        }
+        
+        .weui-cells_radio .weui-check:checked+.weui-icon-checked:before {
+            font-size: 30px;
+        }
+        
+        .video_full {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            background: rgba(0, 0, 0, 1);
+        }
+        
+        .video_close {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            background: rgba(0, 0, 0, .4);
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            z-index: 100;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            border-radius: 50%;
+        }
+        
+        .laydatebox {
+            min-height: 680px;
+        }
+        
+        .layui-inline,
+        .layui-laydate1,
+        .layui-laydate {
+            width: 100%;
+            background: none !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        
+        .layui-laydate-main {
+            width: 100% !important;
+        }
+        
+        .layui-laydate-content {
+            padding: 10px 30px !important;
+        }
+        
+        .layui-laydate-content table {
+            width: 100%;
+        }
+        
+        .layui-laydate-content td,
+        .layui-laydate-content th {
+            border-radius: 50%;
+            height: 96px !important;
+            font-size: 34px !important;
+        }
+        
+        .layui-laydate-content td {
+            color: #000 !important;
+        }
+        
+        .layui-laydate-content th {
+            border-bottom: 1px solid #ccc;
+            font-size: 24px !important;
+            height: 80px !important;
+        }
+        
+        .layui-laydate .layui-this {
+            border-radius: 50%;
+        }
+        
+        .layui-laydate-header {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body class="cookbody">
+    <!--<header class="head"></header>-->
+
+    <!-- 主要内容 -->
+    <div class="main">
+        <div class="main_cont">
+            <div class="laydatebox">
+                <div class="layui-inline" id="signindate"></div>
+            </div>
+
+            <div class="sn_status_box">
+                <div class="sn_status">
+                    <div class="sn_status_l">
+                        <div class="sn_day"><span id="snday"></span></div>
+                        <div class="sn_year_box">
+                            <div class="sn_month">
+                                <span id="snmonth"></span>月
+                            </div>
+                            <div class="sn_year">
+                                <span id="snyear"></span>年
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sn_status_r">
+                        <div class="signin yes"><i class="icon iconfont icon-yuandianzhong"></i><span>已签到</span></div>
+                        <div class="signinoff"><i class="icon iconfont icon-yuandianzhong"></i><span>未签离</span></div>
+                    </div>
+                </div>
+
+                <div class="sn_videos">
+                    <div class="sn_videos_t">
+                        <span>打卡记录</span>
+                        <a href="signinmore.html">更多记录 <i class="icon iconfont icon-jiantou"></i></a>
+                    </div>
+                    <div class="sn_videos_b">
+                        <dl class="sn_videos_list">
+                            <dt>签到视频<span>—</span><span class="sndate">2019年06月17日</span></dt>
+                            <dd>
+                                <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                    <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                </video>
+                            </dd>
+                        </dl>
+                        <dl class="sn_videos_list">
+                            <dt>签离视频<span>—</span><span class="sndate">2019年06月17日</span></dt>
+                            <dd>
+                                <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                    <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                </video>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../content/scripts/jquery.min.js"></script>
+    <script src="../content/plugins/jqweui/js/jquery-weui.min.js"></script>
+    <script src="../content/scripts/juqery.cookie.js"></script>
+    <script src="../content/scripts/API.js"></script>
+    <script src="../content/plugins/layui/layui.js"></script>
+    <script src="../content/scripts/commom.js"></script>
+    <script>
+        //新增 start
+        layui.use('laydate', function() {
+            var laydate = layui.laydate;
+            laydate.render({
+                elem: '#signindate',
+                position: 'static',
+                min: -6,
+                max: 0,
+                showBottom: false,
+                ready: function(date) {
+                    console.log(date); //得到初始的日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
+                    $("#snday").text(date.date);
+                    $("#snmonth").text(date.month);
+                    $("#snyear").text(date.year);
+                },
+                done: function(value, date) {
+                    $("#snday").text(date.date);
+                    $("#snmonth").text(date.month);
+                    $("#snyear").text(date.year);
+                }
+            });
+        })
+
+        //新增 end
+
+        // 播放器大小控制
+        function full_video(video_obj) {
+            video_obj.addClass("video_full");
+            $(document.body).append("<span class='video_close' onclick='videoclose()'>X</span>");
+        }
+
+        function videoclose() {
+            $("video").get(0).pause();
+            $("video").eq(0).removeClass("video_full");
+            $(".video_close").hide();
+        }
+    </script>
+</body>
+
+</html>

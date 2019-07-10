@@ -1,0 +1,2761 @@
+---------------------------------------------------------------
+[ 2019-06-11T00:40:51+08:00 ] 172.17.144.244 194.44.172.10 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018731s][吞吐率：53.39req/s] [内存消耗：2,261.30kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T01:39:31+08:00 ] 172.17.144.244 128.0.181.170 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018254s][吞吐率：54.78req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T02:36:00+08:00 ] 172.17.144.244 2.188.36.30 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018724s][吞吐率：53.41req/s] [内存消耗：2,261.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T03:48:35+08:00 ] 172.17.144.244 101.132.107.246 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.018487s][吞吐率：54.09req/s] [内存消耗：2,261.69kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T03:48:35+08:00 ] 172.17.144.244 101.132.107.246 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.017009s][吞吐率：58.79req/s] [内存消耗：2,167.95kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T04:18:24+08:00 ] 172.17.144.244 31.15.85.41 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018536s][吞吐率：53.95req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T05:58:12+08:00 ] 172.17.144.244 80.82.70.187 GET /cache/global/img/gs.gif
+[ info ] www.baidu.com/cache/global/img/gs.gif [运行时间：0.014791s][吞吐率：67.61req/s] [内存消耗：1,782.66kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'user-agent' => 'Mozilla',
+  'host' => 'www.baidu.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T07:30:34+08:00 ] 172.17.144.244 39.106.220.230 GET /webdav/
+[ info ] 39.107.140.181:80/webdav/ [运行时间：0.015436s][吞吐率：64.78req/s] [内存消耗：1,782.59kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'webdav',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'user-agent' => 'Mozilla/5.0',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T08:35:44+08:00 ] 172.17.144.244 116.236.146.21 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.017920s][吞吐率：55.80req/s] [内存消耗：2,262.26kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T08:35:44+08:00 ] 172.17.144.244 116.236.146.21 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.017217s][吞吐率：58.08req/s] [内存消耗：2,169.81kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=o62lmqdk9lkpqvkcqp48fb53f6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T08:35:45+08:00 ] 172.17.144.244 116.236.146.21 GET /captcha.html
+[ info ] www.tongsafe.com/captcha.html [运行时间：0.014592s][吞吐率：68.53req/s] [内存消耗：1,787.55kb] [文件加载：43]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=o62lmqdk9lkpqvkcqp48fb53f6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.tongsafe.com/Admin/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/chenganxjh/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T08:35:58+08:00 ] 172.17.144.244 116.236.146.21 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.017886s][吞吐率：55.91req/s] [内存消耗：2,263.34kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=o62lmqdk9lkpqvkcqp48fb53f6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T08:35:58+08:00 ] 172.17.144.244 116.236.146.21 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.017503s][吞吐率：57.13req/s] [内存消耗：2,170.85kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=o62lmqdk9lkpqvkcqp48fb53f6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T08:35:58+08:00 ] 172.17.144.244 116.236.146.21 GET /captcha.html
+[ info ] www.tongsafe.com/captcha.html [运行时间：0.015172s][吞吐率：65.91req/s] [内存消耗：1,787.70kb] [文件加载：43]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=o62lmqdk9lkpqvkcqp48fb53f6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.tongsafe.com/Admin/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/chenganxjh/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T09:59:31+08:00 ] 172.17.144.244 208.100.26.232 POST /sdk
+[ info ] 39.107.140.181/sdk [运行时间：0.015407s][吞吐率：64.91req/s] [内存消耗：1,782.43kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sdk',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '441',
+  'connection' => 'close',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T09:59:32+08:00 ] 172.17.144.244 208.100.26.232 GET /nmaplowercheck1560218370
+[ info ] 39.107.140.181/nmaplowercheck1560218370 [运行时间：0.015186s][吞吐率：65.85req/s] [内存消耗：1,782.95kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'nmaplowercheck1560218370',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T09:59:32+08:00 ] 172.17.144.244 208.100.26.232 GET /
+[ info ] 39.107.140.181/ [运行时间：0.026327s][吞吐率：37.98req/s] [内存消耗：2,260.91kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.140.181',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T09:59:32+08:00 ] 172.17.144.244 208.100.26.232 HEAD /
+[ info ] 39.107.140.181/ [运行时间：0.026077s][吞吐率：38.35req/s] [内存消耗：2,260.98kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T09:59:33+08:00 ] 172.17.144.244 208.100.26.232 HEAD /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.018034s][吞吐率：55.45req/s] [内存消耗：2,167.00kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T09:59:33+08:00 ] 172.17.144.244 208.100.26.232 GET /HNAP1
+[ info ] 39.107.140.181/HNAP1 [运行时间：0.014510s][吞吐率：68.92req/s] [内存消耗：1,782.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'HNAP1',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T09:59:33+08:00 ] 172.17.144.244 208.100.26.232 GET /evox/about
+[ info ] 39.107.140.181/evox/about [运行时间：0.014998s][吞吐率：66.68req/s] [内存消耗：1,782.95kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'evox',
+    1 => 'about',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T10:59:23+08:00 ] 172.17.144.244 1.203.144.182 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.018899s][吞吐率：52.91req/s] [内存消耗：2,262.38kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T10:59:23+08:00 ] 172.17.144.244 1.203.144.182 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.016210s][吞吐率：61.69req/s] [内存消耗：2,169.81kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1g6ecrteekuee0ramkim7ln8b1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T10:59:23+08:00 ] 172.17.144.244 1.203.144.182 GET /captcha.html
+[ info ] www.tongsafe.com/captcha.html [运行时间：0.015123s][吞吐率：66.12req/s] [内存消耗：1,787.55kb] [文件加载：43]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1g6ecrteekuee0ramkim7ln8b1; __guid=228273819.4476811529861093400.1560221970552.9753; monitor_count=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tongsafe.com/Admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/chenganxjh/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T11:11:07+08:00 ] 172.17.144.244 39.155.208.194 GET /
+[ info ] app.freestylewxy.cn/ [运行时间：0.017642s][吞吐率：56.68req/s] [内存消耗：2,262.27kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T11:11:07+08:00 ] 172.17.144.244 39.155.208.194 GET /Admin/login/index.html
+[ info ] app.freestylewxy.cn/Admin/login/index.html [运行时间：0.016125s][吞吐率：62.02req/s] [内存消耗：2,169.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T11:11:07+08:00 ] 172.17.144.244 39.155.208.194 GET /captcha.html
+[ info ] app.freestylewxy.cn/captcha.html [运行时间：0.014150s][吞吐率：70.67req/s] [内存消耗：1,787.57kb] [文件加载：43]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/Admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/chenganxjh/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T11:11:18+08:00 ] 172.17.144.244 39.155.208.194 POST /Admin/login/index.html
+[ info ] app.freestylewxy.cn/Admin/login/index.html [运行时间：0.027554s][吞吐率：36.29req/s] [内存消耗：2,983.73kb] [文件加载：65]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'content-length' => '51',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://app.freestylewxy.cn/Admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+)
+[ info ] [ PARAM ] array (
+  'admin_name' => 'admin',
+  'admin_password' => '123456',
+  'captcha' => 'nuf3',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_admin` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT * FROM `x_admin` WHERE  `admin_name` = 'admin'  AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e'  AND `admin_del_status` = 1 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] UPDATE `x_admin`  SET `admin_login_num`=442,`admin_login_time`=1560222678  WHERE  `admin_id` = 1 [ RunTime:0.002419s ]
+---------------------------------------------------------------
+[ 2019-06-11T11:11:21+08:00 ] 172.17.144.244 39.155.208.194 GET /Admin/index/index.html
+[ info ] app.freestylewxy.cn/Admin/index/index.html [运行时间：0.033529s][吞吐率：29.82req/s] [内存消耗：3,393.28kb] [文件加载：70]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/Admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/index.lang.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/www/chenganxjh/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/index/index.html [ array (
+  0 => 'menu_list',
+  1 => 'admin_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_config` [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT * FROM `x_config` [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000229s ]
+---------------------------------------------------------------
+[ 2019-06-11T11:11:21+08:00 ] 172.17.144.244 39.155.208.194 GET /Admin/Dashboard/index.html
+[ info ] app.freestylewxy.cn/Admin/Dashboard/index.html [运行时间：0.273884s][吞吐率：3.65req/s] [内存消耗：3,449.79kb] [文件加载：69]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'Dashboard',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/dashboard.lang.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ /home/www/chenganxjh/application/admin/controller/Dashboard.php ]
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/dashboard/welcome.html [ array (
+  0 => 'menu_list',
+  1 => 'statistics',
+  2 => 'admin_info',
+  3 => 'admin_item',
+  4 => 'curitem',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Dashboard::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Dashboard.php:7]
+[ error ] [8]未定义变量: version_message[/home/www/chenganxjh/runtime/temp/45c57ec2318e37c689549e71e9980a42.php:58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000167s ]
+---------------------------------------------------------------
+[ 2019-06-11T11:11:22+08:00 ] 172.17.144.244 39.155.208.194 GET /admin/dashboard/statistics.html
+[ info ] app.freestylewxy.cn/admin/dashboard/statistics.html [运行时间：0.074935s][吞吐率：13.34req/s] [内存消耗：3,785.91kb] [文件加载：73]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => 'statistics',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://app.freestylewxy.cn/Admin/Dashboard/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/dashboard.lang.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->statistics[ /home/www/chenganxjh/application/admin/controller/Dashboard.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Dashboard::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Dashboard.php:7]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000392s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 1 LIMIT 1 [ RunTime:0.002387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 1  AND `member_add_time` >= 1560182400 LIMIT 1 [ RunTime:0.013081s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 1  AND `member_add_time` >= 1559318400 LIMIT 1 [ RunTime:0.011847s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 2 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 2  AND `member_add_time` >= 1560182400 LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 2  AND `member_add_time` >= 1559318400 LIMIT 1 [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_teachchild` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_teachchild` LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_teachchild` WHERE  `t_maketime` >= 1560182400 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_teachchild` WHERE  `t_maketime` >= 1559318400 LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_company` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_company` LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_company` WHERE  `o_createtime` >= '2019-06-11 00:00:00' LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_company` WHERE  `o_createtime` >= '2019-06-01 00:00:00' LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_school` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_school` LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_school` WHERE  `createtime` >= '2019-06-11 00:00:00' LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_school` WHERE  `createtime` >= '2019-06-01 00:00:00' LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_order` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_order` LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_order` WHERE  `add_time` >= 1560182400 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_order` WHERE  `add_time` >= 1559318400 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_camera` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_camera` LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_camera` WHERE  `sq_time` >= 1560182400 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_camera` WHERE  `sq_time` >= 1559318400 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_robot` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_robot` LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_robot` WHERE  `creattime` >= '1560182400' LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_robot` WHERE  `creattime` >= '1559318400' LIMIT 1 [ RunTime:0.000190s ]
+---------------------------------------------------------------
+[ 2019-06-11T11:11:24+08:00 ] 172.17.144.244 39.155.208.194 GET /index.php/Admin/Platform/index/
+[ info ] app.freestylewxy.cn/index.php/Admin/Platform/index/ [运行时间：0.036651s][吞吐率：27.28req/s] [内存消耗：3,487.54kb] [文件加载：74]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'Platform',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/school.lang.php
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/admin.lang.php
+[ info ] [ RUN ] app\admin\controller\Platform->index[ /home/www/chenganxjh/application/admin/controller/Platform.php ]
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/platform/index.html [ array (
+  0 => 'menu_list',
+  1 => 'action',
+  2 => 'sum',
+  3 => 'pdlog',
+  4 => 'page',
+  5 => 'admin_item',
+  6 => 'curitem',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Platform::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Platform.php:8]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT `permid` FROM `x_perms` WHERE  (   name='platform' AND pid !=0 AND status=1 ) LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_roleperms` [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT `action` FROM `x_roleperms` WHERE  (   roleid=0 AND permsid=136 ) LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_adminpdlog` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_adminpdlog` `s` LEFT JOIN `x_member` `me` ON `me`.`member_id`=`s`.`lg_member_id` LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT `s`.*,`me`.`member_identity` FROM `x_adminpdlog` `s` LEFT JOIN `x_member` `me` ON `me`.`member_id`=`s`.`lg_member_id` ORDER BY lg_id desc LIMIT 0,15 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] select sum(lg_av_amount) as num from x_adminpdlog where lg_type='cash_pay' [ RunTime:0.000237s ]
+[ sql ] [ SQL ] select sum(lg_av_amount) as num from x_adminpdlog where lg_type='share_admin_payment' [ RunTime:0.000187s ]
+[ sql ] [ SQL ] select sum(lg_av_amount) as num from x_adminpdlog where lg_type='order_pay' [ RunTime:0.000193s ]
+---------------------------------------------------------------
+[ 2019-06-11T11:15:02+08:00 ] 172.17.144.244 39.155.208.194 GET /Admin/login/index.html
+[ info ] app.freestylewxy.cn/Admin/login/index.html [运行时间：0.017422s][吞吐率：57.40req/s] [内存消耗：2,170.52kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T11:15:02+08:00 ] 172.17.144.244 39.155.208.194 GET /captcha.html
+[ info ] app.freestylewxy.cn/captcha.html [运行时间：0.015144s][吞吐率：66.03req/s] [内存消耗：1,787.75kb] [文件加载：43]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'dnt' => '1',
+  'referer' => 'http://app.freestylewxy.cn/Admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/chenganxjh/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T11:26:27+08:00 ] 172.17.144.244 42.236.10.75 GET /
+[ info ] 39.107.140.181/ [运行时间：0.018487s][吞吐率：54.09req/s] [内存消耗：2,261.86kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '39.107.140.181',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T11:32:48+08:00 ] 172.17.144.244 201.76.113.14 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.017403s][吞吐率：57.46req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T12:26:40+08:00 ] 172.17.144.244 180.163.220.5 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.018295s][吞吐率：54.66req/s] [内存消耗：2,261.91kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T12:26:53+08:00 ] 172.17.144.244 180.163.220.5 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.017197s][吞吐率：58.15req/s] [内存消耗：2,169.77kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nhrd77hkftcjqr5ve1qhus8cm5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T12:41:32+08:00 ] 172.17.144.244 109.73.180.166 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018905s][吞吐率：52.90req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T15:10:34+08:00 ] 172.17.144.244 39.107.121.196 GET /
+[ info ] app.freestylewxy.cn/ [运行时间：0.017586s][吞吐率：56.86req/s] [内存消耗：2,261.39kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T15:10:34+08:00 ] 172.17.144.244 39.107.121.196 GET /Admin/login/index.html
+[ info ] app.freestylewxy.cn/Admin/login/index.html [运行时间：0.016187s][吞吐率：61.78req/s] [内存消耗：2,167.41kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T15:16:10+08:00 ] 172.17.144.244 101.132.177.30 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.019082s][吞吐率：52.41req/s] [内存消耗：2,261.38kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T15:16:10+08:00 ] 172.17.144.244 101.132.177.30 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.017211s][吞吐率：58.10req/s] [内存消耗：2,167.38kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T15:26:17+08:00 ] 172.17.144.244 47.100.38.232 GET /
+[ info ] 39.107.140.181/ [运行时间：0.018141s][吞吐率：55.12req/s] [内存消耗：2,261.33kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T15:26:17+08:00 ] 172.17.144.244 47.100.38.232 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017190s][吞吐率：58.17req/s] [内存消耗：2,167.34kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T15:39:37+08:00 ] 172.17.144.244 156.0.249.29 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018246s][吞吐率：54.81req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T16:06:46+08:00 ] 172.17.144.244 80.82.70.187 GET /cache/global/img/gs.gif
+[ info ] www.baidu.com/cache/global/img/gs.gif [运行时间：0.015232s][吞吐率：65.65req/s] [内存消耗：1,782.66kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'user-agent' => 'Mozilla',
+  'host' => 'www.baidu.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T16:09:54+08:00 ] 172.17.144.244 85.99.185.25 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.017387s][吞吐率：57.51req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T16:27:38+08:00 ] 172.17.144.244 39.155.208.194 GET /
+[ info ] app.freestylewxy.cn/ [运行时间：0.033511s][吞吐率：29.84req/s] [内存消耗：3,390.18kb] [文件加载：70]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/index.lang.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/www/chenganxjh/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/index/index.html [ array (
+  0 => 'menu_list',
+  1 => 'admin_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_config` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `x_config` [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000266s ]
+---------------------------------------------------------------
+[ 2019-06-11T16:27:38+08:00 ] 172.17.144.244 39.155.208.194 GET /Admin/Dashboard/index.html
+[ info ] app.freestylewxy.cn/Admin/Dashboard/index.html [运行时间：0.056775s][吞吐率：17.61req/s] [内存消耗：3,449.79kb] [文件加载：69]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'Dashboard',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/dashboard.lang.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ /home/www/chenganxjh/application/admin/controller/Dashboard.php ]
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/dashboard/welcome.html [ array (
+  0 => 'menu_list',
+  1 => 'statistics',
+  2 => 'admin_info',
+  3 => 'admin_item',
+  4 => 'curitem',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Dashboard::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Dashboard.php:7]
+[ error ] [8]未定义变量: version_message[/home/www/chenganxjh/runtime/temp/45c57ec2318e37c689549e71e9980a42.php:58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000156s ]
+---------------------------------------------------------------
+[ 2019-06-11T16:27:38+08:00 ] 172.17.144.244 39.155.208.194 GET /admin/dashboard/statistics.html
+[ info ] app.freestylewxy.cn/admin/dashboard/statistics.html [运行时间：0.075222s][吞吐率：13.29req/s] [内存消耗：3,785.91kb] [文件加载：73]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => 'statistics',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://app.freestylewxy.cn/Admin/Dashboard/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/dashboard.lang.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->statistics[ /home/www/chenganxjh/application/admin/controller/Dashboard.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Dashboard::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Dashboard.php:7]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000403s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 1 LIMIT 1 [ RunTime:0.002376s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 1  AND `member_add_time` >= 1560182400 LIMIT 1 [ RunTime:0.013187s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 1  AND `member_add_time` >= 1559318400 LIMIT 1 [ RunTime:0.012168s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 2 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 2  AND `member_add_time` >= 1560182400 LIMIT 1 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  `member_identity` = 2  AND `member_add_time` >= 1559318400 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_teachchild` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_teachchild` LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_teachchild` WHERE  `t_maketime` >= 1560182400 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_teachchild` WHERE  `t_maketime` >= 1559318400 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_company` [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_company` LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_company` WHERE  `o_createtime` >= '2019-06-11 00:00:00' LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_company` WHERE  `o_createtime` >= '2019-06-01 00:00:00' LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_school` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_school` LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_school` WHERE  `createtime` >= '2019-06-11 00:00:00' LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_school` WHERE  `createtime` >= '2019-06-01 00:00:00' LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_order` [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_order` LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_order` WHERE  `add_time` >= 1560182400 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_order` WHERE  `add_time` >= 1559318400 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_camera` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_camera` LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_camera` WHERE  `sq_time` >= 1560182400 LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_camera` WHERE  `sq_time` >= 1559318400 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_robot` [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_robot` LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_robot` WHERE  `creattime` >= '1560182400' LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_robot` WHERE  `creattime` >= '1559318400' LIMIT 1 [ RunTime:0.000184s ]
+---------------------------------------------------------------
+[ 2019-06-11T16:27:42+08:00 ] 172.17.144.244 39.155.208.194 GET /index.php/Admin/Platform/index/
+[ info ] app.freestylewxy.cn/index.php/Admin/Platform/index/ [运行时间：0.036740s][吞吐率：27.22req/s] [内存消耗：3,487.54kb] [文件加载：74]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'Platform',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/school.lang.php
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/admin.lang.php
+[ info ] [ RUN ] app\admin\controller\Platform->index[ /home/www/chenganxjh/application/admin/controller/Platform.php ]
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/platform/index.html [ array (
+  0 => 'menu_list',
+  1 => 'action',
+  2 => 'sum',
+  3 => 'pdlog',
+  4 => 'page',
+  5 => 'admin_item',
+  6 => 'curitem',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Platform::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Platform.php:8]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT `permid` FROM `x_perms` WHERE  (   name='platform' AND pid !=0 AND status=1 ) LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_roleperms` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `action` FROM `x_roleperms` WHERE  (   roleid=0 AND permsid=136 ) LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_adminpdlog` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_adminpdlog` `s` LEFT JOIN `x_member` `me` ON `me`.`member_id`=`s`.`lg_member_id` LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT `s`.*,`me`.`member_identity` FROM `x_adminpdlog` `s` LEFT JOIN `x_member` `me` ON `me`.`member_id`=`s`.`lg_member_id` ORDER BY lg_id desc LIMIT 0,15 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] select sum(lg_av_amount) as num from x_adminpdlog where lg_type='cash_pay' [ RunTime:0.000250s ]
+[ sql ] [ SQL ] select sum(lg_av_amount) as num from x_adminpdlog where lg_type='share_admin_payment' [ RunTime:0.000193s ]
+[ sql ] [ SQL ] select sum(lg_av_amount) as num from x_adminpdlog where lg_type='order_pay' [ RunTime:0.000182s ]
+---------------------------------------------------------------
+[ 2019-06-11T16:27:45+08:00 ] 172.17.144.244 39.155.208.194 GET /index.php/admin/teachercertify/index.html
+[ info ] app.freestylewxy.cn/index.php/admin/teachercertify/index.html [运行时间：0.030962s][吞吐率：32.30req/s] [内存消耗：3,097.20kb] [文件加载：70]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'teachercertify',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/index.php/Admin/Platform/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/teacher.lang.php
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/admin.lang.php
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Teachercertify::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Teachercertify.php:9]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1[/home/www/chenganxjh/thinkphp/library/think/db/Connection.php:388]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000480s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT `permid` FROM `x_perms` WHERE  (   name='teachercertify' AND pid !=0 AND status=1 ) LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_roleperms` [ RunTime:0.000446s ]
+---------------------------------------------------------------
+[ 2019-06-11T16:27:47+08:00 ] 172.17.144.244 39.155.208.194 GET /index.php/Admin/Platform/index/
+[ info ] app.freestylewxy.cn/index.php/Admin/Platform/index/ [运行时间：0.036805s][吞吐率：27.17req/s] [内存消耗：3,487.66kb] [文件加载：74]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'Platform',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0; now_location_module=management; now_location_controller=Platform; now_location_action=index',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/school.lang.php
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/admin.lang.php
+[ info ] [ RUN ] app\admin\controller\Platform->index[ /home/www/chenganxjh/application/admin/controller/Platform.php ]
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/platform/index.html [ array (
+  0 => 'menu_list',
+  1 => 'action',
+  2 => 'sum',
+  3 => 'pdlog',
+  4 => 'page',
+  5 => 'admin_item',
+  6 => 'curitem',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Platform::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Platform.php:8]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT `permid` FROM `x_perms` WHERE  (   name='platform' AND pid !=0 AND status=1 ) LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_roleperms` [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT `action` FROM `x_roleperms` WHERE  (   roleid=0 AND permsid=136 ) LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_adminpdlog` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_adminpdlog` `s` LEFT JOIN `x_member` `me` ON `me`.`member_id`=`s`.`lg_member_id` LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `s`.*,`me`.`member_identity` FROM `x_adminpdlog` `s` LEFT JOIN `x_member` `me` ON `me`.`member_id`=`s`.`lg_member_id` ORDER BY lg_id desc LIMIT 0,15 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] select sum(lg_av_amount) as num from x_adminpdlog where lg_type='cash_pay' [ RunTime:0.000227s ]
+[ sql ] [ SQL ] select sum(lg_av_amount) as num from x_adminpdlog where lg_type='share_admin_payment' [ RunTime:0.000204s ]
+[ sql ] [ SQL ] select sum(lg_av_amount) as num from x_adminpdlog where lg_type='order_pay' [ RunTime:0.000195s ]
+---------------------------------------------------------------
+[ 2019-06-11T16:30:02+08:00 ] 172.17.144.244 39.155.208.194 GET /
+[ info ] app.freestylewxy.cn/ [运行时间：0.018439s][吞吐率：54.23req/s] [内存消耗：2,262.75kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T16:30:02+08:00 ] 172.17.144.244 39.155.208.194 GET /Admin/login/index.html
+[ info ] app.freestylewxy.cn/Admin/login/index.html [运行时间：0.016303s][吞吐率：61.34req/s] [内存消耗：2,170.52kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T16:30:02+08:00 ] 172.17.144.244 39.155.208.194 GET /captcha.html
+[ info ] app.freestylewxy.cn/captcha.html [运行时间：0.014166s][吞吐率：70.59req/s] [内存消耗：1,787.75kb] [文件加载：43]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'dnt' => '1',
+  'referer' => 'http://app.freestylewxy.cn/Admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/chenganxjh/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T17:42:36+08:00 ] 172.17.144.244 93.115.228.156 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018222s][吞吐率：54.88req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T17:52:29+08:00 ] 172.17.144.244 47.98.97.252 GET /admin/login/index.html
+[ info ] www.tongsafe.com/admin/login/index.html [运行时间：0.017663s][吞吐率：56.62req/s] [内存消耗：2,167.95kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T18:08:19+08:00 ] 172.17.144.244 47.97.167.161 GET /admin/login/index.html
+[ info ] 39.107.140.181/admin/login/index.html [运行时间：0.017347s][吞吐率：57.65req/s] [内存消耗：2,167.91kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T18:10:08+08:00 ] 172.17.144.244 39.155.208.194 GET /admin/index/modifypw.html
+[ info ] app.freestylewxy.cn/admin/index/modifypw.html [运行时间：0.029609s][吞吐率：33.77req/s] [内存消耗：3,075.23kb] [文件加载：67]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'modifypw',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0; now_location_module=management; now_location_controller=Platform; now_location_action=index',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn/index.lang.php
+[ info ] [ RUN ] app\admin\controller\Index->modifypw[ /home/www/chenganxjh/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/index/modifypw.html [ array (
+  0 => 'menu_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000478s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_perms` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 3  AND `status` = 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 23  AND `status` = 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 24  AND `status` = 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 27  AND `status` = 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 31  AND `status` = 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 42  AND `status` = 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 47  AND `status` = 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 106  AND `status` = 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 121  AND `status` = 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `x_perms` WHERE  `pid` = 135  AND `status` = 1 [ RunTime:0.000256s ]
+---------------------------------------------------------------
+[ 2019-06-11T18:10:08+08:00 ] 172.17.144.244 39.155.208.194 GET /admin/login/logout.html
+[ info ] app.freestylewxy.cn/admin/login/logout.html [运行时间：0.017419s][吞吐率：57.41req/s] [内存消耗：2,172.89kb] [文件加载：54]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0; now_location_module=management; now_location_controller=Platform; now_location_action=index',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->logout[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T18:10:10+08:00 ] 172.17.144.244 39.155.208.194 GET /Admin/login/index.html
+[ info ] app.freestylewxy.cn/Admin/login/index.html [运行时间：0.016579s][吞吐率：60.32req/s] [内存消耗：2,170.50kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0; now_location_module=management; now_location_controller=Platform; now_location_action=index',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/admin/login/logout.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T18:10:10+08:00 ] 172.17.144.244 39.155.208.194 GET /captcha.html
+[ info ] app.freestylewxy.cn/captcha.html [运行时间：0.013890s][吞吐率：71.99req/s] [内存消耗：1,787.57kb] [文件加载：43]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f65u62h4mdq0l03qnhd1k5fhi0; now_location_module=management; now_location_controller=Platform; now_location_action=index',
+  'connection' => 'keep-alive',
+  'referer' => 'http://app.freestylewxy.cn/Admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0',
+  'host' => 'app.freestylewxy.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/chenganxjh/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T18:33:07+08:00 ] 172.17.144.244 36.110.164.248 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.018745s][吞吐率：53.35req/s] [内存消耗：2,261.70kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T18:33:07+08:00 ] 172.17.144.244 36.110.164.248 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.016067s][吞吐率：62.24req/s] [内存消耗：2,167.88kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'cookie' => 'PHPSESSID=r9ol5obr68ivuvlk2i3nd0jms3',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T20:14:53+08:00 ] 172.17.144.244 36.77.107.181 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018193s][吞吐率：54.97req/s] [内存消耗：2,261.70kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'max-stale=0',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T22:17:14+08:00 ] 172.17.144.244 107.170.238.150 GET /
+[ info ] 39.107.140.181/ [运行时间：0.017646s][吞吐率：56.67req/s] [内存消耗：2,261.23kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '39.107.140.181',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-11T22:38:52+08:00 ] 172.17.144.244 93.126.28.151 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.017614s][吞吐率：56.77req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]

@@ -1,0 +1,1087 @@
+---------------------------------------------------------------
+[ 2019-07-04T23:56:45+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Students/get_student_info.html
+[ info ] www.tongsafe.com/index.php/Wap/Students/get_student_info.html [运行时间：0.030851s][吞吐率：32.41req/s] [内存消耗：3,249.22kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000913s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = '1daa062f7c632a5fa00eae46558621cc' LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000617s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:56:45+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Students/get_student_info.html
+[ info ] www.tongsafe.com/index.php/Wap/Students/get_student_info.html [运行时间：0.032360s][吞吐率：30.90req/s] [内存消耗：3,248.90kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000870s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = '1daa062f7c632a5fa00eae46558621cc' LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000650s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:56:46+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/lookchild/index
+[ info ] www.tongsafe.com/index.php/Wap/lookchild/index [运行时间：0.032531s][吞吐率：30.74req/s] [内存消耗：3,211.23kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'lookchild',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '76',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+  'member_id' => '100031',
+  'sid' => '8106',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Lookchild->index[ /home/www/chenganxjh/application/wap/controller/Lookchild.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000956s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001197s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_ownerAccount` = '100031'  AND `s_del` = 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_packagetime` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `x_packagetime` WHERE  `pkg_type` = 1  AND `s_id` = 8106 LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id,`sc`.`provinceid`,`sc`.`cityid`,`sc`.`areaid` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_id` = 8106 LIMIT 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_camera` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT `ability`,`channelid`,`companyid`,`deviceid`,`id`,`name`,`online`,`parentid`,`type`,`is_classroom`,`status`,`begintime`,`endtime` FROM `x_camera` WHERE  `parentid` = 3772 OR `parentid` = 3771 ORDER BY cid desc [ RunTime:0.000579s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:56:46+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/lookchild/index
+[ info ] www.tongsafe.com/index.php/Wap/lookchild/index [运行时间：0.031454s][吞吐率：31.79req/s] [内存消耗：3,211.23kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'lookchild',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '76',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+  'member_id' => '100031',
+  'sid' => '8106',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Lookchild->index[ /home/www/chenganxjh/application/wap/controller/Lookchild.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000959s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_ownerAccount` = '100031'  AND `s_del` = 1 [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_packagetime` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `x_packagetime` WHERE  `pkg_type` = 1  AND `s_id` = 8106 LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id,`sc`.`provinceid`,`sc`.`cityid`,`sc`.`areaid` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_id` = 8106 LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_camera` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT `ability`,`channelid`,`companyid`,`deviceid`,`id`,`name`,`online`,`parentid`,`type`,`is_classroom`,`status`,`begintime`,`endtime` FROM `x_camera` WHERE  `parentid` = 3772 OR `parentid` = 3771 ORDER BY cid desc [ RunTime:0.000575s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:56:47+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/teacherhome/index
+[ info ] www.tongsafe.com/index.php/Wap/teacherhome/index [运行时间：0.029003s][吞吐率：34.48req/s] [内存消耗：3,344.48kb] [文件加载：66]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'teacherhome',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tongsafe.com/app/teachchild/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EML-AL00 Build/HUAWEIEML-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.tongsafe.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '45',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+  'version' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Teacherhome->index[ /home/www/chenganxjh/application/wap/controller/Teacherhome.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000967s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_teachtype` [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT * FROM `x_teachtype` WHERE  `gc_show` = 1 ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `x_teachtype` WHERE  `gc_parent_id` = 0 ORDER BY gc_sort ASC [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_packages` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT `pkg_id`,`pkg_price` FROM `x_packages` WHERE  `pkg_type` = 3 ORDER BY pkg_price asc [ RunTime:0.000516s ]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+---------------------------------------------------------------
+[ 2019-07-04T23:56:47+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Teacherhome/lists
+[ info ] www.tongsafe.com/index.php/Wap/Teacherhome/lists [运行时间：0.024282s][吞吐率：41.18req/s] [内存消耗：3,168.22kb] [文件加载：65]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Teacherhome',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tongsafe.com/app/teachchild/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EML-AL00 Build/HUAWEIEML-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.tongsafe.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '27',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+)
+[ info ] [ PARAM ] array (
+  'recommend' => '2',
+  'page' => '1',
+  'version' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Teacherhome->lists[ /home/www/chenganxjh/application/wap/controller/Teacherhome.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: order[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:152]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000880s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] select t_id,t_url,t_videoimg,t_picture,t_title,t_profile,t_price,t_userid,t_author from x_teachchild where t_audit=3 and t_del=1 and t_recommend=2 order by t_id desc limit 0,10 [ RunTime:0.000869s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:56:47+08:00 ] 172.17.144.244 223.81.193.90 GET /uploads/home/videoimg/20181122113011_1542857411.png
+[ info ] www.tongsafe.com/uploads/home/videoimg/20181122113011_1542857411.png [运行时间：0.015709s][吞吐率：63.66req/s] [内存消耗：1,885.10kb] [文件加载：49]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'videoimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'xjh.chenganxiangjianhai.com.chenanxjh',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tongsafe.com/app/teachchild/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EML-AL00 Build/HUAWEIEML-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-04T23:56:52+08:00 ] 172.17.144.244 47.92.148.120 GET /index.php/admin/position/index.html
+[ info ] www.tongsafe.com/index.php/admin/position/index.html [运行时间：0.026257s][吞吐率：38.09req/s] [内存消耗：2,348.05kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'position',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Position::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Position.php:8]
+---------------------------------------------------------------
+[ 2019-07-04T23:56:52+08:00 ] 172.17.144.244 47.92.148.120 GET /index.php/admin/schoolinfo/lists.html?school_id=59
+[ info ] www.tongsafe.com/index.php/admin/schoolinfo/lists.html?school_id=59 [运行时间：0.026148s][吞吐率：38.24req/s] [内存消耗：2,358.23kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'schoolinfo',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'school_id' => '59',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Schoolinfo::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Schoolinfo.php:8]
+---------------------------------------------------------------
+[ 2019-07-04T23:56:52+08:00 ] 172.17.144.244 47.92.148.120 GET /index.php/Admin/login/index.html
+[ info ] www.tongsafe.com/index.php/Admin/login/index.html [运行时间：0.025420s][吞吐率：39.34req/s] [内存消耗：2,266.88kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-04T23:56:52+08:00 ] 172.17.144.244 47.92.148.120 GET /index.php/Admin/login/index.html
+[ info ] www.tongsafe.com/index.php/Admin/login/index.html [运行时间：0.024440s][吞吐率：40.92req/s] [内存消耗：2,266.88kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-04T23:58:01+08:00 ] 172.17.144.244 47.92.115.203 GET /index.php/admin/schoolinfo/index.html?school_id=51
+[ info ] www.tongsafe.com/index.php/admin/schoolinfo/index.html?school_id=51 [运行时间：0.019235s][吞吐率：51.99req/s] [内存消耗：2,358.23kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'schoolinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'school_id' => '51',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Schoolinfo::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Schoolinfo.php:8]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:01+08:00 ] 172.17.144.244 47.92.115.203 GET /index.php/Admin/login/index.html
+[ info ] www.tongsafe.com/index.php/Admin/login/index.html [运行时间：0.017455s][吞吐率：57.29req/s] [内存消耗：2,266.88kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-04T23:58:20+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Common/get_version
+[ info ] www.tongsafe.com/index.php/Wap/Common/get_version [运行时间：0.024064s][吞吐率：41.56req/s] [内存消耗：2,810.86kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Common',
+    2 => 'get_version',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '13',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'accept' => 'application/json',
+  'content-type' => 'application/json;charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Common->get_version[ /home/www/chenganxjh/application/wap/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000918s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_version_update` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `x_version_update` WHERE  (  type=1 ) ORDER BY id DESC LIMIT 1 [ RunTime:0.000572s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:20+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Member/info.html
+[ info ] www.tongsafe.com/index.php/Wap/Member/info.html [运行时间：0.036276s][吞吐率：27.57req/s] [内存消耗：3,420.20kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Member',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '63',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+  'member_id' => '100031',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Member->info[ /home/www/chenganxjh/application/wap/controller/Member.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000918s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = '1daa062f7c632a5fa00eae46558621cc' LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001021s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT `m`.`member_id`,`m`.`member_paypwd` FROM `x_member` `m` WHERE  (   m.member_id = "100031" ) LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `m`.`member_id`,`m`.`member_nickname`,`m`.`member_avatar`,`m`.`member_identity`,`m`.`is_owner`,`m`.`member_age`,`m`.`member_sex`,`m`.`member_email`,`m`.`member_provinceid`,`m`.`member_cityid`,`m`.`member_areaid`,`m`.`member_jobid` FROM `x_member` `m` WHERE  (   m.member_id = "100031" ) LIMIT 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  (  is_owner = "100031" ) LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_area` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT `area_name` FROM `x_area` WHERE  (  area_id = "0" ) LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT `area_name` FROM `x_area` WHERE  (  area_id = "0" ) LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT `area_name` FROM `x_area` WHERE  (  area_id = "0" ) LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_industry` [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT `name` FROM `x_industry` WHERE  (  id = "0" ) LIMIT 1 [ RunTime:0.000489s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:20+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Students/get_student_info.html
+[ info ] www.tongsafe.com/index.php/Wap/Students/get_student_info.html [运行时间：0.032264s][吞吐率：30.99req/s] [内存消耗：3,248.90kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = '1daa062f7c632a5fa00eae46558621cc' LIMIT 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000688s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:20+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Students/get_student_info.html
+[ info ] www.tongsafe.com/index.php/Wap/Students/get_student_info.html [运行时间：0.030927s][吞吐率：32.33req/s] [内存消耗：3,248.90kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000808s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = '1daa062f7c632a5fa00eae46558621cc' LIMIT 1 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000641s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:20+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Students/get_student_info.html
+[ info ] www.tongsafe.com/index.php/Wap/Students/get_student_info.html [运行时间：0.032438s][吞吐率：30.83req/s] [内存消耗：3,248.90kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000953s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = '1daa062f7c632a5fa00eae46558621cc' LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000706s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:21+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/lookchild/index
+[ info ] www.tongsafe.com/index.php/Wap/lookchild/index [运行时间：0.031791s][吞吐率：31.46req/s] [内存消耗：3,211.23kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'lookchild',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '76',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+  'member_id' => '100031',
+  'sid' => '8106',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Lookchild->index[ /home/www/chenganxjh/application/wap/controller/Lookchild.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000883s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001246s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_ownerAccount` = '100031'  AND `s_del` = 1 [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_packagetime` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `x_packagetime` WHERE  `pkg_type` = 1  AND `s_id` = 8106 LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id,`sc`.`provinceid`,`sc`.`cityid`,`sc`.`areaid` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_id` = 8106 LIMIT 1 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_camera` [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT `ability`,`channelid`,`companyid`,`deviceid`,`id`,`name`,`online`,`parentid`,`type`,`is_classroom`,`status`,`begintime`,`endtime` FROM `x_camera` WHERE  `parentid` = 3772 OR `parentid` = 3771 ORDER BY cid desc [ RunTime:0.000558s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:21+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/lookchild/index
+[ info ] www.tongsafe.com/index.php/Wap/lookchild/index [运行时间：0.031123s][吞吐率：32.13req/s] [内存消耗：3,211.23kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'lookchild',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '76',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+  'member_id' => '100031',
+  'sid' => '8106',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Lookchild->index[ /home/www/chenganxjh/application/wap/controller/Lookchild.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000891s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_ownerAccount` = '100031'  AND `s_del` = 1 [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_packagetime` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `x_packagetime` WHERE  `pkg_type` = 1  AND `s_id` = 8106 LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id,`sc`.`provinceid`,`sc`.`cityid`,`sc`.`areaid` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_id` = 8106 LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_camera` [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT `ability`,`channelid`,`companyid`,`deviceid`,`id`,`name`,`online`,`parentid`,`type`,`is_classroom`,`status`,`begintime`,`endtime` FROM `x_camera` WHERE  `parentid` = 3772 OR `parentid` = 3771 ORDER BY cid desc [ RunTime:0.000591s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:22+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/teacherhome/index
+[ info ] www.tongsafe.com/index.php/Wap/teacherhome/index [运行时间：0.029899s][吞吐率：33.45req/s] [内存消耗：3,344.48kb] [文件加载：66]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'teacherhome',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tongsafe.com/app/teachchild/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EML-AL00 Build/HUAWEIEML-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.tongsafe.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '45',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+  'version' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Teacherhome->index[ /home/www/chenganxjh/application/wap/controller/Teacherhome.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000993s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_teachtype` [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SELECT * FROM `x_teachtype` WHERE  `gc_show` = 1 ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT * FROM `x_teachtype` WHERE  `gc_parent_id` = 0 ORDER BY gc_sort ASC [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_packages` [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT `pkg_id`,`pkg_price` FROM `x_packages` WHERE  `pkg_type` = 3 ORDER BY pkg_price asc [ RunTime:0.000496s ]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [2]Invalid argument supplied for foreach()[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:47]
+[ error ] [8]未定义数组索引: childThree[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:57]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+[ error ] [8]未定义数组索引: childFour[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:53]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:22+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Teacherhome/lists
+[ info ] www.tongsafe.com/index.php/Wap/Teacherhome/lists [运行时间：0.025416s][吞吐率：39.35req/s] [内存消耗：3,168.22kb] [文件加载：65]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Teacherhome',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tongsafe.com/app/teachchild/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EML-AL00 Build/HUAWEIEML-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.tongsafe.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '27',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+)
+[ info ] [ PARAM ] array (
+  'recommend' => '2',
+  'page' => '1',
+  'version' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Teacherhome->lists[ /home/www/chenganxjh/application/wap/controller/Teacherhome.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: order[/home/www/chenganxjh/application/wap/controller/Teacherhome.php:152]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000849s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] select t_id,t_url,t_videoimg,t_picture,t_title,t_profile,t_price,t_userid,t_author from x_teachchild where t_audit=3 and t_del=1 and t_recommend=2 order by t_id desc limit 0,10 [ RunTime:0.000879s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:22+08:00 ] 172.17.144.244 223.81.193.90 GET /uploads/home/videoimg/20181122113011_1542857411.png
+[ info ] www.tongsafe.com/uploads/home/videoimg/20181122113011_1542857411.png [运行时间：0.015070s][吞吐率：66.36req/s] [内存消耗：1,885.10kb] [文件加载：49]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'videoimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'xjh.chenganxiangjianhai.com.chenanxjh',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tongsafe.com/app/teachchild/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EML-AL00 Build/HUAWEIEML-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-04T23:58:32+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Member/info.html
+[ info ] www.tongsafe.com/index.php/Wap/Member/info.html [运行时间：0.048797s][吞吐率：20.49req/s] [内存消耗：3,420.20kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Member',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '63',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+  'member_id' => '100031',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Member->info[ /home/www/chenganxjh/application/wap/controller/Member.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000999s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = '1daa062f7c632a5fa00eae46558621cc' LIMIT 1 [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001303s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT `m`.`member_id`,`m`.`member_paypwd` FROM `x_member` `m` WHERE  (   m.member_id = "100031" ) LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT `m`.`member_id`,`m`.`member_nickname`,`m`.`member_avatar`,`m`.`member_identity`,`m`.`is_owner`,`m`.`member_age`,`m`.`member_sex`,`m`.`member_email`,`m`.`member_provinceid`,`m`.`member_cityid`,`m`.`member_areaid`,`m`.`member_jobid` FROM `x_member` `m` WHERE  (   m.member_id = "100031" ) LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  (  is_owner = "100031" ) LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_area` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT `area_name` FROM `x_area` WHERE  (  area_id = "0" ) LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT `area_name` FROM `x_area` WHERE  (  area_id = "0" ) LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT `area_name` FROM `x_area` WHERE  (  area_id = "0" ) LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_industry` [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT `name` FROM `x_industry` WHERE  (  id = "0" ) LIMIT 1 [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:32+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/Students/get_student_info.html
+[ info ] www.tongsafe.com/index.php/Wap/Students/get_student_info.html [运行时间：0.043189s][吞吐率：23.15req/s] [内存消耗：3,248.90kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000830s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = '1daa062f7c632a5fa00eae46558621cc' LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001202s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000684s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:58:32+08:00 ] 172.17.144.244 223.81.193.90 POST /index.php/Wap/lookchild/index
+[ info ] www.tongsafe.com/index.php/Wap/lookchild/index [运行时间：0.031861s][吞吐率：31.39req/s] [内存消耗：3,211.23kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'lookchild',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'content-length' => '76',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => '1daa062f7c632a5fa00eae46558621cc',
+  'member_id' => '100031',
+  'sid' => '8106',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Lookchild->index[ /home/www/chenganxjh/application/wap/controller/Lookchild.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000908s ] mysql:host=39.107.140.181;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001165s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_ownerAccount` = '100031'  AND `s_del` = 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_packagetime` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `x_packagetime` WHERE  `pkg_type` = 1  AND `s_id` = 8106 LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id,`sc`.`provinceid`,`sc`.`cityid`,`sc`.`areaid` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_id` = 8106 LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_camera` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT `ability`,`channelid`,`companyid`,`deviceid`,`id`,`name`,`online`,`parentid`,`type`,`is_classroom`,`status`,`begintime`,`endtime` FROM `x_camera` WHERE  `parentid` = 3772 OR `parentid` = 3771 ORDER BY cid desc [ RunTime:0.000516s ]
+---------------------------------------------------------------
+[ 2019-07-04T23:59:07+08:00 ] 172.17.144.244 47.96.12.13 GET /admin/login/index.html
+[ info ] 39.107.140.181/admin/login/index.html [运行时间：0.018633s][吞吐率：53.67req/s] [内存消耗：2,268.83kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,3092 @@
+---------------------------------------------------------------
+[ 2019-06-07T00:54:10+08:00 ] 172.17.144.244 80.82.70.187 GET /cache/global/img/gs.gif
+[ info ] www.baidu.com/cache/global/img/gs.gif [运行时间：0.014884s][吞吐率：67.19req/s] [内存消耗：1,782.66kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'user-agent' => 'Mozilla',
+  'host' => 'www.baidu.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:23:31+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018369s][吞吐率：54.44req/s] [内存消耗：2,262.43kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'content-length' => '436',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'AQjhn3AUUgaGQuJRFPknh6QSQ6/qT9FEk/P1_O9ABgd9K8lKl7KVnRRb8uycdXa5DjohS2_fcSuF6GT/k9oHwHjN05GswymEDvvEhjVQBky31Ywlu60if6kYceKE7ULUzwH52jHlMjGbIsc07cjGpasfMUNFSfPv/1uKvHsC3hdTw5FRzXhQMtbJXEAJDWc0eo0M7aEfIL7yalPhitho0WF6E6CguGCdIt6E4XEMi6spdQqD6agL4oo//mAu1QsX2249bJoCLI7pdboE0vigvqNRpl0FnEzEpQsbUX3o4boA2WS15OGhz/W2kiEOfdcVFi63QGDDra5MA/1fOCt_cYP6xL5QryKCvVWM64Nq5Jwpn00Opy3DH2We3RCMGCFA9wKcltNtTE7fYz2i9Vw0haFPRHo0XySPgakEqpw1BtI5/TJuoRxX' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:23:31+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017143s][吞吐率：58.33req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:25:31+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017853s][吞吐率：56.01req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '368',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'Vg3mmnAUBPCYg2P3kd0tCuZPe9Hf7qtJIKSYSz6R8B4r1mj37Hmi2loINBZWVx0kbcILJKzLCHBLyDG/o4BghE0PqobMjS6JtrddjXX7NxX0GGxMn4ifM7oh_1ROrqDm7itLrdZjtx5yN_SoBKAJhWf2Ini8RjX2nuUF2d/AOVimrMnFPyAl4ybeJt8Rmo8f26Kmx_sQgW3mejUu198lgjcQ97uJY11FgGcXQQKoQzKEz_Rat1Ma84Je_HiX5RxIQjPe6CtnpmmeejkyXIDzP45EaJa9ikuqybY5fQclFpAzc97Y7EOvxq4gCPrYGDPRi_b2ONDY8tmWBtgikDzVSuD9fLFr6qTu8nPMBCFEhS72Bw' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:25:32+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.016629s][吞吐率：60.14req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:27:32+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018638s][吞吐率：53.65req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '380',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'BlmzniJCUOCn7NoVwIc5NGyanWBWpyxp3LtgR1ChmNDBm60omLgnv5YYGleA55r_6rgKRIDIepsO_PN1oRT0QKsdTDnH9pdXTjOzHSV8/WDfhjq9DnT6eNaSLfP_jzWf/M6ECBVRy/7BKlDlWOyLqpmt55LvmvIrie2a84mYdPEnFmJT2epqf_I90WSK0UjNvJmbIBcsW2O8iR0FrvKUhifoHlYuV0SUNMTqrQmE/DKFQlOhBlUUX0ia78ww/eGzeUtIkt4_yhrnj_A9hGG6It88kqGvVYg8HxFrEoMwjkjeuzOy1wGNkzR4V8c6X5KGMtSYwq4XZ7ZHGuBTxqQxEetOkv6Sj59TfsIUgDWXncqlHcJv2CyGPY_iRA' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:27:32+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017341s][吞吐率：57.67req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:29:33+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018046s][吞吐率：55.41req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '416',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'A17nyH0QB_idl1SmCxzHxszmocsTMJC2Bq1ePdVUhg5GsjtKxKW979IdlffA8xylv1_dk48e/BkPMXGG9YWvhK79LqTVIpy50yoFVP86F5xCSD5UVCh7yClMyHlCgqUAf8/6kVbWdnXS3E2SYeC5ua3xiRVa6cimO8u7acFhJNunu0q2ZFEUf9PKOuKjg7LzVbKX3nKjc_4xPELL/cb4dHywNsuZCeVYXsgLDFipnm4nYqTtEq25ek5OR5qpD2i4ZEJxLwp/B61a867U_sPzejI5_5FVEv6a_fQLJmk3_jUEW/PCzM39Km4AuvLHCBHRan14QQoebfzxbKHY3oUlv5orEeFhZBEsJYvWuiMqS7LUwfisbBs4aXtNEve870X5Rr9ZuS0Mne4SFrMp5BtJ9itOCGpDqw' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:29:33+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017842s][吞吐率：56.05req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:31:34+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017669s][吞吐率：56.60req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '404',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'VVyxzCEXUHX06Jw9AHwYVgfT4BwAQHKj_Zz_c6GRqeCuvUO4hYTLQV7CKilF0z3Ltr1gA9v8HO1udBAhQcNvRP2SzYvItXvVTmuj1v9oP60U37luES5JhopNpfHrig7gSL8QAnQP8MilHBu3lvF1Zi3QjBQjEgnbBntsM0Naflz2qXoDySjT3g_TLtunF0SQR7wviwoouZJ_B5cYRd4aHz7WhLQiV5W6ke_yJLSLH442oLaAHAKes2ZG73QwdltC2e2t4jskw_c7t2fO/0APFZYrdt6ONtjpEdBLqjo/Y2J_d56F9JYjvqgoayRLkLfFscTMnTEMiviqbAmL9c9MEYLToKcGzW1tbXrdL/LsBUl6AJ6V/p7S16ZCEcxuj7nbJgKYUNOd41ZzMV/EapwA' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:31:34+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017343s][吞吐率：57.66req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:33:34+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018058s][吞吐率：55.38req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '420',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'AFK7zCISV6vO_IzpS_YEC/ILPxDHiz_I5YtyDL7j/PoXZ1/8AbBYIbVnMS_YmSEZyAr7ZFaSISwkpTmfJFJRqh7vJlOTY8tXG5K61q2KZmC9cxBWfViuII_cPsiL/1S2Zc8PyqtCZA5IkUVLP5BYl9CSrZRapcL3uRnZ12RmC/mvAE7Xnm0Fquu4Ra96tWafYih4LAmfbmJogeR9xfxBfundtlYNrTIGuoZC2iXJI9fuZbSv1MtpBLAKsdp3ykC/YDYVV0tsdh_9ZHf5AV2ZmAaVzskO1IdOW_6EkuLnpqPuIyFH2_haWMaN27qpHdonY/F5amNa4C/xaB0wPVMlAPLFrzHoS2t_oQD0NrikmO7Yr1/vDKySQrCIQcVd_O3005ARma7EEtltK_w2qR1nu_kUkp231V9SLipZ' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:33:35+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017377s][吞吐率：57.55req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:35:35+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018208s][吞吐率：54.92req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '376',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'BQ2yzCEeAo3HBhaxJm86d0RWurMfhzgkDk8nR8WStDww3Motpj4b1YahKCX2sNDqetaWyUpfX5dCFLP4bQl1ZfFOMVusUnSXgaei/dGi9EvftbIf6Jfp1jKFYqGMfThHY8ApHd3Pl5unOVwyWPwZAxNR5O/0emiDDF5ZkgIhYHUoc3fyKbXE6Gn9Ecxl8lafgiTurMjkStn0LO6Ljo/5RyEWAmcpKbO0HkVTn5P/Pp4jARtNT84fpX9hOpAMK9XB50wwUkDp2X3eLteAiOxsN8eWMG6XVH8U0ReSU2lKV/25piZI4OUZl7tNahGwUk_Kr5/U7cjBx/fa8yFz37v9Pxlt3TyJYwSU_GSkdks14uiVPj3HEVhetg' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:35:35+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017149s][吞吐率：58.31req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:37:36+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018149s][吞吐率：55.10req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '388',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'CVq3nn0fArlzYdZNytfFsaoeOUCLK4GSjUKUbGXfqvJMlEUr9ktD23Iq_98/mlDewKeb6p8ptjKgXvFszFKaAc0oeVq0rNkgiHj_qfeTWd0mFEXEdtVWRMvBK5SVIECLrFM11zVSMD85Ij7wcoGEqU6biVOxc4ZDm4sibBjfb/czB8PoYnfwBXJaZU5qqtimcWlRFqpavA6fPbmLb7RCsndv0zZV2rXqiK13MGM2PFaYbcKakoG/Zyeerx_QdJVsoiZEQmPvnfydvpQcKQan71GoJ3xy3Fjs0UdvlDbkm78mIFHTP6eU4p2F7ey9w7J0XGgo5A4jWw/bA/BQ3dYV82939odzjXJKKCP_AhAXlH8CJawOCTOdQ_/KYSyf//K0eQ' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:37:36+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.016772s][吞吐率：59.62req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:39:37+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018000s][吞吐率：55.56req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '368',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'CVm7y3QfU4bYgGvQxcCtGx0sWwAS8QxbDvsNh11iS/NRZdduobRXTRV5dOJ_yVuriMAaWELty7Wx1eIQfWGRW6R/Tz1YpRDSBil83KJ9gHk5qDxk2EE5JGuPktRQGPYzmj03_eMxrmWtJJMHdhFNJNrGkUPWPaljanHiiOWVRdsQd9Y7E7XE/S46krise_oR8anZQml3EYmN58monHJPcDZqkSXMslBC2zidNhfA4vmg0GTnWRjjAAUAqBCpGGdwIx32frDrArJWOkIRGUDbLLZwhpIKLyReWB35iKN3pITfbWgOAwsXKjNM9KnMJ56DhMKdwcpTGVJ6TD9XibjO4OQToYdCLoJo3JH_VL2WKd1E9h8m' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:39:37+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017583s][吞吐率：56.87req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:41:37+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018189s][吞吐率：54.98req/s] [内存消耗：2,262.41kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '428',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'Alq6yCUQWPRouUylHTpZ7LGmsqz905rwCQAfhqPZujhSmF2fIEqfJm40waZw1GkH0ox5vErE_T61njAYnfgULBGOS_lmsMK4RqiirSpIe3PLC6SVY_eutIwJSAw1wv/gADP4cOOwdP_6ExBsz5ka0gOECDt8sB5KdHdJLFxj_wjsqSu5TcAtciCsa_3IvNOehs66OGTAzBGcjYURDYfNXiOSD/ZpOPA3IddqH1UdNAkQSRpSvALqWia_ig2_uleDIg7GzQZmX8iDSdys7NQmvAL_b2JNFtjgM2ZGjl6fpZr3szkgsGGb1U_MTAPOFDkoHGDWeQCgJjI5f9UvbjzwKMPBCYiAvKcSYteSlusBmvPMVO2Qn/nROh9G/LxPOmWainkrUqD/MjBTpLTgpkOzts/Do5b1aNsSir7odbfY6/94' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:41:38+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017314s][吞吐率：57.76req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:42:32+08:00 ] 172.17.144.244 78.161.183.24 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018133s][吞吐率：55.15req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:43:38+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018037s][吞吐率：55.44req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '404',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'VVm2mXITBT4oHbrv1SM6MtYZewQzrMeH6L8cvny_uzjuUDXby0a4eyqnSoZsZE1R9grcIRAOofvJUf59FPZmF0VUFenQYaKGy/ie5B2v_7Lu8bJAn27JQQXJ/Kpn/LNBeGJ8KRlLAepT05NJ_VrXmE1ThDyF6Mh9sOTnYikTB_Nevp_D73Jx7Jm9sk0yz3O9xjsKzCkWe6KUisZQE1pULQOHnle5ub8hGMCykUr53G1ci_tsf9G/sQP0zjUeorKko49RJjitijjixVyGmSntG4hMMrtGX1Ty9874eexR8SeqjWPL9s2IPpm8G3f1vLrDLkTWE1u2pRNovoXXESRQkPMXoV2oDwPiQ/OJHBtcZEs7jyVXDVV4jCcXOXOwzkYAOJiNyvofuPvyNe6_nHGz' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:43:38+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017032s][吞吐率：58.71req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:45:39+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018006s][吞吐率：55.54req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '380',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'VVjnxCYTUQKmlc/Tsg5/UA62ML6dAPZKQG8qobRe4iC00EnDF6rBDwbKumLBy1zN6cRW_GJrMwCYgw230ALdd27cMjFtZ8fZUmVA4RCPzAT2rl/mZGf4565VWQb9eo07Htjn7muq73XGo0eg/7jnFBGfIGsLJL/ekCLFSEwKzqXrl3t_ioPaKs9rhENqNdtCNISVxvPy4mKFaFoCufuwCoxHA8jUGwCBOdOyot7xgmzQ6cpbdQ3piGs7oY4oPn/DlcG1zlp_Qm3lF9BCNyx8lztpEgwV/kALBlfBgdJLx4Yu2rCL5M9MJMVVa7CIQX6x1YmEwc61n5sOVvHMX_YgMKzKitj8TP7lDniCVlSguoS1F_mAeYwp_GUDsg' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:45:39+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017215s][吞吐率：58.09req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:47:40+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018087s][吞吐率：55.29req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '364',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'U1m1ziURAzTU_oGH1x8nCdXuZN3kWVntBbBEsh6R2TT7kQfmaYTSTq6Kt3Vc7vZ1k36QZYKoq8Lz1Qu20d_If/i_gZNHlSPaUlZde_4h05JRFgHV807GeJJcot7HTQJ/R3u0GPa7NoOX8UoHlOOGbRGbmMNmkwBbac9jEHWTh7bmMMcQ_8Q5aBuuHj2meaJIg3nw2dNLXJSU6ChFJCBw9nVgl6CgifA_YOln3bXYl4CiOOU_7hvnP_mii31013reRuZkd2/2aHFb49eO5_xy4fZsi6sCBYk_oFSlNgoYsQOLc30LNftbTh4C7zsABEu33ZJy/0Azewfz0LD3/pJTYPWVrfpt7eky6/M2d3U/nV2P' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:47:40+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017219s][吞吐率：58.08req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:49:40+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017328s][吞吐率：57.71req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '372',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'Vgm1nSESWQhTRW1GTZNH5vBLGKB5ziEyZU0BpMVL_Y5ifDA923oYP5jt_Tz5TgM35A4k79G6qPd1607hvXuo_TmDE8CLtd6EeJ5ASR3Mhhz4sAOanVpUFF/esiftN_xBiJPUjdzfzXdjlX6CNFlaJbF53yr0fUebqxMKEg69CdX05E3IEYtRl1jHdCqzi1OvvmVj30mR/asmmYtQbhOssK4nTrxb9jVAecoxtJpya7cywbwAOZpw1O9rmWPXqAyJKx3ZX/xIzFkjigPCrTROEgZvCLcf1JIfPSDRroi7Nc3wemrZ81ay1ESbYBQ0B17bjOvViufc5QUVI0hTnTVVnM6I_e7ThQ_TVYqCHFdJNAWrWjfz8wo' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:49:41+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.016554s][吞吐率：60.41req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T02:51:41+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017479s][吞吐率：57.21req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '400',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'Blm0mnUTAuC71HIHfMnEJoP4LY8PYKY2Yd9OiDP_jcxQNWUF3b_B0_JOW3ZTZITAQbYZic6maOCgqytZAhDYye9/ebgQhrRU37/846i75oTl0cZ1aOAoQG3lnlCul1LFxUcfeZb036/c_DJISQWqJXZb3UfvNnyL14Zqh9o92BqcCClnsSirMwZCxQ3jaThJ7hVJ9b7l1RbZD7K76xdXyfSttKvjAmzB54EmRj9dhgHeO5lU4cBQlmWAn5NS4bVcz1eRiVcv/lg684i1L7A8AaeI4V3uxNQz9EO8D6NPS9E/gBXiWH8z1JfEu3kJekngC14dso7tZZKUrVE0uyJPjBRdM1kV6gZwvIzqHMJ/4ySz8fmeGJyTX49oXtHnZJs/LojOdc3aHiBJJQ' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T02:51:41+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.016331s][吞吐率：61.23req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:28:09+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018169s][吞吐率：55.04req/s] [内存消耗：2,262.41kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '432',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'Vgi2xX0TAK9HpmHxekQiq0pupxaPZ3D3/X60JZga3wCxdZM_vXIyoPTwi01F1jbgeg_Gu0JBP/gKqXcq5w/pyu/qouWvH8pNE4l2dGIX_RQ3UUCqs8yslXRU4VbNPCRmQjltClpRXliidCWpXr6jAnuCUKxHpWa_guE7vKg72AsndZ6g7E6zB8ABQ4avGlTkt4dWuTLqB9v8pGROpaswT1XJn6CiM4OJmru4JNR04pqQC/LLSmZnkILfyoi/_4jAKHXseIHwATfnRfSg0ru3FnU_j2GSOrUN40ilCDiC/D/B1gYAZ9t2ikzcOmYRrW3LMxIV556PRPWHkmvdzM321uPEvB9jeKJBSWg1fXgfR7qHzdK4zKcpeFEddePwd1UnV4ILP9m8vkT8zoEpj8unU9V0/RjQRfGFSfcwCAnGFev9OA' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:28:09+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017141s][吞吐率：58.34req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:30:09+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018716s][吞吐率：53.43req/s] [内存消耗：2,262.41kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '440',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'Bg6yxHRFBcaj8AH1EryFuCQYLjqZnUSjG6vIiLqf0zUg_Ow2PyAEjU4IC0whT6KMGBciwLQZYHahjo04LZ819mTEuVjaMLIdvZNgIAGc3iUIwOiNM1HJZwTw7sjon6aC2I2PvoG3TkE909wUFqAEVW9_PkdktHMIUwvIykNUk2ZkqPmaOh0EvswyTpNrt5m2cG4ivGVIb8IOT67KEVhK4OxKQxCxZ8Rz6mwnNM2pWgjMQh1zqM0I8LT8B2EnKyqNOQvT2IzAoQytNCdMZWVS1ZUA5WdlMeTAX_ccs8QmFITX_0JDFBBadK3PFxK/mA52hZ59f19DLmACq2ilj8sCEIc/XVfNd4kc5_v9xHIWorSKT4DhWntrnNTDs1gtfdCQ8x34S1_D5qdVj9eJaEll7WWIdbanIYGi_KGxlHHs8DSlX2evQwlxDXNe' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:30:10+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017363s][吞吐率：57.59req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:32:10+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018038s][吞吐率：55.44req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '420',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'Ali3yHRAVOyIYvgOZMEl6sLve6Q6wUy1VAT9tYDpsEVAWp_uEubAwPPhr_n4gW/CNAUzsEo/SxO4g7SxxCnGN44MTm0NpbS6h3L/jmrGvADWi367MOynGtiPFFEvvJN_dewkOnJ5jtDCY4ul0cYo_giV2h_qANE2wMarYIjflg659spZnbCfaT/u/q9m9slhZC/zJej1bi6k_RNjkeN7Ie7tZWcKA5UDrM/uLIRT5eUH_e4LT1nuBktgHpWwASUDu0vH9KXxFo_Di2TZi5R4gMe3YvXTM/XDcjcWWBcgmXwCAUT/5zDfO7qhO8zjd6TGNdJL8fUPjCjittovL88CF5TQDWOWyoQmz_32slmBx4rJkxveWPB3PyVxH5yls1cXTuXQFNW0X1xzkFbO3yrQOvDQkSm3z80d8z0' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:32:10+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017302s][吞吐率：57.80req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:34:11+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018086s][吞吐率：55.29req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '388',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'VV3jyCYfWYPQF0UoVDeU2Oi7xDt9uf10Ikd4k8cbbSC4XSiPODtePmpNRBEVvhAJ/UBjrB_fMLgE0_uGXD_Wds_Gex2arH5X5cx/2hBWmYidP6VeYucFoU_6V26jZApmZ2BE/1UEXS/R7Ir1wPRnVt8hwrgIM1NEFsxfghWAFGhrrkg1zCzsSg8khn8UTZCasIib/8QLnEqg30bQu6sUeYhDppFIYEBTvn0q6NYI37RelxW6dnFVELsxiObA1K6Utr84Ec5LUHvqOIGJui2XgSNwzzUjyEDtZgTe04uUJfc1J2u97Tpy1IabIuJs4L8oA1cqfDSDA4789TV4n8H7JISpJwlcbd7/74Sf8TaePOIGGt7tRjpIH0LNJzZI_jOI1A' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:34:11+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017229s][吞吐率：58.04req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:36:11+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017928s][吞吐率：55.78req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '420',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'VFy0nXMVAL198zDuyZVK0CnRFCeHxpR5VwRFd_QJfHjch28iZs7HpBAMZB_AWVwHInP4iRIosPkJEkpwTVv4yRsbITOjJSlDNrohZcRIZjtBEnCZ2AbSjFJ_8sdOJ76edO6xO5VMTvDWJv_WZN_roqksHDtLJNAM7t/hqUrfDbc9bAy46CsbSeN6g8d/NSXRAyzlpipGVS7Sb5u0h_cw8JiXj8K7Yy3s9Kh5bEGxEylj/t0mQtRWhTNH12Gl3mpqj5scXca7kKJVfbO4fMf0xBXA6V8DlP5l7IqGSV0zvohVcjiZk4nx7kFhixBsfbo6tAmi/DMknoRme0C_l2zGzIhZFINsJiVLBj_1zgTyOhFWJIatogm/C9nMU4o01Kcw7gaDd89C/ZE8yc63BwP6u_qYWn__tL_9WAw' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:36:12+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017369s][吞吐率：57.57req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:38:12+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018022s][吞吐率：55.49req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '368',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'CV_3mnxEUtaVoB1pEL7Qcrj4_aDQxJUHi_DtGsKirnpcVCwScgz__EWWU9lzUZAkAUDlz_4oHqQkShPhFtU7BPpC9QUsQLbA4pqRHy1r2Ctwr8bt0ImsurqbvTfRPMJZfVjFNhPkxMLyO_xDQ2bxx9awKDE2UlmyYSIFyina/D5MBDpKcjGXs8OW661Q_Bm_7Pw52zMpeVENWq8LpeFozZPqPJqPvR96X3BWsscr2viToT_foYzakAVkkgyMToPxiqEy37cXc1A4tc7dTann9ue/QFyms5_vyqduoaMWc8LKEEp15k0DfTbalcU1JnfsysaZjE4vvUK/TQnbw40Fyc09zbdPwXSM_ODnZmcs0NucSt6A' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:38:12+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017833s][吞吐率：56.08req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:40:13+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017185s][吞吐率：58.19req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '380',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'AlrhnnIUUutDqhbNDGyVlwOMT2Veq3fKMOwKOH4R2PTzfxG8s2aqHz0EZFia8Whcbs/gzr/xx8rjuMKFU7Z96fzHJ25AX71r0AaKovtm3L9jiEdlySrqrY_JuCcQgF_SyjXjb57YiL80AiCSjS_M4I6htLCEUOkxFD64D1MmWg13neQXjUm_YHQ49ZO2wkO2gWnWB0zZHPXAnwhkXWa4Owrohgdx9SD7m0CPhp5BUqWN0zBu5EfvPt66G3IrprvTXSLNQtZJrPQ_GyYmdjZ7094FoLZhd4rruc6wGhw6QO/rklfPbtRyQel3XAP8z7Uj_H4bXjDv1//8SliPnWTeUt_EuYK3OyOSchbcUu46gRQPXVflUA0RHqMziD0' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:40:13+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017177s][吞吐率：58.22req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:42:14+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017725s][吞吐率：56.42req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '360',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'U1O1yCASBeg0eVi19oNYPlXnDcXYVDJPYNnoQ9JAnkUkY6V4ufDOdzOFIkBs7joiZkDO7c7vZ4spdD7GfsZPbv94/HMiww9wZGllD2WtOHFP9ZWxo4WY3eM3CFtCHEOpwDAq0RHZKsRwjLQbKnUsLBQg9/SeCrmtovkc7ns4_nJOyYEhTYjAAQlLObqkKLlrRJFRxo9PWOL5lLbiBf5HRT/2khtDnyKwho9KxBPFqUfHy2nsEdHsQJVH6dDCWSm77xBLQWx_b0l2_hPLV6_SCrGOIii61Lpeyf6ATCBTSXyzZldRCWoRemBV_YoY_4U1ceHnSxYF1LBHyD03QvXYZGn1wsJVbcE23IgPsdI' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:42:14+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017372s][吞吐率：57.56req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:44:14+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018344s][吞吐率：54.51req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '404',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'CAqxxHYfBS1aK56QiMh1nS9S735zl2PvYvweficPzxUwXbI8izYOY_sjG1Hraikajy5s2ZNQA08Frd0SYqN1C_NB7kj8WTyx/Bl052LC6d9TtrT2TAyP4FEzq9LXcxxzfPgmThRezts3G2uEsreT4JPGBOnBm89RbYVthyjuE/QqN8/LnefrIA6cOlhnOqIUMPbZiR4onFjtLcX6_pKSd2CMupscRQtLOYT593SaOY/KkORhTa7thMGzfC0yo4Pbalpo5E4g9G/GjJWrFbLOd4pPlOSUrATd1iACXBa/XM3Ln/14OGiHmGexm6iShvlXXQd2vf2kz0ivxPe6dsR6yurjOTYcMSnsmH8azCKcrznT/Txy1MTQtA8XimtVS6KImW4YeUMhJl7B8cyHsA' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:44:15+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017172s][吞吐率：58.23req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:44:21+08:00 ] 172.17.144.244 101.132.144.145 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.017738s][吞吐率：56.38req/s] [内存消耗：2,261.38kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:44:21+08:00 ] 172.17.144.244 101.132.144.145 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.015965s][吞吐率：62.64req/s] [内存消耗：2,167.38kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:46:15+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017979s][吞吐率：55.62req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '372',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'AA2yniYeVbmC5EaOSk3wtAwgeX0rVyBNr/_/aK_5TG7ixbPAuwRqbop_5yMaUCRjeSgEZO8yb0q/BG1DZ5C7zfsQ6BFOV/uj43iauDmiRprMh09vwkVyZmueCDK20VVb3DyfdCH8XMOZzv4dM2wdA2rOkvrcbC09fSq0WR0i/eBVDQ0bYKg4qopf_vkdTTDMsfEleQWVX94Gb53JtE_SWfJbD10VZlg_NqJD9j0ePm49fXKzaZG0GKz4LM7fPYgOMr3jKL5kyUE4amf54vMnzTnaSrGJwUrwjljGj5c3C_CqTTmMseiyLGRz_FLWk0Vho0OsTnrSaVEgMBLvYGfRMfYBnChThn0_cu2rG4z0aLsR0a0rKw' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:46:15+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017350s][吞吐率：57.64req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:48:16+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017023s][吞吐率：58.74req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '400',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'B1q1ynEVBel8QDHvml3NaKIvoIolQ968rUDTnMhLn/ql0_EA3Jg0h1AqolLcui7Nzc8NRW7uoVtVOTBULgPB8jK2gt_DanZgaYlD_1uMh8v/_JJFMh6mDJf3xKSXW6L3n/5jwH7zFicPIAhuKjb2ru/U8u7Z0SbJXjBRjiJNBbFMl8axUkMFNdqcS0mlKR5WlNkW5cIttAlmlrZiDoz35jYCoW6V0l1nH_9EHke_m1SzFunaDFx_Rb8ckIBfFF9JW81N9qz03Ubp2v4KZCZ_EgE7PAs6y18nKDUadAHPGynWZeowMH1ZKKGeFiMoPSx/mG76esCwn2DBXQPrfHZ/oDS9_d3M2h0nXqg/uqnhLSHLnWQgVgSynP_JaETyG_Rhp2HcMM6oLiSn8ovE' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:48:16+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017355s][吞吐率：57.62req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:49:06+08:00 ] 172.17.144.244 23.100.76.20 GET /
+[ info ] 39.107.140.181/ [运行时间：0.017435s][吞吐率：57.36req/s] [内存消耗：2,261.23kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '39.107.140.181',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:49:07+08:00 ] 172.17.144.244 23.100.76.20 GET /Admin/login/index.html
+[ info ] 39.107.140.181:80/Admin/login/index.html [运行时间：0.016528s][吞吐率：60.50req/s] [内存消耗：2,167.44kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'referer' => 'http://39.107.140.181:80/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:50:17+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017919s][吞吐率：55.81req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '416',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'BlvjnyIXUB8FTg0eNQ_hFoUYJ4v2_eEi30BY5twCdOi_UEEvWVTSffsr7HR8HZ1cVSKEshBWFxFTzZim3F0lLQamt2sEplXvQdYZCwQLnaTHl4mPnY_FvTWqjjtLHQUfn2Uoa1i1JYg9Vweow7P1UJcDBRVuMGFRwiLhCauZL6MGtO1RuzZd5WQW5kVd0exCeTTWzRQSG8daY/p5rAFvCXWrIwC/UPikq7AbQ4YL8DT2Ck2fkIpBEWGNwjtHh4vlHx1W3rfGfQJc3l88Fx3Bhu6djnGeBrghxiEy0UsY/BKwy8Yye6nFpzvOg0WABAxOdF7wjrN045Z03xaL1pnZizur/hXU8Uhp06QlkpOecR9fhoqWgcMJMfXLrfl/9XMfHxNDsqlyqzXDCebn0l8RpL0Ma8f2lQQ' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:50:17+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017194s][吞吐率：58.16req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:52:17+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018168s][吞吐率：55.04req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '364',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'UV3jy3dCAIEfawMiwclEVnSQ4qHsufMcu0FKUozPKvSpDN9/2jejEQ_n3Rc8crltqUk6RfqUb2r2MfQNJXxhV_phwSZJuU1A9dt8m3_6W6FGV6O6DDz4SXdrCuuK6U64RisXYJnL0o9Qu25sqHsE3bzW6cArFBAnEFyMtoOR2/VKWsZQHnJblDbicBUuCP2_fsYD9P6HWtIiBBLAQvuiEGA8fTc8m39hFkbBXYTLoUCUJ1y2eY0HCMLgSgCTaBAo8xenLt7QKi5ibwZxGiE3B9LIWiupcEPCl/5n6vE7KGoSMB/cLtrCSnVAaf2uXFmrVHyyJIDtnrY9F0nTfEQlgf6/_3PBBkWNeXJXU5v0qKI' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:52:18+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017284s][吞吐率：57.86req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:54:18+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018621s][吞吐率：53.70req/s] [内存消耗：2,262.35kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '400',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'B17hxSUUUPGLwZIWSQzuiFdUnoYMNUT3oylyM3edqCHT3po_dDY/R09IpxD/rkF7bj/bUhXnftCFqxpxgH8t31vrDGEzsBqGNdz7eLLDuihXxCqHo0TDsfzjhltOY71gHFijtRmXwL3PgQVPmwnjzdUkBRBRuobI6PzdRVPgTaMjslAyt8pFGEDTwzTjiPMGCUVzSpctnrH4M14JBGQdLJoktdyaZ36IlZKni_9ynQM8AkVp9VuvgW7WwtthN/vcZf1uiTkWAlpWJUxLU9kXoZQ2eZ9uz_4UaqLZD_aEGtuaLMcuaYDMA/ZMHYf_yqJ2dD95qJninZ/DRSbtkT9FOEctCC2kmuwYJw7kuHc5SUFOhEPim6fOmMnZGq7enMFEMtE5pxiE/E8Ouw' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:54:18+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017147s][吞吐率：58.32req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:56:19+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.017653s][吞吐率：56.65req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '376',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'UQ61zSJCBZateh84zI6n5T/tePbBcicbEzo6lRP_rTbvNAXBwGzYKqLAL6KoUpwLh11X4j6l7c2HuZKQEWqA_rWHOyelJOeI1bkme62S_a4o4/E0txNU75drWGUI6Cz6XkFBvJo9iB1QBuoT/Dy01fnYOXbtihOriSg7mLhfnjoU6KtrMCUSlx5wDkdrd4MpI1CVZ0f5Om2P7w9eQkd1SIbTWxiwNwe7saGI19nSzvuYSwwu0Sr798h58dI7F_/1pgoZ8/ueGXubvl5YHsKXMyhZIUdLDZjd9CW5eEm_sDDMF76wCJWECFpHqYAibQwkndwKC9NOifhS9ISB_B6U2m267T1PWpupFboDxu_wG9gj/hpIToqCRb3e' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:56:19+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017255s][吞吐率：57.95req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T03:58:19+08:00 ] 172.17.144.244 91.50.58.141 POST /
+[ info ] 39.107.140.181/ [运行时间：0.018216s][吞吐率：54.90req/s] [内存消耗：2,262.29kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'cache-control' => 'no-cache',
+  'content-length' => '368',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'BA22nSFHUTCjl6POGdjLUXjnV5IPL3mGVJxhuJEgghDjeMBLMDz/1HbqwWrdDSTHKrXDdzuFOeItb2h7okeRpZQA2xxo2rhtUm9CJa4cqeWMxoXQNddexc5LKpJWcTNofOlgbGssX0TKggZS84QQdSc6YeHfT4C856bAjBPILtqejGk_vckhZKhDr2VhM_p0pPv2OTCvy_Spw5nRlsOaqZuBUBdKFS8LH_q7npaevCX7oOj8pjkGrZvUjyoXBwLfP40HSdSIhyzCzpGwlpwbUCWtZaKDrp6GzmVaYGPFwoNqruIQTAJsreEPrDpfgbJBSunjl/7LMQSDlB4ebNFHP1psHlspMQbccbJQIiY801nOpQ' => '=',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T03:58:20+08:00 ] 172.17.144.244 91.50.58.141 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017337s][吞吐率：57.68req/s] [内存消耗：2,167.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=7pkf11fbn2qtkviafv5rccmd37',
+  'host' => '39.107.140.181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T06:22:10+08:00 ] 172.17.144.244 47.98.96.116 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.018528s][吞吐率：53.97req/s] [内存消耗：2,261.69kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T06:22:10+08:00 ] 172.17.144.244 47.98.96.116 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.017321s][吞吐率：57.73req/s] [内存消耗：2,167.95kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T08:52:55+08:00 ] 172.17.144.244 202.108.211.151 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.018384s][吞吐率：54.40req/s] [内存消耗：2,262.70kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.21 (KHTML, like Gecko) Chrome/19.0.1042.0 Safari/535.21',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T08:52:55+08:00 ] 172.17.144.244 202.108.211.151 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.016042s][吞吐率：62.34req/s] [内存消耗：2,170.38kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.tongsafe.com',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.21 (KHTML, like Gecko) Chrome/19.0.1042.0 Safari/535.21',
+  'cookie' => 'PHPSESSID=lghcrl3bssmpn59ri646eo0mf3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T09:55:40+08:00 ] 172.17.144.244 42.236.10.77 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.018013s][吞吐率：55.52req/s] [内存消耗：2,261.38kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.tongsafe.com',
+  'accept-encoding' => 'identity',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T09:55:40+08:00 ] 172.17.144.244 42.236.10.76 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.017087s][吞吐率：58.52req/s] [内存消耗：2,167.39kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.tongsafe.com',
+  'accept-encoding' => 'identity',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T10:26:59+08:00 ] 172.17.144.244 177.105.239.254 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018245s][吞吐率：54.81req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T10:58:49+08:00 ] 172.17.144.244 80.82.70.187 GET /cache/global/img/gs.gif
+[ info ] www.baidu.com/cache/global/img/gs.gif [运行时间：0.014890s][吞吐率：67.16req/s] [内存消耗：1,782.66kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'user-agent' => 'Mozilla',
+  'host' => 'www.baidu.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T11:11:41+08:00 ] 172.17.144.244 109.104.240.33 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018485s][吞吐率：54.10req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T13:13:31+08:00 ] 172.17.144.244 151.76.107.188 GET /
+[ info ] 39.107.140.181/ [运行时间：0.018531s][吞吐率：53.96req/s] [内存消耗：2,260.91kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.140.181',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T13:15:07+08:00 ] 172.17.144.244 151.76.107.188 GET /
+[ info ] 39.107.140.181/ [运行时间：0.018122s][吞吐率：55.18req/s] [内存消耗：2,260.91kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.140.181',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T14:41:46+08:00 ] 172.17.144.244 89.248.172.16 GET /
+[ info ] 39.107.140.181/ [运行时间：0.018978s][吞吐率：52.69req/s] [内存消耗：2,261.64kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => '39.107.140.181',
+  'accept-encoding' => 'identity',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T14:41:46+08:00 ] 172.17.144.244 89.248.172.16 GET /Admin/login/index.html
+[ info ] 39.107.140.181/Admin/login/index.html [运行时间：0.017302s][吞吐率：57.80req/s] [内存消耗：2,167.91kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => '39.107.140.181',
+  'accept-encoding' => 'identity',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T14:41:50+08:00 ] 172.17.144.244 89.248.172.16 GET /sitemap.xml
+[ info ] 39.107.140.181/sitemap.xml [运行时间：0.014881s][吞吐率：67.20req/s] [内存消耗：1,782.32kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sitemap.xml',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'host' => '39.107.140.181',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T14:41:51+08:00 ] 172.17.144.244 89.248.172.16 GET /.well-known/security.txt
+[ info ] 39.107.140.181/.well-known/security.txt [运行时间：0.014883s][吞吐率：67.19req/s] [内存消耗：1,782.42kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '.well-known',
+    1 => 'security.txt',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'host' => '39.107.140.181',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T14:42:20+08:00 ] 172.17.144.244 123.125.125.249 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.017096s][吞吐率：58.49req/s] [内存消耗：2,261.70kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T14:42:20+08:00 ] 172.17.144.244 123.125.125.249 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.016167s][吞吐率：61.85req/s] [内存消耗：2,167.88kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'cookie' => 'PHPSESSID=jqm2su3vn4otg4snrn1s44i980',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T15:18:43+08:00 ] 172.17.144.244 117.25.139.88 GET /
+[ info ] www.tongsafe.com/ [运行时间：0.018325s][吞吐率：54.57req/s] [内存消耗：2,262.24kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-charset' => 'GB2312,utf-8;q=0.7,*;q=0.7',
+  'accept-language' => 'zh-cn,zh;q=0.5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T15:18:43+08:00 ] 172.17.144.244 117.25.139.88 GET /Admin/login/index.html
+[ info ] www.tongsafe.com/Admin/login/index.html [运行时间：0.017298s][吞吐率：57.81req/s] [内存消耗：2,169.80kb] [文件加载：53]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'PHPSESSID=sif1p2tdej9os8q3v8c73uu303',
+  'host' => 'www.tongsafe.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-charset' => 'GB2312,utf-8;q=0.7,*;q=0.7',
+  'accept-language' => 'zh-cn,zh;q=0.5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/www/chenganxjh/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /home/www/chenganxjh/public/../application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T15:54:24+08:00 ] 172.17.144.244 5.236.228.246 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018187s][吞吐率：54.98req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T21:05:22+08:00 ] 172.17.144.244 73.130.20.41 GET /
+[ info ] 39.107.140.181/ [运行时间：0.018745s][吞吐率：53.35req/s] [内存消耗：2,260.91kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.140.181',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]
+---------------------------------------------------------------
+[ 2019-06-07T22:15:51+08:00 ] 172.17.144.244 120.132.3.65 GET /404/search_children.js
+[ info ] www.qq.com/404/search_children.js [运行时间：0.015176s][吞吐率：65.89req/s] [内存消耗：1,782.93kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => 'search_children.js',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36',
+  'pragma' => 'no-cache',
+  'accept' => '*/*',
+  'host' => 'www.qq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-07T22:19:07+08:00 ] 172.17.144.244 36.37.135.111 GET /
+[ info ] 39.107.140.181:80/ [运行时间：0.018754s][吞吐率：53.32req/s] [内存消耗：2,261.31kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '39.107.140.181:80',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\admin\controller\Index::_initialize() should be compatible with app\admin\controller\AdminControl::_initialize($ControllerNmae = '')[/home/www/chenganxjh/application/admin/controller/Index.php:8]

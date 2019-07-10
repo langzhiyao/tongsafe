@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>童安天下-更多门禁打卡</title>
+    <meta name="author" content="童安天下" />
+    <meta name="copyright" content="童安天下" />
+    <meta name="description" content="童安天下" />
+    <meta id="viewport" name="viewport" content="width=750" />
+    <link rel="stylesheet" href="../content/style/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../content/plugins/iconfonts/iconfont.css" type="text/css" />
+    <link rel="stylesheet" href="../content/plugins/jqweui/lib/weui.min.css" type="text/css" />
+    <link rel="stylesheet" href="../content/plugins/jqweui/css/jquery-weui.min.css" type="text/css" />
+    <link rel="stylesheet" href="../content/style/common.css" type="text/css" />
+    <link rel="stylesheet" href="../content/style/find.css" type="text/css" />
+    <link rel="shortcut icon" href="../content/images/ico.ico" type="image/x-icon" />
+    <script src="../content/scripts/mobile-util.js"></script>
+    <style>
+        .weui-cells_radio {
+            padding: 30px 40px;
+        }
+        
+        .weui-check_label {
+            font-size: 28px;
+            line-height: 80px;
+        }
+        
+        .weui-cells_radio .weui-check:checked+.weui-icon-checked:before {
+            font-size: 30px;
+        }
+        
+        .video_full {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            background: rgba(0, 0, 0, 1);
+        }
+        
+        .video_close {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            background: rgba(0, 0, 0, .4);
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            z-index: 100;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="cookbody">
+    <!--<header class=" head"></header>-->
+
+    <!-- 主要内容 -->
+    <div class="main">
+        <div class="cook_contbox">
+            <!-- 暂无打卡记录 -->
+            <div class="no_cook_cont" id="no_cook_cont" style="display:none;">
+                <div class="nofootbox">
+                    <img src="../content/images/find/nofoodbook_icon.png" alt="">
+                    <p class="nofootbox_p">
+                        暂无打卡记录
+                        <a href="../user/boundstudent.html">绑定学生</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 有数据时显示 -->
+            <div class="signin_cont" id="signin_cont">
+
+                <div class="sn_videos_more">
+                    <div class="sn_videos_mt">
+                        <span class="sn_videos_mt_span">
+                            <input class="weui-input sn_more_date" id="sn_more_date" type="text" value="2019年06月17日">
+                        </span>
+                    </div>
+
+                    <div class="sn_videos_mb">
+                        <dl class="sn_videos_list sn_videosmore_list">
+                            <dt>签到视频<span>—</span><span class="sndate">2019-06-17 07:25:29</span></dt>
+                            <dd>
+                                <div>
+                                    <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                        <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div>
+                                    <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                        <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="sn_videos_list sn_videosmore_list">
+                            <dt>签离视频<span>—</span><span class="sndate">2019-06-17 15:25:29</span></dt>
+                            <dd>
+                                <div>
+                                    <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                        <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div>
+                                    <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                        <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div>
+                                    <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                        <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div>
+                                    <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                        <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div>
+                                    <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                        <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../content/scripts/jquery.min.js"></script>
+    <script src="../content/plugins/jqweui/js/jquery-weui.min.js"></script>
+    <script src="../content/scripts/juqery.cookie.js"></script>
+    <script src="../content/scripts/API.js"></script>
+    <script src="../content/scripts/commom.js"></script>
+    <script>
+        $(function() {
+            $("#sn_more_date").select({
+                title: "选择日期",
+                items: ["2019年06月17日", "2019年06月16日", "2019年06月15日", "2019年06月14日", "2019年06月13日", "2019年06月12日", "2019年06月11日"],
+                onChange: function(d) {
+                    console.log(this, d);
+                },
+                onClose: function() {
+                    console.log("close");
+                },
+                onOpen: function() {
+                    console.log("open");
+                },
+            });
+        })
+
+        // 播放器大小控制
+        function full_video(video_obj) {
+            video_obj.addClass("video_full");
+            $(document.body).append("<span class='video_close' onclick='videoclose()'>X</span>");
+        }
+
+        function videoclose() {
+            $("video").get(0).pause();
+            $("video").eq(0).removeClass("video_full");
+            $(".video_close").hide();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,4657 @@
+---------------------------------------------------------------
+[ 2019-05-28T22:13:15+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Students/get_student_info.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Students/get_student_info.html [运行时间：0.051098s][吞吐率：19.57req/s] [内存消耗：3,234.98kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000520s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001094s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000490s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:13:15+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/avatar/avatar_100031_15423487317801.jpg
+[ info ] app.freestylewxy.cn/uploads/home/avatar/avatar_100031_15423487317801.jpg [运行时间：0.023915s][吞吐率：41.82req/s] [内存消耗：1,783.17kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:13:15+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Membermessage/showReceivedNewNum.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Membermessage/showReceivedNewNum.html [运行时间：0.083607s][吞吐率：11.96req/s] [内存消耗：3,515.50kb] [文件加载：68]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Membermessage',
+    2 => 'showReceivedNewNum',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Membermessage->showReceivedNewNum[ /home/www/chenganxjh/application/wap/controller/Membermessage.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002073s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_message` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 0,15 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:13:15+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/avatar/avatar_100031_15423487317801.jpg
+[ info ] app.freestylewxy.cn/uploads/home/avatar/avatar_100031_15423487317801.jpg [运行时间：0.027038s][吞吐率：36.99req/s] [内存消耗：1,783.17kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:13:15+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/lookchild/index
+[ info ] app.freestylewxy.cn/index.php/Wap/lookchild/index [运行时间：0.039789s][吞吐率：25.13req/s] [内存消耗：3,200.34kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'lookchild',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '76',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+  'member_id' => '100031',
+  'sid' => '8106',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Lookchild->index[ /home/www/chenganxjh/application/wap/controller/Lookchild.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_ownerAccount` = '100031'  AND `s_del` = 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_packagetime` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `x_packagetime` WHERE  `pkg_type` = 1  AND `s_id` = 8106 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id,`sc`.`provinceid`,`sc`.`cityid`,`sc`.`areaid` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_id` = 8106 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_camera` [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT `ability`,`channelid`,`companyid`,`deviceid`,`id`,`name`,`online`,`parentid`,`privilege`,`type`,`usernum`,`is_classroom`,`status`,`begintime`,`endtime` FROM `x_camera` WHERE  `parentid` = 3772 OR `parentid` = 3771 ORDER BY cid desc [ RunTime:0.000359s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:13:15+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Membermessage/showReceivedNewNum.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Membermessage/showReceivedNewNum.html [运行时间：0.074491s][吞吐率：13.42req/s] [内存消耗：3,515.50kb] [文件加载：68]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Membermessage',
+    2 => 'showReceivedNewNum',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Membermessage->showReceivedNewNum[ /home/www/chenganxjh/application/wap/controller/Membermessage.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_message` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 0,15 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000402s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:13:16+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/mobile/navicon/x3/guard@x3.png
+[ info ] app.freestylewxy.cn/uploads/mobile/navicon/x3/guard@x3.png [运行时间：0.014826s][吞吐率：67.45req/s] [内存消耗：1,783.87kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'mobile',
+    2 => 'navicon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'x3' => 'guard@x3.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:13:17+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014350s][吞吐率：69.69req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:13:17+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/mobile/navicon/x3/guard@x3.png
+[ info ] app.freestylewxy.cn/uploads/mobile/navicon/x3/guard@x3.png [运行时间：0.014822s][吞吐率：67.47req/s] [内存消耗：1,783.87kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'mobile',
+    2 => 'navicon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'x3' => 'guard@x3.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:14:01+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Common/get_version
+[ info ] app.freestylewxy.cn/index.php/Wap/Common/get_version [运行时间：0.023032s][吞吐率：43.42req/s] [内存消耗：2,800.02kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Common',
+    2 => 'get_version',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '13',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'accept' => 'application/json',
+  'content-type' => 'application/json;charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Common->get_version[ /home/www/chenganxjh/application/wap/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000448s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_version_update` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `x_version_update` WHERE  (  type=1 ) ORDER BY id DESC LIMIT 1 [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:14:02+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Common/get_version
+[ info ] app.freestylewxy.cn/index.php/Wap/Common/get_version [运行时间：0.022762s][吞吐率：43.93req/s] [内存消耗：2,800.02kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Common',
+    2 => 'get_version',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '13',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'accept' => 'application/json',
+  'content-type' => 'application/json;charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Common->get_version[ /home/www/chenganxjh/application/wap/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_version_update` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `x_version_update` WHERE  (  type=1 ) ORDER BY id DESC LIMIT 1 [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Common/get_version
+[ info ] app.freestylewxy.cn/index.php/Wap/Common/get_version [运行时间：0.022312s][吞吐率：44.82req/s] [内存消耗：2,800.02kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Common',
+    2 => 'get_version',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '13',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'accept' => 'application/json',
+  'content-type' => 'application/json;charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Common->get_version[ /home/www/chenganxjh/application/wap/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_version_update` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `x_version_update` WHERE  (  type=1 ) ORDER BY id DESC LIMIT 1 [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/avatar/avatar_100031_15423487317801.jpg
+[ info ] app.freestylewxy.cn/uploads/home/avatar/avatar_100031_15423487317801.jpg [运行时间：0.015383s][吞吐率：65.01req/s] [内存消耗：1,783.17kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Common/navicon.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Common/navicon.html [运行时间：0.022620s][吞吐率：44.21req/s] [内存消耗：2,812.89kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Common',
+    2 => 'navicon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '25',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'version' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Common->navicon[ /home/www/chenganxjh/application/wap/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_navaicon` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT `icon_name`,`icon_1`,`icon_2`,`icon_3`,`link`,`link_type`,`group_type`,`group_name`,`icon_sign`,`icon_type` FROM `x_navaicon` WHERE  `type` = 1  AND `is_show` = 2 [ RunTime:0.000380s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/avatar/avatar_100031_15423487317801.jpg
+[ info ] app.freestylewxy.cn/uploads/home/avatar/avatar_100031_15423487317801.jpg [运行时间：0.020545s][吞吐率：48.67req/s] [内存消耗：1,783.17kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/avatar/avatar_100031_15423487317801.jpg
+[ info ] app.freestylewxy.cn/uploads/home/avatar/avatar_100031_15423487317801.jpg [运行时间：0.037091s][吞吐率：26.96req/s] [内存消耗：1,783.17kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Common/navicon.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Common/navicon.html [运行时间：0.048565s][吞吐率：20.59req/s] [内存消耗：2,812.89kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Common',
+    2 => 'navicon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '25',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'version' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Common->navicon[ /home/www/chenganxjh/application/wap/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000359s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_navaicon` [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT `icon_name`,`icon_1`,`icon_2`,`icon_3`,`link`,`link_type`,`group_type`,`group_name`,`icon_sign`,`icon_type` FROM `x_navaicon` WHERE  `type` = 1  AND `is_show` = 2 [ RunTime:0.000357s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Member/info.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Member/info.html [运行时间：0.043970s][吞吐率：22.74req/s] [内存消耗：3,405.88kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Member',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '63',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+  'member_id' => '100031',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Member->info[ /home/www/chenganxjh/application/wap/controller/Member.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000520s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT `m`.`member_id`,`m`.`member_paypwd` FROM `x_member` `m` WHERE  (   m.member_id = "100031" ) LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT `m`.`member_id`,`m`.`member_nickname`,`m`.`member_avatar`,`m`.`member_identity`,`m`.`is_owner`,`m`.`member_age`,`m`.`member_sex`,`m`.`member_email`,`m`.`member_provinceid`,`m`.`member_cityid`,`m`.`member_areaid`,`m`.`member_jobid` FROM `x_member` `m` WHERE  (   m.member_id = "100031" ) LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_member` WHERE  (  is_owner = "100031" ) LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_area` [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT `area_name` FROM `x_area` WHERE  (  area_id = "0" ) LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT `area_name` FROM `x_area` WHERE  (  area_id = "0" ) LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT `area_name` FROM `x_area` WHERE  (  area_id = "0" ) LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_industry` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT `name` FROM `x_industry` WHERE  (  id = "0" ) LIMIT 1 [ RunTime:0.000213s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Chat/UntreatedMessageCount.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Chat/UntreatedMessageCount.html [运行时间：0.058541s][吞吐率：17.08req/s] [内存消耗：3,382.41kb] [文件加载：65]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Chat',
+    2 => 'UntreatedMessageCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Chat->UntreatedMessageCount[ /home/www/chenganxjh/application/wap/controller/Chat.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_chatfrendly` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_chatfrendly` WHERE  `friend_id` = 100031  AND `relation_state` = 1 LIMIT 1 [ RunTime:0.000273s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Membermessage/showReceivedNewNum.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Membermessage/showReceivedNewNum.html [运行时间：0.042650s][吞吐率：23.45req/s] [内存消耗：3,515.50kb] [文件加载：68]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Membermessage',
+    2 => 'showReceivedNewNum',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Membermessage->showReceivedNewNum[ /home/www/chenganxjh/application/wap/controller/Membermessage.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000353s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_message` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 0,15 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000389s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Students/get_student_info.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Students/get_student_info.html [运行时间：0.030079s][吞吐率：33.25req/s] [内存消耗：3,234.66kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000468s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000460s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Students/get_student_info.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Students/get_student_info.html [运行时间：0.031045s][吞吐率：32.21req/s] [内存消耗：3,234.66kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000412s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:47+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Chat/GetRongCloudToken.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Chat/GetRongCloudToken.html [运行时间：0.051338s][吞吐率：19.48req/s] [内存消耗：3,410.53kb] [文件加载：67]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Chat',
+    2 => 'GetRongCloudToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Chat->GetRongCloudToken[ /home/www/chenganxjh/application/wap/controller/Chat.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000409s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000244s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Goods/index.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Goods/index.html [运行时间：0.043396s][吞吐率：23.04req/s] [内存消耗：2,812.77kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '12',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'ssss' => '0',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Goods->index[ /home/www/chenganxjh/application/wap/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010961s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_adv` [ RunTime:0.001065s ]
+[ sql ] [ SQL ] SELECT `adv_title`,`adv_link`,`adv_code` FROM `x_adv` WHERE  (  ap_id =16 AND adv_enabled=1 AND is_show=1 ) ORDER BY adv_sort asc [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_goodsclass` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT `gc_id`,`gc_name` FROM `x_goodsclass` WHERE  (  gc_show =1 AND gc_parent_id=0 ) ORDER BY gc_sort asc LIMIT 0,4 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT `adv_title`,`adv_link`,`adv_code` FROM `x_adv` WHERE  (  ap_id =17 AND adv_enabled=1 AND is_show=1 ) ORDER BY adv_sort asc LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_goodscommon` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT `goods_commonid`,`goods_name`,`goods_jingle`,`goods_image`,`goods_price`,`goods_marketprice`,`store_id` FROM `x_goodscommon` WHERE  (  goods_state=1 AND goods_verify=1 AND goods_lock=0 AND is_virtual=0 ) ORDER BY goods_commend desc LIMIT 0,10 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_goods` [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `x_goods` WHERE  (  goods_commonid = "124" ) LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `x_goods` WHERE  (  goods_commonid = "125" ) LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `x_goods` WHERE  (  goods_commonid = "126" ) LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `x_goods` WHERE  (  goods_commonid = "127" ) LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `x_goods` WHERE  (  goods_commonid = "128" ) LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `x_goods` WHERE  (  goods_commonid = "129" ) LIMIT 1 [ RunTime:0.000224s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Students/get_student_info.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Students/get_student_info.html [运行时间：0.041099s][吞吐率：24.33req/s] [内存消耗：3,234.66kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000518s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000474s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Common/navicon.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Common/navicon.html [运行时间：0.031435s][吞吐率：31.81req/s] [内存消耗：2,818.91kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Common',
+    2 => 'navicon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '25',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'version' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Common->navicon[ /home/www/chenganxjh/application/wap/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_navaicon` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT `icon_name`,`icon_1`,`icon_2`,`icon_3`,`link`,`link_type`,`group_type`,`group_name`,`icon_sign`,`icon_type` FROM `x_navaicon` WHERE  `type` = 2  AND `is_show` = 2 [ RunTime:0.000426s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Membermessage/showReceivedNewNum.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Membermessage/showReceivedNewNum.html [运行时间：0.080953s][吞吐率：12.35req/s] [内存消耗：3,515.50kb] [文件加载：68]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Membermessage',
+    2 => 'showReceivedNewNum',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Membermessage->showReceivedNewNum[ /home/www/chenganxjh/application/wap/controller/Membermessage.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001147s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001294s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_message` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 0,15 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Students/get_student_info.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Students/get_student_info.html [运行时间：0.063524s][吞吐率：15.74req/s] [内存消耗：3,234.66kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000301s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Membermessage/showReceivedNewNum.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Membermessage/showReceivedNewNum.html [运行时间：0.045058s][吞吐率：22.19req/s] [内存消耗：3,515.50kb] [文件加载：68]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Membermessage',
+    2 => 'showReceivedNewNum',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Membermessage->showReceivedNewNum[ /home/www/chenganxjh/application/wap/controller/Membermessage.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000339s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_message` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 0,15 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000489s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Chat/GetRongCloudToken.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Chat/GetRongCloudToken.html [运行时间：0.070887s][吞吐率：14.11req/s] [内存消耗：3,410.53kb] [文件加载：67]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Chat',
+    2 => 'GetRongCloudToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Chat->GetRongCloudToken[ /home/www/chenganxjh/application/wap/controller/Chat.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001519s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000269s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Common/navicon.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Common/navicon.html [运行时间：0.031422s][吞吐率：31.82req/s] [内存消耗：2,818.91kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Common',
+    2 => 'navicon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '25',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'version' => '',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Common->navicon[ /home/www/chenganxjh/application/wap/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_navaicon` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT `icon_name`,`icon_1`,`icon_2`,`icon_3`,`link`,`link_type`,`group_type`,`group_name`,`icon_sign`,`icon_type` FROM `x_navaicon` WHERE  `type` = 2  AND `is_show` = 2 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Students/get_student_info.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Students/get_student_info.html [运行时间：0.055514s][吞吐率：18.01req/s] [内存消耗：3,234.66kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Students',
+    2 => 'get_student_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Students->get_student_info[ /home/www/chenganxjh/application/wap/controller/Students.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000315s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_schoolid`,`sc`.`name`,`s`.`s_classid`,`cl`.`classname`,`cl`.`classCard` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_del` = 1  AND `s_ownerAccount` = '100031' [ RunTime:0.000486s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/Membermessage/showReceivedNewNum.html
+[ info ] app.freestylewxy.cn/index.php/Wap/Membermessage/showReceivedNewNum.html [运行时间：0.042737s][吞吐率：23.40req/s] [内存消耗：3,515.50kb] [文件加载：68]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'Membermessage',
+    2 => 'showReceivedNewNum',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '42',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\wap\controller\Membermessage->showReceivedNewNum[ /home/www/chenganxjh/application/wap/controller/Membermessage.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000376s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_mbusertoken` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `x_mbusertoken` WHERE  `token` = 'cc3ec5a41e3fff018898969a7d52f0b2' LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_seller` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `x_seller` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_message` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '2' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '1' and (to_member_id ='all' or (message_ismore=0 and to_member_id='100031') or (message_ismore=1 and to_member_id like '%,100031,%')) and del_member_id not like '%,100031,%'  and read_member_id not like '%,100031,%'  ) LIMIT 0,15 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT count(message_id) as countnum FROM `x_message` WHERE  (  1=1 and message_type = '0' and message_state != '2' and message_open = '0' and to_member_id='100031'  ) LIMIT 0,15 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031  AND `is_del` = 1 LIMIT 1 [ RunTime:0.000384s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/avatar/avatar_100031_15423487317801.jpg
+[ info ] app.freestylewxy.cn/uploads/home/avatar/avatar_100031_15423487317801.jpg [运行时间：0.014099s][吞吐率：70.93req/s] [内存消耗：1,783.17kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/lookchild/index
+[ info ] app.freestylewxy.cn/index.php/Wap/lookchild/index [运行时间：0.038967s][吞吐率：25.66req/s] [内存消耗：3,200.34kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'lookchild',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '76',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+  'member_id' => '100031',
+  'sid' => '8106',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Lookchild->index[ /home/www/chenganxjh/application/wap/controller/Lookchild.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001330s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_ownerAccount` = '100031'  AND `s_del` = 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_packagetime` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `x_packagetime` WHERE  `pkg_type` = 1  AND `s_id` = 8106 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id,`sc`.`provinceid`,`sc`.`cityid`,`sc`.`areaid` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_id` = 8106 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_camera` [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT `ability`,`channelid`,`companyid`,`deviceid`,`id`,`name`,`online`,`parentid`,`privilege`,`type`,`usernum`,`is_classroom`,`status`,`begintime`,`endtime` FROM `x_camera` WHERE  `parentid` = 3772 OR `parentid` = 3771 ORDER BY cid desc [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 POST /index.php/Wap/lookchild/index
+[ info ] app.freestylewxy.cn/index.php/Wap/lookchild/index [运行时间：0.039556s][吞吐率：25.28req/s] [内存消耗：3,200.34kb] [文件加载：64]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Wap',
+    1 => 'lookchild',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.9.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'content-length' => '76',
+  'content-type' => 'application/json; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'cc3ec5a41e3fff018898969a7d52f0b2',
+  'member_id' => '100031',
+  'sid' => '8106',
+)
+[ info ] [ LANG ] /home/www/chenganxjh/public/../application/wap/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\wap\controller\Lookchild->index[ /home/www/chenganxjh/application/wap/controller/Lookchild.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000357s ] mysql:host=127.0.0.1;port=3306;dbname=xjh;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_member` [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT * FROM `x_member` WHERE  `member_id` = 100031 LIMIT 1 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_student` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_ownerAccount` = '100031'  AND `s_del` = 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_packagetime` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `x_packagetime` WHERE  `pkg_type` = 1  AND `s_id` = 8106 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT `s`.`s_id`,`s`.`s_name`,`s`.`s_region`,`sc`.`schoolid`,`sc`.`name`,`sc`.`res_group_id`,`cl`.`classid`,`cl`.`classname`,`cl`.`classCard`,cl.res_group_id as clres_group_id,`sc`.`provinceid`,`sc`.`cityid`,`sc`.`areaid` FROM `x_student` `s` LEFT JOIN `x_school` `sc` ON `sc`.`schoolid`=`s`.`s_schoolid` LEFT JOIN `x_class` `cl` ON `cl`.`classid`=`s`.`s_classid` WHERE  `s_id` = 8106 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `x_camera` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `ability`,`channelid`,`companyid`,`deviceid`,`id`,`name`,`online`,`parentid`,`privilege`,`type`,`usernum`,`is_classroom`,`status`,`begintime`,`endtime` FROM `x_camera` WHERE  `parentid` = 3772 OR `parentid` = 3771 ORDER BY cid desc [ RunTime:0.000288s ]
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/avatar/avatar_100031_15423487317801.jpg
+[ info ] app.freestylewxy.cn/uploads/home/avatar/avatar_100031_15423487317801.jpg [运行时间：0.013896s][吞吐率：71.96req/s] [内存消耗：1,783.17kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.013672s][吞吐率：73.14req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.015258s][吞吐率：65.54req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617015591493.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617015591493.png [运行时间：0.013827s][吞吐率：72.32req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.013882s][吞吐率：72.03req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617025523870.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617025523870.png [运行时间：0.013723s][吞吐率：72.87req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.013933s][吞吐率：71.77req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:49+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020260s][吞吐率：49.36req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:49+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110616581989223.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110616581989223.png [运行时间：0.029126s][吞吐率：34.33req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:49+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc989cacf13c.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc989cacf13c.jpg [运行时间：0.020251s][吞吐率：49.38req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:49+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110616412689943.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110616412689943.png [运行时间：0.019663s][吞吐率：50.86req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:49+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617502723168.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617502723168.png [运行时间：0.018311s][吞吐率：54.61req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:49+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/mobile/navicon/x3/guard@x3.png
+[ info ] app.freestylewxy.cn/uploads/mobile/navicon/x3/guard@x3.png [运行时间：0.014033s][吞吐率：71.26req/s] [内存消耗：1,783.87kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'mobile',
+    2 => 'navicon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'x3' => 'guard@x3.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:49+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014713s][吞吐率：67.97req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:49+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014270s][吞吐率：70.08req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:49+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/mobile/navicon/x3/guard@x3.png
+[ info ] app.freestylewxy.cn/uploads/mobile/navicon/x3/guard@x3.png [运行时间：0.014265s][吞吐率：70.10req/s] [内存消耗：1,783.87kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'mobile',
+    2 => 'navicon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'x3' => 'guard@x3.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:50+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014897s][吞吐率：67.13req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:50+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.013974s][吞吐率：71.56req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:52+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014905s][吞吐率：67.09req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:54+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.015001s][吞吐率：66.66req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:54+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.014577s][吞吐率：68.60req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:56+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014911s][吞吐率：67.06req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:57+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.014080s][吞吐率：71.02req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:58+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.016266s][吞吐率：61.48req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:16:58+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.016334s][吞吐率：61.22req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:00+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014339s][吞吐率：69.74req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:00+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.013958s][吞吐率：71.64req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:02+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.017000s][吞吐率：58.82req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:02+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.016682s][吞吐率：59.94req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:04+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.015701s][吞吐率：63.69req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:04+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.015723s][吞吐率：63.60req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:06+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.016319s][吞吐率：61.28req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:06+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.016323s][吞吐率：61.26req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:08+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021329s][吞吐率：46.88req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:08+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.021548s][吞吐率：46.41req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:10+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.019380s][吞吐率：51.60req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:10+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.019120s][吞吐率：52.30req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:12+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.015887s][吞吐率：62.94req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:12+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.015916s][吞吐率：62.83req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:14+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.015461s][吞吐率：64.68req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:14+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.014790s][吞吐率：67.61req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:16+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.019006s][吞吐率：52.61req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:16+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.018946s][吞吐率：52.78req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:18+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.019014s][吞吐率：52.59req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:18+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.018786s][吞吐率：53.23req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:20+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014041s][吞吐率：71.22req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:22+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.020823s][吞吐率：48.02req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:22+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020411s][吞吐率：48.99req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:24+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.015195s][吞吐率：65.81req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:25+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.014845s][吞吐率：67.36req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:26+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.019470s][吞吐率：51.36req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:26+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.019252s][吞吐率：51.94req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:28+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.021423s][吞吐率：46.68req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:28+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021064s][吞吐率：47.47req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:30+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.020232s][吞吐率：49.43req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:30+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.021109s][吞吐率：47.37req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:32+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014902s][吞吐率：67.11req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:32+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.013918s][吞吐率：71.85req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:34+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021162s][吞吐率：47.25req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:34+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020934s][吞吐率：47.77req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:36+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.019599s][吞吐率：51.02req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:36+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.019544s][吞吐率：51.17req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:38+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.020512s][吞吐率：48.75req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:38+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.019833s][吞吐率：50.42req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:40+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.017783s][吞吐率：56.23req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:40+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.017564s][吞吐率：56.94req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:42+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021161s][吞吐率：47.26req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:42+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020980s][吞吐率：47.66req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:44+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.017771s][吞吐率：56.27req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:44+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.017688s][吞吐率：56.54req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:46+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.019581s][吞吐率：51.07req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:46+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.019557s][吞吐率：51.13req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.015056s][吞吐率：66.42req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.013986s][吞吐率：71.50req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:50+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021523s][吞吐率：46.46req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:50+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.021106s][吞吐率：47.38req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:52+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021568s][吞吐率：46.36req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:52+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.021568s][吞吐率：46.36req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:54+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.019934s][吞吐率：50.17req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:54+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020905s][吞吐率：47.84req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:56+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.013963s][吞吐率：71.62req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:56+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.014007s][吞吐率：71.39req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:58+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.017529s][吞吐率：57.05req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:17:58+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.017601s][吞吐率：56.81req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:00+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021146s][吞吐率：47.29req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:00+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.022277s][吞吐率：44.89req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:02+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.021078s][吞吐率：47.44req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:02+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021062s][吞吐率：47.48req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:04+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.017039s][吞吐率：58.69req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:04+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.017081s][吞吐率：58.54req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:06+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.019717s][吞吐率：50.72req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:06+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.019732s][吞吐率：50.68req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:08+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.018773s][吞吐率：53.27req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:08+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.018672s][吞吐率：53.56req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:10+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020682s][吞吐率：48.35req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:10+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.020156s][吞吐率：49.61req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:12+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.019947s][吞吐率：50.13req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:12+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.019745s][吞吐率：50.65req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:14+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021609s][吞吐率：46.28req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:14+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.021053s][吞吐率：47.50req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:16+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014601s][吞吐率：68.49req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:16+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.013989s][吞吐率：71.48req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:18+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.020104s][吞吐率：49.74req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:18+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020031s][吞吐率：49.92req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:20+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014813s][吞吐率：67.51req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:20+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.014176s][吞吐率：70.54req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:22+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.020561s][吞吐率：48.64req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:22+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020906s][吞吐率：47.83req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:24+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.015059s][吞吐率：66.41req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:24+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.014975s][吞吐率：66.78req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:26+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.020486s][吞吐率：48.81req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:26+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020800s][吞吐率：48.08req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:28+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.021294s][吞吐率：46.96req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:28+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021044s][吞吐率：47.52req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:30+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.021203s][吞吐率：47.16req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:30+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021106s][吞吐率：47.38req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:32+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.021492s][吞吐率：46.53req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:32+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.022068s][吞吐率：45.31req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:34+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.020386s][吞吐率：49.05req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:34+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020133s][吞吐率：49.67req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:36+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014598s][吞吐率：68.50req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:36+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.014165s][吞吐率：70.60req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:38+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.020180s][吞吐率：49.55req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:38+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.020174s][吞吐率：49.57req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:40+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.014826s][吞吐率：67.45req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:40+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.014106s][吞吐率：70.89req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:42+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.019836s][吞吐率：50.41req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:42+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.019525s][吞吐率：51.22req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:44+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.020605s][吞吐率：48.53req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:44+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.020304s][吞吐率：49.25req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:46+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.014592s][吞吐率：68.53req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:46+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.013807s][吞吐率：72.43req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.021693s][吞吐率：46.10req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:48+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021694s][吞吐率：46.10req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:50+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.016672s][吞吐率：59.98req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:50+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bc9539cadf8e.jpg
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bc9539cadf8e.jpg [运行时间：0.016213s][吞吐率：61.68req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:52+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/adv/5bda5398e3d91.png
+[ info ] app.freestylewxy.cn/uploads/home/adv/5bda5398e3d91.png [运行时间：0.020739s][吞吐率：48.22req/s] [内存消耗：1,783.13kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'adv',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-28T22:18:52+08:00 ] 172.17.144.244 223.81.192.124 GET /uploads/home/store/goods/1/1_2018110617004680589.png
+[ info ] app.freestylewxy.cn/uploads/home/store/goods/1/1_2018110617004680589.png [运行时间：0.021530s][吞吐率：46.45req/s] [内存消耗：1,783.88kb] [文件加载：44]
+[ info ] [ LANG ] /home/www/chenganxjh/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'home',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'app.freestylewxy.cn',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 9; EML-AL00 Build/HUAWEIEML-AL00)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'goods' => '1',
+)
+[ info ] [ LOG ] INIT File
