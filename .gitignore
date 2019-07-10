@@ -1,6 +1,6 @@
+.idea
 composer.lock
 *.log
 /runtime
 /.phpintel
 /public/uploads
-/application/database.php
