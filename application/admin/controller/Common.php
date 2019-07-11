@@ -604,7 +604,7 @@ class Common extends AdminControl
             }
             //房间位置
             $position_where['school_id'] = $school_id;
-//            $position_where['type_id'] = $grade_id;
+            $position_where['type_id'] = $grade_id;
 //            $position_where['is_bind'] = 1;
             $position =  db('position')->field('position_id,position,is_bind')->where($position_where)->select();
             if(!empty($position)){

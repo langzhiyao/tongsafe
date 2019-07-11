@@ -55,8 +55,8 @@ class Schoolinfo extends AdminControl {
     public function lists() {
         $model_class = model('Classes');
         $condition = array();
-        $condition['schoolid'] = input('param.school_id');
-        $condition['isdel'] = 1;
+        $condition['c.schoolid'] = input('param.school_id');
+        $condition['c.isdel'] = 1;
         $class_list = $model_class->getClasslList($condition, 10);
         //学校类型
         $schooltype = db('schooltype')->where('sc_enabled','1')->select();

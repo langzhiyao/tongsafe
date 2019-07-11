@@ -110,6 +110,7 @@ class School extends AdminControl {
             $res= $vlink->SetLogin();
             $accountid=$res['accountid'];
             $vlinker=$vlink->AddResources($accountid,$data['name'],$data['areaid']);
+            halt($vlinker);
             $data['vlinkerid']=$vlinker['groupres']['id'];
             //验证数据  END
             $result = $model_school->addSchool($data);
@@ -164,6 +165,12 @@ class School extends AdminControl {
                 'createtime' => date('Y-m-d H:i:s',time())
 
             );
+            //物盟学校修改
+            $vlink = new Vomont();
+            $res= $vlink->SetLogin();
+            $accountid=$res['accountid'];
+            $vlinker=$vlink->ModifyResources($accountid,$data['name'],$data['vlinkerid']);
+
             //验证数据  END
             $result = $model_school->editSchool($data,array('schoolid'=>$school_id));
             //修改学校信息的同时 要修改班级和学生的地区
@@ -199,7 +206,7 @@ class School extends AdminControl {
             $this->error(lang('param_error'));
         }
         if (!request()->isPost()) {
-            /*$schooltype = db('schooltype')->where('sc_enabled','1')->select();
+            $schooltype = db('schooltype')->where('sc_enabled','1')->select();
             $schoolinfo = $model_school->getSchoolInfo(array('schoolid'=>$school_id));
             $typeids = explode(',',$schoolinfo['typeid']);
             foreach ($schooltype as $k=>$v){
@@ -209,7 +216,7 @@ class School extends AdminControl {
                     }
                 }
             }
-            $this->assign('schooltype', $type);*/
+            $this->assign('schooltype', $type);
             $this->assign('schoolid', $school_id);
             $this->setAdminCurItem('addposition');
             return $this->fetch();
@@ -217,7 +224,7 @@ class School extends AdminControl {
             $model_class = model('position');
             $data = array(
                 'school_id' => $school_id,
-//                'type_id' => input('post.school_type'),
+                'type_id' => input('post.school_type'),
                 'position' => input('post.school_position_name'),
             );
             $schoolinfo = $model_school->find(array("schoolid"=>$school_id));

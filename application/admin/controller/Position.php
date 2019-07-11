@@ -48,14 +48,14 @@ class Position extends AdminControl {
             $condition['p.school_id'] =$school_id;
         }
 
-        /*$school_type = input('param.grade');//学校类型
+       $school_type = input('param.grade');//学校类型
         if ($school_type) {
             $condition['p.type_id'] = $school_type;
-        }*/
-//        if(!empty($_GET['position'])){
-//            $position_id = input('param.position');
-//            $condition['p.position_id'] =$position_id;
-//        }
+        }
+        if(!empty($_GET['position'])){
+            $position_id = input('param.position');
+            $condition['p.position_id'] =$position_id;
+        }
 
         $position_list = $model_position->get_position_list($condition,15);
         //地区信息
@@ -87,7 +87,7 @@ class Position extends AdminControl {
             $model_position = model('Position');
             $data = array(
                 'school_id' => input('post.school'),
-//                'type_id' => input('post.grade'),
+                'type_id' => input('post.grade'),
                 'position' => input('post.school_position_name'),
                 'desc' => input('post.position_desc'),
             );
@@ -129,9 +129,10 @@ class Position extends AdminControl {
             $model_position = model('Position');
             $data = array(
                 'school_id' => input('post.school'),
-//                'type_id' => input('post.grade'),
+                'type_id' => input('post.grade'),
                 'position' => input('post.school_position_name'),
                 'desc' => input('post.position_desc'),
+                'create_time'=>time()
             );
             $schoolinfo = $model_school->find(array("schoolid"=>input('post.school')));
             $data['province_id'] = $schoolinfo['provinceid'];
@@ -166,7 +167,7 @@ class Position extends AdminControl {
 
                 $condition['position'] = input('param.position');
                 $condition['school_id'] = input('param.school_id');
-//                $condition['type_id'] = input('param.type_id');
+                $condition['type_id'] = input('param.type_id');
                 $list = $class_member->where($condition)->find();
                 if (empty($list)) {
                     echo 'true';

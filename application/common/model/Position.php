@@ -84,9 +84,9 @@ class Position extends Model {
     public function get_position_list($condition, $page = '', $field = '*', $order = 'p.position_id desc', $limit = '', $extend = array(), $master = false) {
         $list_paginate = db('position')
             ->alias('p')
-            ->field('p.*,s.name as school_name')
+            ->field('p.*,s.name as school_name,t.sc_type as type_name')
             ->join('school s','s.schoolid=p.school_id',LEFT)
-//            ->join('schooltype t','t.sc_id=p.type_id',LEFT)
+            ->join('schooltype t','t.sc_id=p.type_id',LEFT)
             ->where($condition)
             ->order($order)
             ->paginate($page,false,['query' => request()->param()]);

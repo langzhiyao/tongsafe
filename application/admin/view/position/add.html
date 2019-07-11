@@ -65,11 +65,11 @@
                             <option value="">{$Think.lang.school_index_allschool}</option>
                         </select>
                     </div>
-                    <!--<div class="layui-input-inline">
+                    <div class="layui-input-inline">
                         <select name="grade" lay-filter="grade"  class="select"  lay-verify="type"  id="grade">
                             <option value="">{$Think.lang.school_index_type}</option>
                         </select>
-                    </div>-->
+                    </div>
                 </div>
             </div>
             <div class="layui-form-item">
@@ -111,7 +111,7 @@
             //改变县区
             $('#area').html('<option value="0">{$Think.lang.look_address_area}</option>');
             //改变年级
-            // $('#grade').html('<option value="0">{$Think.lang.look_address_grade}</option>');
+            $('#grade').html('<option value="0">{$Think.lang.look_address_grade}</option>');
 
             $.ajax({
                 type:'POST',
@@ -127,7 +127,7 @@
                     //改变学校
                     $('#school').html(data.school);
                     //改变年级
-                    // $('#grade').html(data.grade);
+                    $('#grade').html(data.grade);
                     form.render('select');//select是固定写法 不是选择器
                 }
             })
@@ -137,9 +137,7 @@
             //改变县区
             $('#area').html('<option value="0">{$Think.lang.look_address_area}</option>');
             //改变年级
-            // $('#grade').html('<option value="0">{$Think.lang.look_address_grade}</option>');
-            //改变班级
-            // $('#class').html('<option value="0">{$Think.lang.look_address_class}</option>');
+            $('#grade').html('<option value="0">{$Think.lang.look_address_grade}</option>');
             var province = $('#province').find('option:selected').val();
             $.ajax({
                 type:'POST',
@@ -154,7 +152,7 @@
                     //改变学校
                     $('#school').html(data.school);
                     //改变年级
-                    // $('#grade').html(data.grade);
+                    $('#grade').html(data.grade);
                     form.render('select');//select是固定写法 不是选择器
                 }
             })
@@ -162,9 +160,8 @@
         //县/区
         form.on('select(area)', function(data){
             //改变年级
-            // $('#grade').html('<option value="0">{$Think.lang.look_address_grade}</option>');
+            $('#grade').html('<option value="0">{$Think.lang.look_address_grade}</option>');
             //改变班级
-            // $('#class').html('<option value="0">{$Think.lang.look_address_class}</option>');
             var province = $('#province').find('option:selected').val();
             var city = $('#city').find('option:selected').val();
             $.ajax({
@@ -179,13 +176,13 @@
                     //改变学校
                     $('#school').html(data.school);
                     //改变年级
-                    // $('#grade').html(data.grade);
+                    $('#grade').html(data.grade);
                     form.render('select');//select是固定写法 不是选择器
                 }
             })
         });
         //学校
-        /*form.on('select(school)', function(data){
+        form.on('select(school)', function(data){
             //改变年级
             $('#grade').html('<option value="0">{$Think.lang.look_address_grade}</option>');
             //改变班级
@@ -200,7 +197,7 @@
                     form.render('select');//select是固定写法 不是选择器
                 }
             })
-        });*/
+        });
 
 
     });
