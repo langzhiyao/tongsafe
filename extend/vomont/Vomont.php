@@ -44,12 +44,12 @@ class Vomont
         return $login;
     }
     /**
-     * app获取资源列表
+     * 视频获取资源列表
      */
-    public function SetPlay($accpuntid,$parentid){
+    public function SetPlay($accpuntid,$restype,$parentid){
         $SDK      = new CommandSDK();
         $msgid = $SDK::ResourcesLists;
-        $request = httpRequest($this->http."msgid={$msgid}&authkey={$this->authkey}&accountid={$accpuntid}&restype=1&parentid={$parentid}");
+        $request = httpRequest($this->http."msgid={$msgid}&authkey={$this->authkey}&accountid={$accpuntid}&restype={$restype}&parentid={$parentid}");
         $data = json_decode($request,TRUE);
         return $data;
     }

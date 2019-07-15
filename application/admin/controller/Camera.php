@@ -551,23 +551,22 @@ class Camera extends AdminControl
                 $shu[] = $v['res_group_id'];
             }
         }
-        $model_class=Model('classes');
-        $where=array();
-        $where['isdel']=1;
-        $class=$model_class->getAllClasses($where);
-        foreach($class as $v){
+        $model_position=Model('position');
+        $where=' 1=1 ';
+        $position=$model_position->getpositionList($where);
+        foreach($position as $v){
             if($v['res_group_id']!=0){
                 $shu[]=$v['res_group_id'];
             }
         }
+        //上方获取所有资源组ID
+        //物盟登录认证
         $vlink = new Vomont();
         $res= $vlink->SetLogin();
         $accountid=$res['accountid'];
         $data='';
-        //$b=$vlink->AddResources($accountid,'112','3');
-        //print_r($b);exit;
         foreach($shu as $v){
-            $datas=$vlink->SetPlay($accountid,$v);
+            $datas=$vlink->SetPlay($accountid,1,$v);
             if(empty($data)) {
                 $data = !empty($datas['resources'])?$datas['resources']:'';
             }else{
@@ -577,6 +576,7 @@ class Camera extends AdminControl
 
             }
         }
+        //上方合并所有视频资源
         foreach($data as $k=>$v){
             $play=$v['deviceid'].'-'.$v['channelid'].',';
             $video=$vlink->Resources($accountid,$play);
@@ -588,8 +588,9 @@ class Camera extends AdminControl
             $data[$k]['is_classroom']=1;
         }
         $model_camera=Model('camera');
-        $result=$model_camera->getCameraList('','','id');
+        $result=$model_camera->getCameraList('','','id,name');
         $ret=$this->get_diff_array_by_pk($data,$result);
+//        halt($ret);
         $sult=$model_camera->cameras_add($ret);
         if($sult){
             echo json_encode(array('count'=>$sult));
@@ -597,11 +598,20 @@ class Camera extends AdminControl
             echo json_encode(array('count'=>0));
         }
     }
+    //筛选
     function get_diff_array_by_pk($arr1,$arr2,$pk='id'){
         try{
-            $res=[];
+            $res=[];//添加
+            $res2=[];//修改名字
             foreach($arr2 as $item) $tmpArr[$item[$pk]] = $item;
             foreach($arr1 as $v) if(! isset($tmpArr[$v[$pk]])) $res[] = $v;
+
+            /*foreach($arr1 as $v2){
+                if(($tmpArr[$v2[$pk]]['id'] == $v2[$pk]) && ($tmpArr[$v2[$pk]]['name'] != $v2['name'])){
+                    $res2[] = $v;
+                }
+            }
+            halt($res2);*/
             return $res;
         }catch (\Exception $exception){
             return $arr1;

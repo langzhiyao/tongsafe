@@ -30,9 +30,9 @@ class Lookchild extends MobileMall
                 ->join('__SCHOOL__ sc','sc.schoolid=s.s_schoolid','LEFT')
                 ->join('__CLASS__ cl','cl.classid=s.s_classid','LEFT')
                 ->field('s.s_id,s.s_name,s.s_region,sc.schoolid,sc.name,sc.res_group_id,cl.classid,cl.classname,cl.classCard,cl.res_group_id as clres_group_id')
-                ->where(array("s_ownerAccount"=>$member_id,'s_del'=>1))->select();
-//            $student=model('student');
-//            $result=$student->getAllChilds($member_id);
+                ->where(array("s.s_ownerAccount"=>$member_id,'s.s_del'=>1))->select();
+
+//            halt($result);
             if(empty($result)){
                 if($member_info['is_owner']==0){
                     //请绑定学生
@@ -85,6 +85,7 @@ class Lookchild extends MobileMall
                     $schoolid=$str['res_group_id'];
                     $classid=$str['clres_group_id'];
                 }
+
                 $user['ip']='39.97.235.153';
                 $user['port']='9001';
                 $user['username']='test';
@@ -93,8 +94,10 @@ class Lookchild extends MobileMall
                 $condition=array();
                 $condition['parentid']=$classid;
                 $conditions['parentid']=$schoolid;
-//                $html=$camera_model->getCameras($condition,$conditions,'ability,channelid,companyid,deviceid,id,name,online,parentid,privilege,type,usernum,is_classroom,status,begintime,endtime');
-                $html=$camera_model->getCameras($condition,$conditions,'ability,channelid,companyid,deviceid,id,name,online,parentid,type,is_classroom,status,begintime,endtime');
+//                halt($conditions);
+                $html=$camera_model->getCameras($condition,$conditions,'ability,channelid,companyid,deviceid,id,name,online,parentid,privilege,type,usernum,is_classroom,status,begintime,endtime');
+//                halt($html);
+                //                $html=$camera_model->getCameras($condition,$conditions,'ability,channelid,companyid,deviceid,id,name,online,parentid,type,is_classroom,status,begintime,endtime');
                 $date=date('H:i',time());
                 foreach($html as $k=> $v){
                     if($v['online']==0){

@@ -4,6 +4,7 @@ namespace app\admin\controller;
 
 use think\Lang;
 use think\Validate;
+use vomont\Vomont;
 
 class Position extends AdminControl {
 
@@ -87,15 +88,28 @@ class Position extends AdminControl {
             $model_position = model('Position');
             $data = array(
                 'school_id' => input('post.school'),
-                'type_id' => input('post.grade'),
+//                'type_id' => input('post.grade'),
                 'position' => input('post.school_position_name'),
                 'desc' => input('post.position_desc'),
+                'create_time'=>time()
             );
+            if(empty($data['school_id'])){
+                $this->error('请选择学校');
+            }
             $schoolinfo = $model_school->find(array("schoolid"=>input('post.school')));
             $data['province_id'] = $schoolinfo['provinceid'];
             $data['city_id'] = $schoolinfo['cityid'];
             $data['area_id'] = $schoolinfo['areaid'];
             $data['region'] = $schoolinfo['region'];
+            //物盟房间位置添加
+            $vlink = new Vomont();
+            $res= $vlink->SetLogin();
+            $accountid=$res['accountid'];
+            $vlinker=$vlink->AddResources($accountid,$data['position'],$schoolinfo['res_group_id']);
+            if($vlinker['result'] != 0){
+                $this->error('物盟房间位置添加失败');
+            }
+            $data['res_group_id']=$vlinker['groupres']['id'];
             //验证数据  END
             $result = $model_position->insertGetId($data);
             if ($result) {
@@ -115,9 +129,9 @@ class Position extends AdminControl {
             $this->error(lang('param_error'));
         }
         $model_position = Model('position');
+        $condition['position_id'] = $position_id;
+        $position_array = $model_position->where($condition)->find();
         if (!request()->isPost()) {
-            $condition['position_id'] = $position_id;
-            $position_array = $model_position->where($condition)->find();
             //地区信息
             $region_list = db('area')->where('area_parent_id','0')->select();
             $this->assign('region_list', $region_list);
@@ -128,17 +142,28 @@ class Position extends AdminControl {
             $model_school = model('School');
             $model_position = model('Position');
             $data = array(
-                'school_id' => input('post.school'),
-                'type_id' => input('post.grade'),
+//                'school_id' => input('post.school'),
+//                'type_id' => input('post.grade'),
                 'position' => input('post.school_position_name'),
                 'desc' => input('post.position_desc'),
                 'create_time'=>time()
             );
-            $schoolinfo = $model_school->find(array("schoolid"=>input('post.school')));
+            /*$schoolinfo = $model_school->find(array("schoolid"=>input('post.school')));
             $data['province_id'] = $schoolinfo['provinceid'];
             $data['city_id'] = $schoolinfo['cityid'];
             $data['area_id'] = $schoolinfo['areaid'];
-            $data['region'] = $schoolinfo['region'];
+            $data['region'] = $schoolinfo['region'];*/
+            //物盟学校修改
+            if($position_array['res_group_id'] == ''){
+                $this->error('物盟房间位置不存在');
+            }
+            $vlink = new Vomont();
+            $res= $vlink->SetLogin();
+            $accountid=$res['accountid'];
+            $vlinker=$vlink->ModifyResources($accountid,$data['position'],$position_array['res_group_id']);
+            if($vlinker['result'] != 0){
+                $this->error('修改失败，物盟房间位置修改失败');
+            }
             //验证数据  END
             $result = $model_position->where(array('position_id'=>$position_id))->update($data);
             if ($result) {
@@ -191,11 +216,19 @@ class Position extends AdminControl {
         if (empty($position_id)) {
             $this->error(lang('param_error'));
         }
-        $position = db('position')->where(['position_id'=>$position_id,'is_bind'=>2])->limit(1)->find();
+        $model_position = Model('position');
+        $position = $model_position->where(['position_id'=>$position_id,'is_bind'=>2])->limit(1)->find();
         if($position){
             $this->error('该位置已被绑定，无法删除');
         }
-        $model_position = Model('position');
+        //物盟学校删除
+        $vlink = new Vomont();
+        $res= $vlink->SetLogin();
+        $accountid=$res['accountid'];
+        $vlinker=$vlink->DelResources($accountid,$position['res_group_id']);
+        if($vlinker['result'] != 0){
+            $this->error('物盟资源组删除失败');
+        }
         $result = $model_position->where(array('position_id'=>$position_id))->delete();
         if ($result) {
             $this->success(lang('ds_common_del_succ'), 'Position/index');

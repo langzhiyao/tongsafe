@@ -87,15 +87,23 @@ class Classes extends AdminControl {
             return $this->fetch();
         } else {
             $admininfo = $this->getAdminInfo();
-            $schoolInfo = db('school')->where('schoolid', input('post.order_state'))->find();
+            $schoolInfo = db('school')->where('schoolid', input('post.school'))->find();
             $model_classes = model('Classes');
+            $school_id = input('post.school');
+            $grade_id = input('post.grade');
             $position_id = input('post.position');
+            if (empty($school_id)) {
+                $this->error('请选择学校');
+            }
+            if (empty($grade_id)) {
+                $this->error('请选择学校类型');
+            }
             if (empty($position_id)) {
-                $this->error('请绑定房间位置');
+                $this->error('请选择绑定房间');
             }
             $data = array(
-                'typeid' => input('post.grade'),
-                'schoolid' => input('post.school'),
+                'schoolid' => $school_id,
+                'typeid' => $grade_id,
                 'position_id' => $position_id,
                 'classname' => input('post.school_class_name'),
                 'desc' => input('post.class_desc'),
@@ -103,11 +111,10 @@ class Classes extends AdminControl {
                 'admin_company_id' => $schoolInfo['admin_company_id'],
                 'createtime' => date('Y-m-d H:i:s', time())
             );
-            $schoolinfo = db('school')->find(array("schoolid" => input('post.school')));
-            $data['school_provinceid'] = $schoolinfo['provinceid'];
-            $data['school_cityid'] = $schoolinfo['cityid'];
-            $data['school_areaid'] = $schoolinfo['areaid'];
-            $data['school_region'] = $schoolinfo['region'];
+            $data['school_provinceid'] = $schoolInfo['provinceid'];
+            $data['school_cityid'] = $schoolInfo['cityid'];
+            $data['school_areaid'] = $schoolInfo['areaid'];
+            $data['school_region'] = $schoolInfo['region'];
             //学校识别码
             $classcard = $schoolInfo['schoolCard'] . ($model_classes->getNumber($schoolInfo['schoolCard']));
             $data['classCard'] = $classcard;
@@ -123,6 +130,7 @@ class Classes extends AdminControl {
             //验证数据  END
             //判断位置是否被绑定
             $is_bind = db('position')->where(array('position_id' => $position_id))->find();
+            $data['res_group_id'] = $is_bind['res_group_id'];
             if (!empty($is_bind)) {
                 if ($is_bind['is_bind'] == 1) {
                     //更改房间位置状态
@@ -137,7 +145,7 @@ class Classes extends AdminControl {
                     }
                 } else {
                     //更改房间位置状态
-                    $old_result = $model_classes->editClass(array('position_id' => $position_id), array('position_id' => 0));
+                    $old_result = $model_classes->editClass(array('position_id' => 0,'res_group_id'=>0), array('position_id' => $position_id));
                     $result = $model_classes->addClasses($data);
                     if ($result && $old_result) {
                         $model_classes->commit();
@@ -176,13 +184,17 @@ class Classes extends AdminControl {
 
             //原来信息
             $res = $model_class->getClassInfo(array('classid'=>$class_id));
-
+            $grade_id = input('post.grade');
             $position_id = input('post.position');
-            if(empty($position_id)){
-                $this->error('请绑定房间位置');
+
+            if (empty($grade_id)) {
+                $this->error('请选择学校类型');
+            }
+            if (empty($position_id)) {
+                $this->error('请选择绑定房间');
             }
             $data = array(
-                'typeid' => input('post.grade'),
+                'typeid' => $grade_id,
                 'position_id' => $position_id,
                 'classname' => input('post.school_class_name'),
                 'desc' => input('post.class_desc'),
@@ -190,11 +202,14 @@ class Classes extends AdminControl {
             );
             //判断位置是否被绑定
             $is_bind = db('position')->where(array('position_id'=>$position_id))->find();
+            $data['res_group_id'] = $is_bind['res_group_id'];
             if(!empty($is_bind)){
                 if($is_bind['is_bind'] == 1){
                     //更改房间位置状态
+                    if(!empty($res['position_id'])){
+                        $old_now = db('position')->where(array('position_id'=>$res['position_id']))->update(array('is_bind'=>1,'create_time'=>time()));
+                    }
                     $now = db('position')->where(array('position_id'=>$position_id))->update(array('is_bind'=>2,'create_time'=>time()));
-                    $old_now = db('position')->where(array('position_id'=>$res['position_id']))->update(array('is_bind'=>1,'create_time'=>time()));
                     $result = $model_class->editClass($data,array('classid'=>$class_id));
                     if ($result && $now && $old_now) {
                         $model_class->commit();
@@ -205,7 +220,7 @@ class Classes extends AdminControl {
                     }
                 }else{
                     //更改房间位置状态
-                    $old_result = $model_class->editClass(array('position_id'=>$res['position_id']),array('position_id'=>$position_id));
+                    $old_result = $model_class->editClass(array('position_id'=>$res['position_id'],'res_group_id'=>$res['res_group_id']),array('position_id'=>$position_id));
                     $result = $model_class->editClass($data,array('classid'=>$class_id));
                     if ($result && $old_result) {
                         $model_class->commit();

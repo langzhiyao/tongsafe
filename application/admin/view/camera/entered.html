@@ -64,12 +64,7 @@
             <div class="layui-inline">
                 <button class="layui-btn" data-type="reload">{$Think.lang.look_camera_search}</button>
             </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="layui-inline">
-                <a href="javascript:update()" class="layui-btn" data-type="auto" data-method="offset">{$Think.lang.look_camera_update}</a>
-            </div>
-            <div class="layui-inline">
-                <input type='botton' class="layui-btn" data-type="reload" id='' onclick='timess1()' value='批量设置开启关闭时间'/>
-            </div>
+
         </div>
 
         <table class="layui-table">
@@ -81,6 +76,10 @@
             <thead>
             <tr class="thead">
                 <th colspan="13">
+                    <div class="layui-inline" style="float: right;">
+                        <a href="javascript:update()" class="layui-btn" data-type="auto" data-method="offset">{$Think.lang.look_camera_update}</a>
+                        <input type='botton' class="layui-btn" data-type="reload" id='' onclick='timess1()' value='批量设置开启关闭时间'/>
+                    </div>
                     <p class="layui-table-tool-temp" >{$Think.lang.look_camera_wait_an_number}：<span style="font-size: 24px;color: #D90909" id="count"></span> </p>
                 </th>
             </tr>

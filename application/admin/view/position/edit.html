@@ -37,7 +37,7 @@
                 <div class="layui-inline">
                     <label class="layui-form-label">{$Think.lang.school_index_schoolregion}：</label>
                     <div class="layui-input-inline">
-                        <select  lay-filter="province"  class="select"  lay-verify="type" name="province" id="province">
+                        <select  lay-filter="province"  class="select"  lay-verify="type" name="province" id="province" disabled>
                             <option value="">{$Think.lang.look_address_province}</option>
                             {volist name="region_list" id="vo"}
                             <option value="{$vo.area_id}" <?php if($vo['area_id'] == $position_array["province_id"]){echo 'selected';}?> >{$vo.area_name}</option>
@@ -45,12 +45,12 @@
                         </select>
                     </div>
                     <div class="layui-input-inline">
-                        <select name="city" lay-filter="city"  class="select"  lay-verify="type"  id="city">
+                        <select name="city" lay-filter="city"  class="select"  lay-verify="type"  id="city" disabled>
                             <option value="">{$Think.lang.look_address_city}</option>
                         </select>
                     </div>
                     <div class="layui-input-inline">
-                        <select name="area" lay-filter="area"  class="select"  lay-verify="type"  id="area">
+                        <select name="area" lay-filter="area"  class="select"  lay-verify="type"  id="area" disabled>
                             <option value="">{$Think.lang.look_address_area}</option>
                         </select>
                     </div>
@@ -61,15 +61,15 @@
                 <div class="layui-inline">
                     <label class="layui-form-label">{$Think.lang.school_index_checkname}：</label>
                     <div class="layui-input-inline">
-                        <select  lay-filter="school"  class="select"  lay-verify="type" name="school" id="school">
+                        <select  lay-filter="school"  class="select"  lay-verify="type" name="school" id="school" disabled>
                             <option value="">{$Think.lang.school_index_allschool}</option>
                         </select>
                     </div>
-                    <div class="layui-input-inline">
+                   <!-- <div class="layui-input-inline">
                         <select name="grade" lay-filter="grade"  class="select"  lay-verify="type"  id="grade">
                             <option value="">{$Think.lang.school_index_type}</option>
                         </select>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class="layui-form-item">
@@ -110,7 +110,7 @@
         var area = '<?php if(!empty($position_array["area_id"])){echo $position_array["area_id"];}?>';
         //学校 年级 班级
         var school = '<?php if(!empty($position_array["school_id"])){echo $position_array["school_id"];}?>';
-        var grade = '<?php if(!empty($position_array["type_id"])){echo $position_array["type_id"];}?>';
+        // var grade = '<?php if(!empty($position_array["type_id"])){echo $position_array["type_id"];}?>';
         if(province != 0){
             $.ajax({
                 type:'POST',
@@ -124,13 +124,13 @@
                     //改变学校
                     $('#school').html(data.school);
                     //改变年级
-                    $('#grade').html(data.grade);
+                    // $('#grade').html(data.grade);
                     form.render('select');//select是固定写法 不是选择器
                 }
             })
         }
 
-        if(school != 0){
+        /*if(school != 0){
             $.ajax({
                 type:'POST',
                 url:ADMIN_URL+'Common/get_school_info2?school='+school+'&grade='+grade,
@@ -141,10 +141,10 @@
                     form.render('select');//select是固定写法 不是选择器
                 }
             })
-        }
+        }*/
 
         //省
-        form.on('select(province)', function(data){
+  /*      form.on('select(province)', function(data){
             //改变市区
             $('#city').html('<option value="0">{$Think.lang.look_address_city}</option>');
             //改变县区
@@ -233,7 +233,7 @@
                     form.render('select');//select是固定写法 不是选择器
                 }
             })
-        });
+        });*/
 
 
     });

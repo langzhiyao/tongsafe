@@ -110,8 +110,7 @@ class School extends AdminControl {
             $res= $vlink->SetLogin();
             $accountid=$res['accountid'];
             $vlinker=$vlink->AddResources($accountid,$data['name'],$data['areaid']);
-            halt($vlinker);
-            $data['vlinkerid']=$vlinker['groupres']['id'];
+            $data['res_group_id']=$vlinker['groupres']['id'];
             //验证数据  END
             $result = $model_school->addSchool($data);
             if ($result) {
@@ -133,9 +132,10 @@ class School extends AdminControl {
             $this->error(lang('param_error'));
         }
         $model_school = Model('school');
+
+        $condition['schoolid'] = $school_id;
+        $school_array = $model_school->getSchoolInfo($condition);
         if (!request()->isPost()) {
-            $condition['schoolid'] = $school_id;
-            $school_array = $model_school->getSchoolInfo($condition);
             $school_array['typeid']=explode(',',$school_array['typeid']);
             //地区信息
             $region_list = db('area')->where('area_parent_id','0')->select();
@@ -148,9 +148,7 @@ class School extends AdminControl {
             $this->setAdminCurItem('edit');
             return $this->fetch();
         } else {
-
             $data = array(
-
                 'name' => input('post.school_name'),
                 'provinceid' => input('post.province'),
                 'cityid' => input('post.city'),
@@ -163,14 +161,18 @@ class School extends AdminControl {
                 'dieline' => input('post.school_dieline'),
                 'desc' => input('post.school_desc'),
                 'createtime' => date('Y-m-d H:i:s',time())
-
             );
             //物盟学校修改
+            if($school_array['res_group_id'] == ''){
+                $this->error('物盟学校不存在');
+            }
             $vlink = new Vomont();
             $res= $vlink->SetLogin();
             $accountid=$res['accountid'];
-            $vlinker=$vlink->ModifyResources($accountid,$data['name'],$data['vlinkerid']);
-
+            $vlinker=$vlink->ModifyResources($accountid,$data['name'],$school_array['res_group_id']);
+            if($vlinker['result'] != 0){
+                $this->error('修改失败，物盟学校名称修改失败');
+            }
             //验证数据  END
             $result = $model_school->editSchool($data,array('schoolid'=>$school_id));
             //修改学校信息的同时 要修改班级和学生的地区
@@ -205,9 +207,9 @@ class School extends AdminControl {
         if (empty($school_id)) {
             $this->error(lang('param_error'));
         }
+        $schoolinfo = $model_school->getSchoolInfo(array('schoolid'=>$school_id));
         if (!request()->isPost()) {
-            $schooltype = db('schooltype')->where('sc_enabled','1')->select();
-            $schoolinfo = $model_school->getSchoolInfo(array('schoolid'=>$school_id));
+            /*$schooltype = db('schooltype')->where('sc_enabled','1')->select();
             $typeids = explode(',',$schoolinfo['typeid']);
             foreach ($schooltype as $k=>$v){
                 foreach ($typeids as $key=>$item){
@@ -216,22 +218,32 @@ class School extends AdminControl {
                     }
                 }
             }
-            $this->assign('schooltype', $type);
+            $this->assign('schooltype', $type);*/
             $this->assign('schoolid', $school_id);
             $this->setAdminCurItem('addposition');
             return $this->fetch();
         } else {
             $model_class = model('position');
+
             $data = array(
                 'school_id' => $school_id,
-                'type_id' => input('post.school_type'),
+//                'type_id' => input('post.school_type'),
                 'position' => input('post.school_position_name'),
+                'create_time'=>time()
             );
-            $schoolinfo = $model_school->find(array("schoolid"=>$school_id));
             $data['province_id'] = $schoolinfo['provinceid'];
             $data['city_id'] = $schoolinfo['cityid'];
             $data['area_id'] = $schoolinfo['areaid'];
             $data['region'] = $schoolinfo['region'];
+            //物盟房间位置添加
+            $vlink = new Vomont();
+            $res= $vlink->SetLogin();
+            $accountid=$res['accountid'];
+            $vlinker=$vlink->AddResources($accountid,$data['position'],$schoolinfo['res_group_id']);
+            if($vlinker['result'] != 0){
+                $this->error('物盟房间位置添加失败');
+            }
+            $data['res_group_id']=$vlinker['groupres']['id'];
             //验证数据  END
             $result = $model_class->insertGetId($data);
             if ($result) {
@@ -258,9 +270,9 @@ class School extends AdminControl {
         if (empty($school_id)) {
             $this->error(lang('param_error'));
         }
+        $schoolinfo = $model_school->getSchoolInfo(array('schoolid'=>$school_id));
         if (!request()->isPost()) {
             $schooltype = db('schooltype')->where('sc_enabled','1')->select();
-            $schoolinfo = $model_school->getSchoolInfo(array('schoolid'=>$school_id));
             $typeids = explode(',',$schoolinfo['typeid']);
             foreach ($schooltype as $k=>$v){
                 foreach ($typeids as $key=>$item){
@@ -280,21 +292,44 @@ class School extends AdminControl {
             $admininfo = $this->getAdminInfo();
             $schoolInfo = db('school')->where('schoolid',$school_id)->find();
             $model_class = model('Classes');
+            $grade_id = input('post.school_type');
+            $position_id = input('post.position');
+            if (empty($grade_id)) {
+                $this->error('请选择学校类型');
+            }
+            if (empty($position_id)) {
+                $this->error('请选择绑定房间');
+            }
             $data = array(
                 'schoolid' => $school_id,
-                'typeid' => input('post.school_type'),
-                'position_id' => input('post.position'),
+                'typeid' => $grade_id,
+                'position_id' => $position_id,
                 'classname' => input('post.school_class_name'),
                 'desc' => input('post.class_desc'),
                 'option_id' => $admininfo['admin_id'],
                 'admin_company_id' => $schoolInfo['admin_company_id'],
                 'createtime' => date('Y-m-d H:i:s',time())
             );
+            if(empty($data['typeid'])){
+                $this->error('请选择学校类型');
+            }
+            if(empty($data['position_id'])){
+                $this->error('请选择房间位置');
+            }
             $schoolinfo = $model_school->find(array("schoolid"=>$school_id));
             $data['school_provinceid'] = $schoolinfo['provinceid'];
             $data['school_cityid'] = $schoolinfo['cityid'];
             $data['school_areaid'] = $schoolinfo['areaid'];
             $data['school_region'] = $schoolinfo['region'];
+            //查询房间资源ID
+            $position = db('position')->where(array('position_id'=>$position_id))->find();
+            if(!$position){
+                $this->error('房间不存在');
+            }
+            if(empty($position['res_group_id'])){
+                $this->error('物盟资源组ID为空');
+            }
+            $data['res_group_id'] = $position['res_group_id'];
             //学校识别码
             $data['classCard'] = $schoolInfo['schoolCard'].($model_class -> getNumber($schoolInfo['schoolCard']));
             //生成二维码
@@ -309,6 +344,8 @@ class School extends AdminControl {
             //验证数据  END
             $result = $model_class->addClasses($data);
             if ($result) {
+                //修改房间位置状态
+                db('position')->where(array('position_id'=>$position_id))->update(array('is_bind'=>2));
                 $this->success(lang('school_class_add_succ'), 'School/member');
             } else {
                 $this->error(lang('school_class_add_fail'));
@@ -389,7 +426,7 @@ class School extends AdminControl {
     }
 
     /**
-     * 重要提示，删除会员 要先确定删除店铺,然后删除会员以及会员相关的数据表信息。这个后期需要完善。
+     * 重要提示，删除
      */
     public function drop() {
         if(session('admin_is_super') !=1 && !in_array(2,$this->action )){
