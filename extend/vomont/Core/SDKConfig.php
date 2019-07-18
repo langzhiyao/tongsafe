@@ -11,6 +11,6 @@ class SDKConfig
 	const KEY            = 'webuser';
 //	const VomontUsername = 'admin';
 //	const VomontPswd     = 'f9eb3a38c26b1280';
-    const VomontUsername = 'test1';
+    const VomontUsername = 'test';
 	const VomontPswd     = 'e10adc3949ba59ab';
 }
