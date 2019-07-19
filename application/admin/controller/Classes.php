@@ -127,8 +127,7 @@ class Classes extends AdminControl {
             $PhpQRCode->set('pngTempName', $classcard . '.png');
             $qr = $PhpQRCode->init();
             $data['qr'] = '/home/class/' . $schoolInfo['schoolCard'] . '/' . $qr;
-            halt($data['qr']);
-            //验证数据  END
+            //验证数据  END 
             //判断位置是否被绑定
             $is_bind = db('position')->where(array('position_id' => $position_id))->find();
             $data['res_group_id'] = $is_bind['res_group_id'];
