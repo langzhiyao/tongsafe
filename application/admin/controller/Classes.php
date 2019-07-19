@@ -121,12 +121,13 @@ class Classes extends AdminControl {
             //生成二维码
             import('qrcode.index', EXTEND_PATH);
             $PhpQRCode = new \PhpQRCode();
-            $PhpQRCode->set('pngTempDir', BASE_UPLOAD_PATH . DS . ATTACH_STORE . DS . 'class' . DS . $schoolInfo['schoolCard'] . DS);
-            // 生成商品二维码
+            $PhpQRCode->set('pngTempDir', BASE_UPLOAD_PATH . DS . 'class' . DS . $schoolInfo['schoolCard'] . DS);
+            // 生成班级二维码
             $PhpQRCode->set('date', $classcard);
             $PhpQRCode->set('pngTempName', $classcard . '.png');
             $qr = $PhpQRCode->init();
-            $data['qr'] = '/home/store/class/' . $schoolInfo['schoolCard'] . '/' . $qr;
+            $data['qr'] = '/home/class/' . $schoolInfo['schoolCard'] . '/' . $qr;
+            halt($data['qr']);
             //验证数据  END
             //判断位置是否被绑定
             $is_bind = db('position')->where(array('position_id' => $position_id))->find();

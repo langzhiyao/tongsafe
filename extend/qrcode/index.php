@@ -29,7 +29,7 @@ class PhpQRCode {
     //remember to sanitize user input in real-life solution !!!
     private $errorCorrectionLevel = 'H';  // L M Q H
     private $matrixPointSize = 8;    // 1 2 3 4 5 6 7 8 9 10
-    private $date = 'xjh';
+    private $date = '';
     private $pngTempDir = '';
     private $pngTempName = '';
 
@@ -48,20 +48,13 @@ class PhpQRCode {
         //ofcourse we need rights to create temp dir
         if (!file_exists($this->pngTempDir))
             mkdir($this->pngTempDir);
-
-        if ($this->date != 'xjh') {
-
-            // user data
-            if ($this->pngTempName != '') {
-                $filename = $this->pngTempDir . $this->pngTempName;
-            } else {
-                $filename = $this->pngTempDir . 'test' . md5($this->date . '|' . $this->errorCorrectionLevel . '|' . $this->matrixPointSize) . '.png';
-            }
-            QRcode::png($this->date, $filename, $this->errorCorrectionLevel, $this->matrixPointSize, 2);
+        // user data
+        if ($this->pngTempName != '') {
+            $filename = $this->pngTempDir . $this->pngTempName;
         } else {
-            //default data
-            QRcode::png('http://www.xiangjianhai.com', $filename, $this->errorCorrectionLevel, $this->matrixPointSize, 2);
+            $filename = $this->pngTempDir . 'test' . md5($this->date . '|' . $this->errorCorrectionLevel . '|' . $this->matrixPointSize) . '.png';
         }
+        QRcode::png($this->date, $filename, $this->errorCorrectionLevel, $this->matrixPointSize, 2);
 
         //display generated file
         return basename($filename);
