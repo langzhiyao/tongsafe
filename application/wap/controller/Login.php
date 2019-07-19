@@ -118,7 +118,7 @@ class Login extends MobileMall
                     $sms_tpl = config('sms_tpl');
                     $tempId = $sms_tpl['sms_password_reset'];
                     $sms = new \sendmsg\Sms();
-                    $pass = '您于'.date('Y-m-d H:i:s',time()).'注册童安账号，您的账号是:'.$member['member_mobile'].'密码是：'.$pass;
+                    $pass = '【'.config('site_name').'】您于'.date('Y-m-d H:i:s',time()).'注册童安账号，您的账号是:'.$member['member_mobile'].'密码是：'.$pass;
                     $send = $sms->send($member['member_mobile'],$pass,$tempId);
 
                     //发送站内信,提示修改密码

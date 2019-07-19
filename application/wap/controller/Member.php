@@ -696,7 +696,7 @@ class Member extends MobileMember
                     }else{
                         if(!empty($member_student[0]['s_card']) && in_array($member_student[0]['s_card'],$res)){
                             $result= db('member')->where('member_mobile="'.$member_mobile.'"')->update($data);
-                            $log_msg = '【'.config('site_name').'】您于'.date("Y-m-d").'被账号'. '[' . $this->member_info['member_mobile'] . ']'.'添加为副账号，可共同使用想见孩平台';
+                            $log_msg = '【'.config('site_name').'】您于'.date("Y-m-d").'被账号'. '[' . $this->member_info['member_mobile'] . ']'.'添加为副账号，可共同使用童无忧平台';
                             if ($result) {
                                 $sms = new \sendmsg\Sms();
                                 $send = $sms->send($member_mobile,$log_msg);
@@ -714,7 +714,7 @@ class Member extends MobileMember
                     }
                 }else{
                     $result = db('member')->where('member_mobile="'.$member_mobile.'"')->update($data);
-                    $log_msg = '【'.config('site_name').'】您于'.date("Y-m-d").'被账号'. '[' .$this->member_info['member_mobile']. ']'.'添加为副账号，可共同使用想见孩平台';
+                    $log_msg = '【'.config('site_name').'】您于'.date("Y-m-d").'被账号'. '[' .$this->member_info['member_mobile']. ']'.'添加为副账号，可共同使用童无忧平台';
                     if ($result) {
                         $sms = new \sendmsg\Sms();
                         $send = $sms->send($member_mobile,$log_msg);
@@ -732,7 +732,7 @@ class Member extends MobileMember
                     output_error('该手机号绑定有多个孩子，不能添加');
                 }else{
                     $result = db('member')->where('member_mobile="'.$member_mobile.'"')->update($data);
-                    $log_msg = '【'.config('site_name').'】您于'.date("Y-m-d").'被账号'. '[' . $this->member_info['member_mobile'] . ']'.'添加为副账号，可共同使用想见孩平台';
+                    $log_msg = '【'.config('site_name').'】您于'.date("Y-m-d").'被账号'. '[' . $this->member_info['member_mobile'] . ']'.'添加为副账号，可共同使用童无忧平台';
                     if ($result) {
                         $sms = new \sendmsg\Sms();
                         $send = $sms->send($member_mobile,$log_msg);
@@ -763,7 +763,7 @@ class Member extends MobileMember
             );
             $result = db('member')->insert($data);
 
-            $log_msg = '【'.config('site_name').'】您于'.date("Y-m-d").'被账号'. '[' . $this->member_info['member_mobile'] . ']'.'添加为副账号，可共同使用想见孩平台。      ';
+            $log_msg = '【'.config('site_name').'】您于'.date("Y-m-d").'被账号'. '[' . $this->member_info['member_mobile'] . ']'.'添加为副账号，可共同使用童无忧平台。      ';
             $log_msg .= '【登陆账号为：'.$member_mobile.'密码为：'.$pass.'】';
             if ($result) {
                 $sms = new \sendmsg\Sms();

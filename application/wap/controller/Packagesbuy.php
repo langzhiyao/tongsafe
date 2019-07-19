@@ -90,6 +90,9 @@ class Packagesbuy extends MobileMember
                       break;
               }
               $v['pkg_title'] = $str;*/
+
+            $v['pkg_price'] = intval($v['pkg_price']);
+            $v['pkg_cprice'] = intval($v['pkg_cprice']);
             $v['pkg_title'] = $v['pkg_name'];
 
         }

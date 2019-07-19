@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>想见孩-选择套餐</title>
-    <meta name="author" content="想见孩" />
-    <meta name="copyright" content="想见孩" />
-    <meta name="description" content="想见孩" />
+    <title>童无忧-选择套餐</title>
+    <meta name="author" content="童无忧" />
+    <meta name="copyright" content="童无忧" />
+    <meta name="description" content="童无忧" />
     <meta id="viewport" name="viewport" content="width=750" />
     <link rel="stylesheet" href="../content/style/reset.css" type="text/css" />
     <link rel="stylesheet" href="../content/plugins/iconfonts/iconfont.css" type="text/css" />
@@ -56,7 +56,7 @@
         <div class="payment_mode_box">
             <div class="container2">
                 <div class="weui-cells weui-cells_checkbox clearfix" id="payments">
-                    <label class="weui-cell weui-check__label" for="s11" style="visibility: hidden;" id="wxpay_h5">
+                    <label class="weui-cell weui-check__label" for="s11" style="visibility: hidden;display:none;" id="wxpay_h5">
                         <div class="weui-cell__bd">
                             <p><img class="zhifulogo" src="../content/images/icons/weixin.png" alt="">
                                 微信支付
@@ -74,7 +74,7 @@
                             </p>
                         </div>
                         <div class="weui-cell__hd">
-                            <input type="radio" name="payment_code" class="weui-check" id="s12" value="alipay_app">
+                            <input type="radio" name="payment_code"checked class="weui-check" id="s12" value="alipay_app">
                             <i class="weui-icon-checked"></i>
                         </div>
                     </label>
@@ -120,14 +120,14 @@
 
 </div>
 <script>
-    // var api = 'http://w.xjh.com/index.php/Wap';
-    // var user_token = '4570a44f7d6512c8ec2e20507a80009a';
+    var api = 'http://w.tongsafe.com/index.php/Wap';
+    var user_token = '7582e38a2c67ad94094090383dc46c61';
     var pkg_type = GetQueryString('pkg_type');
     var child_id = GetQueryString('child_id');
     $(function() {
         if (pkg_type && child_id) {
             if(pkg_type == 1){
-                $('.head_title p').html('看孩套餐');
+                $('.head_title p').html('视频云套餐');
             }else{
                 $('.head_title p').html('重温课堂套餐');
             }
@@ -291,7 +291,7 @@
                 var Discount = pkginfo.pkg_cprice - pkginfo.pkg_price;
                 $('#Discount').text('已优惠' + Discount + '元');
                 if(pkginfo.pkg_type == 1){
-                    var  type = '看孩';
+                    var  type = '视频云';
                 }else if(type == 2){
                     var  type = '重温课堂';
                 }
