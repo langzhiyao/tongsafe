@@ -12,7 +12,6 @@ return [
 'username'       => 'root',
 // 密码
  'password'       => 'tongan123.',
-//'password'       => 'root',
 // 端口
 'hostport'       => '3306',
 // 连接dsn

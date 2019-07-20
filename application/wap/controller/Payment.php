@@ -261,7 +261,7 @@ class Payment extends MobileMall
                     "lg_type" => "order_pay",
                     "lg_av_amount" => $orderInfo['order_amount'],
                     "lg_add_time" => time(),
-                    "lg_desc" => "看孩套餐，用户支付成功。订单编号：".$orderInfo['order_sn']
+                    "lg_desc" => "视频云套餐，用户支付成功。订单编号：".$orderInfo['order_sn']
                 ];
                 $log_model->addLog($reClass_data);
             }

@@ -315,6 +315,14 @@ class Member extends Model
             $member_info = array();
             $member_info['member_name'] = $param['member_name'];
             $member_info['member_password'] = $param['member_password'];
+
+
+            if (isset($param['schoolid'])) {
+                $member_info['schoolid'] = $param['schoolid'];
+            }
+            if (isset($param['oldid'])) {
+                $member_info['oldid'] = $param['oldid'];
+            }
             if (isset($param['member_email'])) {
                 $member_info['member_email'] = $param['member_email'];
             }

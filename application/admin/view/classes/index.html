@@ -92,6 +92,7 @@
         <tr class="thead">
             <th colspan="align-center">{$Think.lang.school_index_id}</th>
             <th class="align-center">{$Think.lang.school_index_classname}</th>
+            <th class="align-center">绑定房间位置</th>
             <th class="align-center">{$Think.lang.school_index_classunique}</th>
             <th class="align-center">{$Think.lang.school_index_name}</th>
             <th class="align-center">{$Think.lang.school_index_region}</th>
@@ -111,6 +112,7 @@
             <?php }else{ ?>
             <td class="align-center"><?php echo $v['classname']; ?></td>
             <?php } ?>
+            <td class="align-center" style="color: #ff3b30;"><?php if($v['position']){ echo $v['position'];}else{echo '未绑定';}?></td>
             <td class="align-center"><?php echo $v['classCard']; ?></td>
             <td class="align-center"><?php echo $v['schoolname']; ?></td>
             <td class="align-center"><?php echo $v['school_region']; ?></td>
