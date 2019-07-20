@@ -7,7 +7,7 @@ return [
  'hostname'       => '39.107.140.181', //39.107.140.181
 // 'hostname'       => '172.16.15.250',//172.16.15.250
 // 数据库名
-'database'       => 'xjh',
+'database'       => 'tongSafe',
 // 用户名
 'username'       => 'root',
 // 密码

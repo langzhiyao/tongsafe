@@ -250,8 +250,8 @@ class Packagesbuy extends MobileMember
         //微信app支付
         if ($this->payment_code == 'wxpay_app') {
             $param['orderSn'] = $order_pay_info['pay_sn'];
-//            $param['orderFee'] = (100 * $order_pay_info['order_amount']);
-            $param['orderFee'] = (100 * 0.01);
+            $param['orderFee'] = (100 * $order_pay_info['order_amount']);
+//            $param['orderFee'] = (100 * 0.01);
             $param['orderInfo'] = config('site_name') . '订单' . $order_pay_info['pay_sn'];
 //            $param['orderAttach'] = $order_pay_info['pkg_type'] = "teachchild";
             $param['orderAttach'] = $order_pay_info['pkg_type']==1?'witching':'reClass';
@@ -263,8 +263,8 @@ class Packagesbuy extends MobileMember
         //支付宝
         if ($this->payment_code == 'alipay_app') {
             $param['orderSn'] = $order_pay_info['pay_sn'];;
-//            $param['orderFee'] = $order_pay_info['order_amount'];
-            $param['orderFee'] = 0.01;
+            $param['orderFee'] = $order_pay_info['order_amount'];
+//            $param['orderFee'] = 0.01;
             $param['orderInfo'] = config('site_name') . '订单' . $order_pay_info['pay_sn'];
 //            $param['order_type'] = $order_pay_info['pkg_type'] = "teachchild";
             $param['orderAttach'] = $order_pay_info['pkg_type']==1?'witching':'reClass';
