@@ -210,8 +210,6 @@ class Classes extends AdminControl {
                         $old_now = db('position')->where(array('position_id'=>$res['position_id']))->update(array('is_bind'=>1,'create_time'=>time()));
                         $now = db('position')->where(array('position_id'=>$position_id))->update(array('is_bind'=>2,'create_time'=>time()));
                         $result = $model_class->editClass($data,array('classid'=>$class_id));
-
-                        halt($old_now);
                         if ($result && $now && $old_now) {
                             $model_class->commit();
                             $this->success('编辑成功', 'Classes/index');
@@ -222,6 +220,8 @@ class Classes extends AdminControl {
                     }else if(empty($res['position_id'])){
                         $now = db('position')->where(array('position_id'=>$position_id))->update(array('is_bind'=>2,'create_time'=>time()));
                         $result = $model_class->editClass($data,array('classid'=>$class_id));
+                        var_dump($now);echo '<br/>';
+                        halt($result);
                         if ($result && $now) {
                             $model_class->commit();
                             $this->success('编辑成功', 'Classes/index');
@@ -232,7 +232,7 @@ class Classes extends AdminControl {
                     }
                 }else{
                     //更改房间位置状态
-                    $old_result = $model_class->editClass(array('position_id'=>$res['position_id'],'res_group_id'=>$res['res_group_id']),array('position_id'=>$position_id));
+                    $old_result = $model_class->editClass(array('position_id'=>$res['position_id'],'res_group_id'=>$res['res_group_id'],'createtime' => date('Y-m-d H:i:s',time())),array('position_id'=>$position_id));
                     $result = $model_class->editClass($data,array('classid'=>$class_id));
                     if ($result && $old_result) {
                         $model_class->commit();
