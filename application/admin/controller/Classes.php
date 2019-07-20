@@ -218,11 +218,9 @@ class Classes extends AdminControl {
                             $this->error('编辑失败','Classes/edit?class_id="'.$class_id.'"');
                         }
                     }else if(empty($res['position_id'])){
-                        $now = db('position')->where(array('position_id'=>$position_id))->update(array('is_bind'=>2,'create_time'=>time()));
+                         db('position')->where(array('position_id'=>$position_id))->update(array('is_bind'=>2,'create_time'=>time()));
                         $result = $model_class->editClass($data,array('classid'=>$class_id));
-                        var_dump($now);echo '<br/>';
-                        halt($result);
-                        if ($result && $now) {
+                        if ($result) {
                             $model_class->commit();
                             $this->success('编辑成功', 'Classes/index');
                         } else {
