@@ -112,7 +112,14 @@
             <?php }else{ ?>
             <td class="align-center"><?php echo $v['classname']; ?></td>
             <?php } ?>
-            <td class="align-center" style="color: #ff3b30;"><?php if($v['position']){ echo $v['position'];}else{echo '未绑定';}?></td>
+            <?php if($v['position']){?>
+                <td class="align-center" style="color:blue;">{$v['position']}</td>
+            <?php }else{?>
+                <td class="align-center" style="color: #ff3b30;">暂未绑定</td>
+            <?php }?>
+
+
+
             <td class="align-center"><?php echo $v['classCard']; ?></td>
             <td class="align-center"><?php echo $v['schoolname']; ?></td>
             <td class="align-center"><?php echo $v['school_region']; ?></td>

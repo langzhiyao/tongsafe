@@ -208,15 +208,25 @@ class Classes extends AdminControl {
                     //更改房间位置状态
                     if(!empty($res['position_id'])){
                         $old_now = db('position')->where(array('position_id'=>$res['position_id']))->update(array('is_bind'=>1,'create_time'=>time()));
-                    }
-                    $now = db('position')->where(array('position_id'=>$position_id))->update(array('is_bind'=>2,'create_time'=>time()));
-                    $result = $model_class->editClass($data,array('classid'=>$class_id));
-                    if ($result && $now && $old_now) {
-                        $model_class->commit();
-                        $this->success('编辑成功', 'Classes/index');
-                    } else {
-                        $model_class->rollback();
-                        $this->error('编辑失败','Classes/edit?class_id="'.$class_id.'"');
+                        $now = db('position')->where(array('position_id'=>$position_id))->update(array('is_bind'=>2,'create_time'=>time()));
+                        $result = $model_class->editClass($data,array('classid'=>$class_id));
+                        if ($result && $now && $old_now) {
+                            $model_class->commit();
+                            $this->success('编辑成功', 'Classes/index');
+                        } else {
+                            $model_class->rollback();
+                            $this->error('编辑失败','Classes/edit?class_id="'.$class_id.'"');
+                        }
+                    }else if(empty($res['position_id'])){
+                        $now = db('position')->where(array('position_id'=>$position_id))->update(array('is_bind'=>2,'create_time'=>time()));
+                        $result = $model_class->editClass($data,array('classid'=>$class_id));
+                        if ($result && $now) {
+                            $model_class->commit();
+                            $this->success('编辑成功', 'Classes/index');
+                        } else {
+                            $model_class->rollback();
+                            $this->error('编辑失败','Classes/edit?class_id="'.$class_id.'"');
+                        }
                     }
                 }else{
                     //更改房间位置状态

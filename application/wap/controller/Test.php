@@ -131,13 +131,13 @@ class Test extends Controller{
 
         }*/
         //生成订单
-            //获取需要生成的订单组合
+          /*  //获取需要生成的订单组合
             $where = ' s.s_ownerAccount != ""';
             $student_list = db('student')->alias('s')
                 ->field('s.s_id,s.s_name,m.member_id,m.member_mobile,m.member_name')
                 ->join('member m','m.member_id=s.s_ownerAccount')
                 ->where($where)
-                ->limit(0,1)
+                ->limit(2662,300)
                 ->select();
 
 //            halt($student_list);
@@ -231,11 +231,11 @@ class Test extends Controller{
                         $model->rollback();
                         return ds_callback(false, $e->getMessage());
                     }
-                }
+                }*/
 
 
 
-
+        echo '结束了';
 
 
 
