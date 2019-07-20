@@ -210,6 +210,8 @@ class Classes extends AdminControl {
                         $old_now = db('position')->where(array('position_id'=>$res['position_id']))->update(array('is_bind'=>1,'create_time'=>time()));
                         $now = db('position')->where(array('position_id'=>$position_id))->update(array('is_bind'=>2,'create_time'=>time()));
                         $result = $model_class->editClass($data,array('classid'=>$class_id));
+
+                        halt($old_now);
                         if ($result && $now && $old_now) {
                             $model_class->commit();
                             $this->success('编辑成功', 'Classes/index');
