@@ -150,10 +150,6 @@ class School extends AdminControl {
         } else {
             $data = array(
                 'name' => input('post.school_name'),
-                'provinceid' => input('post.province'),
-                'cityid' => input('post.city'),
-                'areaid' => input('post.area'),
-                'region' => input('post.area_info'),
                 'typeid' => implode(",",$_POST['school_type']),
                 'address' => input('post.school_address'),
                 'common_phone' => input('post.school_phone'),
