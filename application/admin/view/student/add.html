@@ -291,7 +291,7 @@
         $("#activity_end_date").datepicker({dateFormat: 'yy-mm-dd'});
         $('#user_form').validate({
             errorPlacement: function(error, element) {
-                error.appendTo(element.parent().parent().prev().find('td:first'));
+                error.appendTo(element.nextAll('span.err'));
             },
             rules: {
                 classunique: {

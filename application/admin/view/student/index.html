@@ -314,31 +314,7 @@
             })
         });
 
-        //分页
-        laypage.render({
-            elem: 'page'
-            ,count: '<?php echo $list_count;?>'
-            ,limit:2
-            ,layout: ['count', 'prev', 'page', 'next',  'skip']
-            ,jump: function(obj){
-                // console.log(obj);
-                var page = obj.curr,
-                    page_count = obj.limit;
-                $.ajax({
-                    type:'POST',
-                    url:ADMIN_URL+'Camera/get_list',
-                    data:{name:name,province:province,city:city,area:area,school:school,grade:grade,class:class_name,page:page,page_count:page_count},
-                    success:function(data){
-                        data = jQuery.parseJSON(data);
 
-                        // console.log(data.html);
-                        $('#html').html(data.html);
-                        $('#count').html(data.count+'个');
-                    }
-                })
-
-            }
-        });
 
     });
     function dd(id) {

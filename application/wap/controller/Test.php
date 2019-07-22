@@ -131,13 +131,13 @@ class Test extends Controller{
 
         }*/
         //生成订单
-          /*  //获取需要生成的订单组合
-            $where = ' s.s_ownerAccount != ""';
+           //获取需要生成的订单组合
+           /* $where = ' s.s_ownerAccount != ""';
+            $where .= ' AND s.s_id <= 4927 AND s.s_id >= 4923';
             $student_list = db('student')->alias('s')
                 ->field('s.s_id,s.s_name,m.member_id,m.member_mobile,m.member_name')
                 ->join('member m','m.member_id=s.s_ownerAccount')
                 ->where($where)
-                ->limit(2662,300)
                 ->select();
 
 //            halt($student_list);
