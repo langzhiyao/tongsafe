@@ -602,16 +602,9 @@ class Camera extends AdminControl
     function get_diff_array_by_pk($arr1,$arr2,$pk='id'){
         try{
             $res=[];//添加
-            $res2=[];//修改名字
             foreach($arr2 as $item) $tmpArr[$item[$pk]] = $item;
             foreach($arr1 as $v) if(! isset($tmpArr[$v[$pk]])) $res[] = $v;
 
-            /*foreach($arr1 as $v2){
-                if(($tmpArr[$v2[$pk]]['id'] == $v2[$pk]) && ($tmpArr[$v2[$pk]]['name'] != $v2['name'])){
-                    $res2[] = $v;
-                }
-            }
-            halt($res2);*/
             return $res;
         }catch (\Exception $exception){
             return $arr1;
