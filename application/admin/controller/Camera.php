@@ -544,7 +544,8 @@ class Camera extends AdminControl
         $model_school = Model('school');
         $condition=array();
         $condition['isdel']=1;
-        $school=$model_school->getSchoolList($condition);
+//        $school=$model_school->getSchoolList($condition);
+        $school=db('school')->where($condition)->select();
         $shu=array();
         foreach($school as $v){
             if($v['res_group_id']!=0){
@@ -553,7 +554,8 @@ class Camera extends AdminControl
         }
         $model_position=Model('position');
         $where=' 1=1 ';
-        $position=$model_position->getpositionList($where);
+//        $position=$model_position->getpositionList($where);
+        $position=db('position')->where($where)->select();
         foreach($position as $v){
             if($v['res_group_id']!=0){
                 $shu[]=$v['res_group_id'];
@@ -588,9 +590,10 @@ class Camera extends AdminControl
             $data[$k]['is_classroom']=1;
         }
         $model_camera=Model('camera');
-        $result=$model_camera->getCameraList('','','id,name');
+//        $result=$model_camera->getCameraList('','','id,name');
+        $result=db('camera')->where($where)->field('id,name')->select();
+
         $ret=$this->get_diff_array_by_pk($data,$result);
-//        halt($ret);
         $sult=$model_camera->cameras_add($ret);
         if($sult){
             echo json_encode(array('count'=>$sult));
@@ -600,6 +603,7 @@ class Camera extends AdminControl
     }
     //筛选
     function get_diff_array_by_pk($arr1,$arr2,$pk='id'){
+
         try{
             $res=[];//添加
             foreach($arr2 as $item) $tmpArr[$item[$pk]] = $item;
@@ -607,6 +611,7 @@ class Camera extends AdminControl
 
             return $res;
         }catch (\Exception $exception){
+            halt($arr2);
             return $arr1;
         }
     }
