@@ -3,7 +3,7 @@ function drop_pcart_item(pcart_id){
     var tr = $('#pcart_item_' + pcart_id);
     var amount_span = $('#pcart_amount');
     var cart_goods_kinds = $('#cart_goods_kinds');
-    $.getJSON(SITE_URL+'index.php/mobile/pointcart/drop?pc_id=' + pcart_id, function(result){
+    $.getJSON(SITE_URL+'mobile.view.personal.index.php/mobile/pointcart/drop?pc_id=' + pcart_id, function(result){
     	window.location.reload();    //刷新
     });
 }
@@ -13,7 +13,7 @@ function pcart_change_quantity(pcart_id, input){
     var quantity_input = $('#input_item_' + pcart_id);
     //暂存为局部变量，否则如果用户输入过快有可能造成前后值不一致的问题
     var _v = input.value;
-    $.getJSON(SITE_URL+'index.php/mobile/pointcart/update?pc_id=' + pcart_id + '&quantity=' + _v, function(result){
+    $.getJSON(SITE_URL+'mobile.view.personal.index.php/mobile/pointcart/update?pc_id=' + pcart_id + '&quantity=' + _v, function(result){
         if(result.done){
             //更新成功
             $(input).attr('changed', _v);

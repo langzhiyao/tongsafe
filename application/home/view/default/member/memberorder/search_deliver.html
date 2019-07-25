@@ -124,7 +124,7 @@ $(function(){
 		allowTipHover: false
 	});
       var_send = '<?php echo date("Y-m-d H:i:s",$order_info['extend_order_common']['shipping_time']); ?>&nbsp;&nbsp;{$Think.lang.member_show_seller_has_send}<br/>';
-	$.getJSON(SITE_URL+'index.php/home/Memberorder/get_express.html?e_code={$e_code}&shipping_code={$order_info.shipping_code}',function(data){
+	$.getJSON(SITE_URL+'mobile.view.personal.index.php/home/Memberorder/get_express.html?e_code={$e_code}&shipping_code={$order_info.shipping_code}',function(data){
 		if(data){
 			data = var_send+data.join('<br/>');
 			$('#express_list').html(data).next().css('display','');

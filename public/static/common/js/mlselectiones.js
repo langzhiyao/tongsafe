@@ -87,7 +87,7 @@ function regionChange() {
     if(sid==1||sid==4) {
         if (this.value > 0) {
             var _self = this;
-            var url = SITE_URL + 'index.php/Home/Mlselection/index/type/region.html';
+            var url = SITE_URL + 'mobile.view.personal.index.php/Home/Mlselection/index/type/region.html';
             $.getJSON(url, {'pid': this.value}, function (data) {
                 if (data.code == 10000) {
                     var dep=data.deep;
@@ -119,7 +119,7 @@ function regionChange() {
         var dep=$("#dep").val();
             if (this.value > 0) {
                 var _self = this;
-                var url = SITE_URL + 'index.php/Home/Mlselection/index/type/region.html';
+                var url = SITE_URL + 'mobile.view.personal.index.php/Home/Mlselection/index/type/region.html';
                 $.getJSON(url, {'pid': this.value}, function (data) {
                     if (data.code == 10000) {
                         var dep=data.deep;
@@ -192,7 +192,7 @@ function gcategoryChange() {
     // ajax请求下级分类
     if (this.value > 0) {
         var _self = this;
-        var url = SITE_URL + 'index.php/Home/Mlselection/index/type/goodsclass.html';
+        var url = SITE_URL + 'mobile.view.personal.index.php/Home/Mlselection/index/type/goodsclass.html';
         $.getJSON(url, {'pid': this.value}, function (data) {
             if (data.code == 10000) {
                 if (data.result.length > 0) {

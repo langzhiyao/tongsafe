@@ -123,7 +123,7 @@ $(function(){
         	showDialog('请输入支付密码', 'error','','','','','','','','',2);return false;
         }
         $('#password_callback').val('');
-        var url = SITE_URL+'index.php/Home/Buy/check_pd_pwd.html'
+        var url = SITE_URL+'mobile.view.personal.index.php/Home/Buy/check_pd_pwd.html'
 	   $.post(url, {'password':$('#pay-password').val()}, function(data){
             if (data == '1') {
             	$('#password_callback').val('1');

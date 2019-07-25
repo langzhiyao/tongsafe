@@ -104,7 +104,7 @@
                 var file_id = obj.find('input[type="file"]').attr('file_id');
                 var img_src = obj.find('input[type="hidden"]:first').val();
                 obj.find('img:first').attr('src', SHOP_TEMPLATES_URL + "static/home/images/loading.gif");
-                $.getJSON(SITE_URL+'index.php/home/Sellersetting/dorp_img.html', {file_id : file_id, img_src : img_src}, function(data) {
+                $.getJSON(SITE_URL+'mobile.view.personal.index.php/home/Sellersetting/dorp_img.html', {file_id : file_id, img_src : img_src}, function(data) {
                     obj.find('img:first').replaceWith('<i class="icon-picture"></i>');
                     obj.find('input[type="file"]').attr('file_id', '').end()
                         .find('input[type="hidden"]:first').val('');

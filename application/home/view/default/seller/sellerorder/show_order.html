@@ -363,7 +363,7 @@
 $(function(){
     $('#show_shipping').on('hover',function(){
         var_send = '<?php echo date("Y-m-d H:i:s",$order_info['extend_order_common']['shipping_time']); ?>&nbsp;&nbsp;{$Think.lang.member_show_seller_has_send}<br/>';
-    	$.getJSON(SITE_URL+'index.php/Sellerdeliver/get_express.html?e_code={$order_info.express_info.e_code}&shipping_code={$order_info.shipping_code}',function(data){
+    	$.getJSON(SITE_URL+'mobile.view.personal.index.php/Sellerdeliver/get_express.html?e_code={$order_info.express_info.e_code}&shipping_code={$order_info.shipping_code}',function(data){
     		if(data){
     			data = var_send+data;
     			$('#shipping_ul').html(data);

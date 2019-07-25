@@ -28,7 +28,7 @@
         $(this).hide();
         disableOtherEdit('如需修改，请先保存收货人信息 ');
         $(this).parent().parent().addClass('current_box');
-        var url = SITE_URL + 'index.php/Home/Buy/load_addr.html';
+        var url = SITE_URL + 'mobile.view.personal.index.php/Home/Buy/load_addr.html';
         $('#addr_list').load(url);
     });
     
@@ -36,7 +36,7 @@
     function showShippingPrice(city_id, area_id) {
         $('#buy_city_id').val('');
         $('#buy_city_id').val(city_id);
-        var url = SITE_URL + 'index.php/Home/Buy/change_addr.html';
+        var url = SITE_URL + 'mobile.view.personal.index.php/Home/Buy/change_addr.html';
         $.post(url, {'freight_hash': '<?php echo $freight_hash; ?>',city_id: city_id, 'area_id': area_id}, function(data) {
             if (data.state == 'success') {
                 $('#buy_city_id').val(city_id);

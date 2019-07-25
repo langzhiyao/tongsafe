@@ -26413,7 +26413,7 @@ UE.ui = baidu.editor.ui = {};
         _onClick: function (evt){
             var target= evt.target || evt.srcElement;
             if(/icon/.test(target.className)){
-                this.items[target.parentNode.getAttribute("index")].onclick();
+                this.items[target.parentNode.getAttribute("mobile.view.personal.index")].onclick();
                 Popup.postHide(evt);
             }
         },

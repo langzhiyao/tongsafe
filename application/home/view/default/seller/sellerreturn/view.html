@@ -127,7 +127,7 @@
 <?php if ($return['express_id'] > 0 && !empty($return['invoice_no'])) { ?>
 <script type="text/javascript">
 $(function(){
-	$.getJSON(SITE_URL+'index.php/Sellerdeliver/get_express.html?e_code={$e_code}&shipping_code={$return.invoice_no}&t=<?php echo random(7);?>',function(data){
+	$.getJSON(SITE_URL+'mobile.view.personal.index.php/Sellerdeliver/get_express.html?e_code={$e_code}&shipping_code={$return.invoice_no}&t=<?php echo random(7);?>',function(data){
 		if(data){
 			$('#express_list').html('<li>物流信息数据</li>'+data);
 		} else {

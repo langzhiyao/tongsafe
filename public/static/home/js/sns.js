@@ -19,7 +19,7 @@ $(function(){
 	    		op = "editprivacy";
 	    		break;
 	    }
-	    ajaxget('index.php?act=member_snsindex&op='+op+'&id='+data_str.sid+'&privacy='+data_str.v);
+	    ajaxget('mobile.view.personal.index.php?act=member_snsindex&op='+op+'&id='+data_str.sid+'&privacy='+data_str.v);
 	});
 	//表单权限模块
 	$("[nc_type='formprivacydiv']").live('mouseover',function(){
@@ -45,7 +45,7 @@ $(function(){
 	$("[nc_type='sharegoods']").bind('click',function(){
 		var data_str = $(this).attr('data-param');
 	    eval( "data_str = "+data_str);
-	    ajaxget('index.php?act=member_snsindex&op=sharegoods_one&dialog=1&gid='+data_str.gid);
+	    ajaxget('mobile.view.personal.index.php?act=member_snsindex&op=sharegoods_one&dialog=1&gid='+data_str.gid);
 	    
 	});
 	//提交分享商品表单
@@ -57,7 +57,7 @@ $(function(){
 				//显示验证码
 				$("#sg_seccode").show();
 				var nchash = $("#sg_seccode").find("[name='nchash']").val();
-				$("#sg_seccode").find("[name='codeimage']").attr('src','index.php?act=seccode&op=makecode&nchash='+nchash+'&t=' + Math.random());
+				$("#sg_seccode").find("[name='codeimage']").attr('src','mobile.view.personal.index.php?act=seccode&op=makecode&nchash='+nchash+'&t=' + Math.random());
 			}else if(cookienum >= max_recordnum && $("#sg_seccode").find("[name='captcha']").val() == ''){
 				showDialog('请填写验证码');
 			}else{
@@ -74,14 +74,14 @@ $(function(){
 	$("[nc_type='sharestore']").bind('click',function(){
 		var data_str = $(this).attr('data-param');
 	    eval( "data_str = "+data_str);	    
-	    ajaxget('index.php?act=member_snsindex&op=sharestore_one&dialog=1&sid='+data_str.sid);
+	    ajaxget('mobile.view.personal.index.php?act=member_snsindex&op=sharestore_one&dialog=1&sid='+data_str.sid);
 	});
 	//删除分享和喜欢的商品
 	$("[nc_type='delbtn']").die('click').live('click',function(){
 		var data_str = $(this).attr('data-param');
         eval( "data_str = "+data_str);
         showDialog('您确定要删除该信息吗？','confirm', '', function(){
-        	ajaxget('index.php?act=member_snsindex&op=delgoods&id='+data_str.sid+'&type='+data_str.tabtype);
+        	ajaxget('mobile.view.personal.index.php?act=member_snsindex&op=delgoods&id='+data_str.sid+'&type='+data_str.tabtype);
 			return false;
 		});
 	});
@@ -90,7 +90,7 @@ $(function(){
 		var obj = $(this);
 		var data_str = $(this).attr('data-param');
         eval( "data_str = "+data_str);
-        ajaxget('index.php?act=member_snsindex&op=editlike&inajax=1&id='+data_str.gid);
+        ajaxget('mobile.view.personal.index.php?act=member_snsindex&op=editlike&inajax=1&id='+data_str.gid);
 	});
     //展示和隐藏评论列表
 	$("[nc_type='fd_commentbtn']").die('click').live('click',function(){
@@ -100,7 +100,7 @@ $(function(){
         $('#forward_'+data.txtid).hide();
 		if($('#tracereply_'+data.txtid).css("display")=='none'){
 			//加载评论列表
-	        $("#tracereply_"+data.txtid).load('index.php?act=member_snshome&op=commenttop&type=0&id='+data.txtid+'&mid='+data.mid);
+	        $("#tracereply_"+data.txtid).load('mobile.view.personal.index.php?act=member_snshome&op=commenttop&type=0&id='+data.txtid+'&mid='+data.mid);
 	        $('#tracereply_'+data.txtid).show();	
 		}else{
 			$('#tracereply_'+data.txtid).hide();
@@ -111,7 +111,7 @@ $(function(){
 	$("[nc_type='fd_del']").die('click').live('click',function(){
 		var data_str = $(this).attr('data-param');
         eval("data_str = "+data_str);
-        var url = "index.php?act=member_snsindex&op=deltrace&id="+data_str.txtid;
+        var url = "mobile.view.personal.index.php?act=member_snsindex&op=deltrace&id="+data_str.txtid;
         if(data_str.type != undefined && data_str.type != ''){
         	url = url+'&type='+data_str.type;
         }
@@ -131,7 +131,7 @@ $(function(){
 				//显示验证码
 				$("#forwardseccode"+data.txtid).show();
 				var nchash = $("#forwardseccode"+data.txtid).find("[name='nchash']").val();
-				$("#forwardseccode"+data.txtid).find("[name='codeimage']").attr('src','index.php?act=seccode&op=makecode&nchash='+nchash+'&t=' + Math.random());
+				$("#forwardseccode"+data.txtid).find("[name='codeimage']").attr('src','mobile.view.personal.index.php?act=seccode&op=makecode&nchash='+nchash+'&t=' + Math.random());
 			}else if(cookienum >= max_recordnum && $("#forwardseccode"+data.txtid).find("[name='captcha']").val() == ''){
 				showDialog('请填写验证码');
 			}else{

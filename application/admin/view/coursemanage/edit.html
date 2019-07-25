@@ -982,7 +982,7 @@
         var ty_id = $(_sef).val();
         var sc_id = $("#schoolid").val();
         if(ty_id) {
-            var url = SITE_URL + 'index.php/Admin/Student/fand_classname';
+            var url = SITE_URL + 'mobile.view.personal.index.php/Admin/Student/fand_classname';
             $.post(url, {'ty_id': ty_id,'sc_id':sc_id}, function (data) {
                 data = $.parseJSON(data);
                 var classname_length = data.length;

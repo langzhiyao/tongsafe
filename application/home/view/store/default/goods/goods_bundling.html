@@ -65,7 +65,7 @@
             	<?php if (session('is_login') !== '1'){?>
             	   login_dialog();
                 <?php } else {?>
-                    var url = SITE_URL+'index.php/Cart/add.html';
+                    var url = SITE_URL+'mobile.view.personal.index.php/Cart/add.html';
                     $.getJSON(url, {'bl_id':bl_id}, function(data){
                     	if(data != null){
                     		if (data.state)
@@ -75,7 +75,7 @@
                                 $('.ncs-cart-popup').fadeIn('fast');
                                 // 头部加载购物车信息
                                 load_cart_information();
-								$("#rtoolbar_cartlist").load(SITE_URL+'index.php/Cart/ajax_load.html?type=html');
+								$("#rtoolbar_cartlist").load(SITE_URL+'mobile.view.personal.index.php/Cart/ajax_load.html?type=html');
                             }
                             else
                             {
@@ -151,7 +151,7 @@ function addcombcart(goods_ids)
         }
     });
     goods_ids += '<?php echo $goods_info['goods_id'];?>';
-    var url = SITE_URL+'index.php/Cart/add_comb.html';
+    var url = SITE_URL+'mobile.view.personal.index.php/Cart/add_comb.html';
     $.getJSON(url, {'goods_ids':goods_ids}, function(data){
     	if(data != null){
     		if (data.state)
@@ -161,7 +161,7 @@ function addcombcart(goods_ids)
                 $('.ncs-cart-popup').fadeIn('fast');
                 // 头部加载购物车信息
                 load_cart_information();
-				$("#rtoolbar_cartlist").load(SITE_URL+'index.php/cart/ajax_load.html?type=html');
+				$("#rtoolbar_cartlist").load(SITE_URL+'mobile.view.personal.index.php/cart/ajax_load.html?type=html');
             }
             else
             {

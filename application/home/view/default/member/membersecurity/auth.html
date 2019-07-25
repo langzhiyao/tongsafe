@@ -60,7 +60,7 @@
                             $(function() {
                                 $('.submit').on('click', function() {
                                     if (!$('#auth_form').valid()) {
-                                        document.getElementById('codeimage').src = SITE_URL+'index.php/Home/Seccode/makecode.html?t=' + Math.random();
+                                        document.getElementById('codeimage').src = SITE_URL+'mobile.view.personal.index.php/Home/Seccode/makecode.html?t=' + Math.random();
                                     } else {
                                         $('#auth_form').submit();
                                     }

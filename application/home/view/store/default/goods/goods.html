@@ -897,7 +897,7 @@ $(function(){
     	var id = $(this).attr('nctype');
     	if (id=='undefined') return false;
     	var _self = this,tpl_id = '<?php echo $goods['transport_id'];?>';
-	    var url = SITE_URL+'index.php/home/Goods/calc.html?rand='+Math.random();
+	    var url = SITE_URL+'mobile.view.personal.index.php/home/Goods/calc.html?rand='+Math.random();
 	    $('#transport_price').css('display','none');
 	    $('#loading_price').css('display','');
 	    $.getJSON(url, {'id':id,'tid':tpl_id}, function(data){
@@ -1078,7 +1078,7 @@ $(document).ready(function(){
 		//如果店铺没有设置默认显示区域，马上异步请求
 		<?php if (!$store_info['deliver_region']) { ?>
 		if (typeof nc_a === "undefined") {
-	 		$.getJSON(SITE_URL + "index.php/home/Goods/json_area?callback=?", function(data) {
+	 		$.getJSON(SITE_URL + "mobile.view.personal.index.php/home/Goods/json_area?callback=?", function(data) {
 	 			nc_a = data;
 	 			$cur_tab = $('#ncs-stock').find('li[data-index="0"]');
 	 			_loadArea(0);
@@ -1195,7 +1195,7 @@ $(document).ready(function(){
 			_args += '&area_id=' + calc_area_id ;
 			if (typeof calced_area[calc_area_id] == 'undefined') {
 				//需要请求配送区域设置
-				$.getJSON(SITE_URL + "index.php/home/Goods/calc.html?" + _args + "&myf=<?php echo $store_info['store_free_price']?>&callback=?", function(data){
+				$.getJSON(SITE_URL + "mobile.view.personal.index.php/home/Goods/calc.html?" + _args + "&myf=<?php echo $store_info['store_free_price']?>&callback=?", function(data){
 					allow_buy = data.total ? true : false;
 					calced_area[calc_area_id] = data.total;
 					if (data.total === false) {

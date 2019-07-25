@@ -49,7 +49,7 @@ $(document).ready(function(){
 							//id 修改内容索引标识
 							//column 修改字段名
 							//value 修改内容
-                            $.get('index.php?act='+act+'&op=ajax',{branch:ajax_branch,id:s_id,column:s_name,value:$(this).attr('value')},function(data){
+                            $.get('mobile.view.personal.index.php?act='+act+'&op=ajax',{branch:ajax_branch,id:s_id,column:s_name,value:$(this).attr('value')},function(data){
                                 if(data === 'false')
                                 {
                                     alert('名称已经存在，请您换一个');
@@ -83,7 +83,7 @@ $(document).ready(function(){
 						}
 					}
 					$(this).prev('span').show().text($(this).attr('value'));
-					$.get('index.php?act='+act+'&op=ajax',{branch:ajax_branch,id:s_id,column:s_name,value:$(this).attr('value')},function(data){
+					$.get('mobile.view.personal.index.php?act='+act+'&op=ajax',{branch:ajax_branch,id:s_id,column:s_name,value:$(this).attr('value')},function(data){
 						if(data === 'false')
 							{
 								alert('名称已经存在，请您换一个');
@@ -139,7 +139,7 @@ $(document).ready(function(){
 							//id 修改内容索引标识
 							//column 修改字段名
 							//value 修改内容
-                            $.get('index.php?act='+act+'&op=ajax',{branch:ajax_branch,id:s_id,column:s_name,value:$(this).attr('value')},function(data){
+                            $.get('mobile.view.personal.index.php?act='+act+'&op=ajax',{branch:ajax_branch,id:s_id,column:s_name,value:$(this).attr('value')},function(data){
                                 if(data === 'false')
                                 {
                                     alert('名称已经存在，请您换一个');
@@ -173,7 +173,7 @@ $(document).ready(function(){
 						}
 					}
 					$(this).prev('span').show().text($(this).attr('value'));
-					$.get('index.php?act='+act+'&op=ajax',{branch:ajax_branch,id:s_id,column:s_name,value:$(this).attr('value')},function(data){
+					$.get('mobile.view.personal.index.php?act='+act+'&op=ajax',{branch:ajax_branch,id:s_id,column:s_name,value:$(this).attr('value')},function(data){
 						if(data === 'false')
 							{
 								alert('名称已经存在，请您换一个');
@@ -194,7 +194,7 @@ $(document).ready(function(){
 		var i_val   = ($(this).attr('fieldvalue'))== 0 ? 1 : 0;
 		var ajax_branch      = $(this).attr('ajax_branch');
 
-		$.get('index.php?act='+act+'&op=ajax',{branch:ajax_branch,id:i_id,column:i_name,value:i_val},function(data){
+		$.get('mobile.view.personal.index.php?act='+act+'&op=ajax',{branch:ajax_branch,id:i_id,column:i_name,value:i_val},function(data){
 		if(data == 'true')
 			{
 				if(i_val == 0)

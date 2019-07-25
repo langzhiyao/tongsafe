@@ -152,7 +152,7 @@
         if(!window.confirm('{$Think.lang.ds_ensure_del}')){
             return;
         }
-        $.getJSON(SITE_URL+'index.php/home/sellerjoinin/del_pic?file_id=' + file_id, function(result){
+        $.getJSON(SITE_URL+'mobile.view.personal.index.php/home/sellerjoinin/del_pic?file_id=' + file_id, function(result){
             if(result){
                 $('#pic_' + file_id).remove();
             }

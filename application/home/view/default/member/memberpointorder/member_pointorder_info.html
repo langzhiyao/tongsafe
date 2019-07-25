@@ -157,7 +157,7 @@
 $(function(){
     $('#show_shipping').on('hover',function(){
         var_send = '<?php echo @date("Y-m-d H:i:s",$order_info.point_shippingtime); ?>&nbsp;&nbsp;平台已发货<br/>';
-        $.getJSON(SITE_URL+'index.php/home/member_order/get_express',function(data){
+        $.getJSON(SITE_URL+'mobile.view.personal.index.php/home/member_order/get_express',function(data){
             if(data){
                 data = var_send+data.join('<br/>');
                 $('#shipping_ul').html('<li>'+data+'</li>');

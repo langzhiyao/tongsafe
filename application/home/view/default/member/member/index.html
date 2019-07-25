@@ -13,7 +13,7 @@
                 var INFO_TYPE = ['member_info', 'order_info', 'goods_info', 'sns_info'];
                 function _ajax_load(type) {
                     $.ajax({
-                        url: SITE_URL+'index.php/Home/Member/ajax_load_' + type,
+                        url: SITE_URL+'mobile.view.personal.index.php/Home/Member/ajax_load_' + type,
                         success: function(html) {
                             INFO_TYPE.shift();
                             if (INFO_TYPE[0]) {

@@ -4,7 +4,7 @@ $(function() {
         $('#search ul.tab li span').eq(0).html('店铺');
         $('#search ul.tab li span').eq(1).html('商品');
         $('#search ul.tab li').eq(0).attr('act', 'store_list');
-        $('#search-form').attr("action", SITE_URL+"index.php/Home/Storelist/index.html");
+        $('#search-form').attr("action", SITE_URL+"mobile.view.personal.index.php/Home/Storelist/index.html");
         
     }
     $('#search').hover(function() {
@@ -20,12 +20,12 @@ $(function() {
             $('#keyword').attr("placeholder", "请输入您要搜索的店铺关键字");
             $('#search ul.tab li span').eq(0).html('店铺');
             $('#search ul.tab li span').eq(1).html('商品');
-            $('#search-form').attr("action", SITE_URL+"index.php/Home/Storelist/index.html");
+            $('#search-form').attr("action", SITE_URL+"mobile.view.personal.index.php/Home/Storelist/index.html");
         } else {
             $('#keyword').attr('placeholder', '请输入您要搜索的商品关键字');
             $('#search ul.tab li span').eq(0).html('商品');
             $('#search ul.tab li span').eq(1).html('店铺');
-            $('#search-form').attr("action", SITE_URL+"index.php/Home/Search/index.html");
+            $('#search-form').attr("action", SITE_URL+"mobile.view.personal.index.php/Home/Search/index.html");
         }
         $("#keyword").focus();
     });
@@ -274,11 +274,11 @@ function html_form(id, title, _html, width, model) {
 }
 //收藏店铺js
 function collect_store(fav_id, jstype, jsobj) {
-    $.get(SITE_URL+'index.php/mobile/Memberfavorites/checkLogin', function(result) {
+    $.get(SITE_URL+'mobile.view.personal.index.php/mobile/Memberfavorites/checkLogin', function(result) {
         if (result == '0') {
             login_dialog();
         } else {
-            var url = SITE_URL+'index.php/mobile/Memberfavorites/favoritesstore';
+            var url = SITE_URL+'mobile.view.personal.index.php/mobile/Memberfavorites/favoritesstore';
             $.getJSON(url, {'fid': fav_id}, function(data) {
                 if (data.done) {
                     showDialog(data.msg, 'succ', '', '', '', '', '', '', '', '', 2);
@@ -309,11 +309,11 @@ function collect_store(fav_id, jstype, jsobj) {
 }
 //收藏商品js
 function collect_goods(fav_id, jstype, jsobj) {
-    $.get(SITE_URL+'index.php/mobile/Memberfavorites/checkLogin', function(result) {
+    $.get(SITE_URL+'mobile.view.personal.index.php/mobile/Memberfavorites/checkLogin', function(result) {
         if (result.done == '0') {
             login_dialog();
         } else {
-            var url = SITE_URL+'index.php/mobile/Memberfavorites/favoritesgoods';
+            var url = SITE_URL+'mobile.view.personal.index.php/mobile/Memberfavorites/favoritesgoods';
             $.getJSON(url, {'fid': fav_id}, function(data) {
                 if (data.done)
                 {
@@ -340,7 +340,7 @@ function collect_goods(fav_id, jstype, jsobj) {
 
 //加载购物车信息
 function load_cart_information() {
-    $.getJSON(SITE_URL + 'index.php/Home/Cart/ajax_load', function(result) {
+    $.getJSON(SITE_URL + 'mobile.view.personal.index.php/Home/Cart/ajax_load', function(result) {
         var obj = $('.header .user_menu .my-cart');
         var mini =$('#rtoolbar_cartlist');
         if (result) {
@@ -380,7 +380,7 @@ function load_cart_information() {
 
 //头部删除购物车信息，登录前使用goods_id,登录后使用cart_id
 function drop_topcart_item(cart_id, goods_id) {
-    $.getJSON(SITE_URL + 'index.php/Home/Cart/del',{'cart_id': cart_id, 'goods_id': goods_id}, function(result) {
+    $.getJSON(SITE_URL + 'mobile.view.personal.index.php/Home/Cart/del',{'cart_id': cart_id, 'goods_id': goods_id}, function(result) {
         if (result.state == 'true') {
             $("[nc_type='cart_item_"+cart_id+"']").remove();
             load_cart_information();
@@ -461,7 +461,7 @@ function load_history_information(){
 /* 加入购物车 */
 function addcart(goods_id, quantity, callbackfunc,dir) {
 
-    var url = SITE_URL + 'index.php/Home/Cart/add';
+    var url = SITE_URL + 'mobile.view.personal.index.php/Home/Cart/add';
     quantity = parseInt(quantity);
     $.getJSON(url, {'goods_id': goods_id, 'quantity': quantity}, function(data) {
         if (data != null) {

@@ -201,7 +201,7 @@ class Teacherbuy extends MobileMember
         $param['orderFee'] = $order_pay_info['order_amount'];
         $param['orderAttach'] = $order_pay_info['pkg_type'] = "teachchild";
         $param['notifyUrl'] = WAP_SITE_URL . '/teacherpayment/alipay_notify_app';
-        $param['return_url'] = APP_SITE_URL . '/user/test.html';
+        $param['return_url'] = APP_SITE_URL . '/user/index.html';
         $payment_api = new $this->payment_code($param);
         $return = $payment_api->getSubmitUrl($param);
         echo $return;

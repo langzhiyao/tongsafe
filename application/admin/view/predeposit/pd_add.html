@@ -75,7 +75,7 @@
                                 alert('请输入会员名');
                                 return false;
                             }
-                            var url = SITE_URL + 'index.php/Admin/Predeposit/checkmember.html';
+                            var url = SITE_URL + 'mobile.view.personal.index.php/Admin/Predeposit/checkmember.html';
                             $.post(url, {'name': membername}, function(data) {
                                 if (data.id)
                                 {

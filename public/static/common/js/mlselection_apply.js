@@ -90,7 +90,7 @@ function regionChange() {
     // ajax请求下级地区
     if (this.value > 0) {
         var _self = this;
-        var url = SITE_URL + 'index.php/Admin/Mlselection/index/type/schoolname.html';
+        var url = SITE_URL + 'mobile.view.personal.index.php/Admin/Mlselection/index/type/schoolname.html';
         $.getJSON(url, {'pid': this.value}, function (data) {
             var school_length = data.school_list.length;
             var school_list = data.school_list;
@@ -123,7 +123,7 @@ function regionChange() {
 function fand_schooltype(_sef) {
     var sc_id = $(_sef).val();
     if(sc_id){
-        var url = SITE_URL + 'index.php/Admin/Schoolapply/fand_schooltype';
+        var url = SITE_URL + 'mobile.view.personal.index.php/Admin/Schoolapply/fand_schooltype';
         $.post(url, {'sc_id': sc_id}, function (data) {
             data=$.parseJSON( data );
             var schooltype_length = data.length;
@@ -150,7 +150,7 @@ function fand_classname(_sef) {
     var ty_id = $(_sef).val();
     var sc_id = $("#school_id").val();
     if(ty_id) {
-        var url = SITE_URL + 'index.php/Admin/Schoolapply/fand_classname';
+        var url = SITE_URL + 'mobile.view.personal.index.php/Admin/Schoolapply/fand_classname';
         $.post(url, {'ty_id': ty_id,'sc_id':sc_id}, function (data) {
             data = $.parseJSON(data);
             var classname_length = data.length;
@@ -207,7 +207,7 @@ function gcategoryChange() {
     // ajax请求下级分类
     if (this.value > 0) {
         var _self = this;
-        var url = SITE_URL + 'index.php/Home/Mlselection/index/type/goodsclass.html';
+        var url = SITE_URL + 'mobile.view.personal.index.php/Home/Mlselection/index/type/goodsclass.html';
         $.getJSON(url, {'pid': this.value}, function (data) {
             if (data.code == 10000) {
                 if (data.result.length > 0) {

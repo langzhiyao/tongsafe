@@ -74,7 +74,7 @@
                     return;
                 ALLOW_SEND = !ALLOW_SEND;
                 $('#sending').show();
-                $.getJSON(SITE_URL + 'index.php/Home/Membersecurity/send_modify_mobile.html', {mobile: $('#mobile').val()}, function(data) {
+                $.getJSON(SITE_URL + 'mobile.view.personal.index.php/Home/Membersecurity/send_modify_mobile.html', {mobile: $('#mobile').val()}, function(data) {
                     if (data.state == 'true') {
                         $('#sending').hide();
                         $('.send_success_tips').show();

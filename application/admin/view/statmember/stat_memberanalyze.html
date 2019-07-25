@@ -223,7 +223,7 @@ $(function () {
         var year = $("[name='searchweek_year']").val();
         var month = $("[name='searchweek_month']").val();
         $("[name='searchweek_week']").html('');
-        $.getJSON(ADMIN_URL+'index.php/common/getweekofmonth',{y:year,m:month},function(data){
+        $.getJSON(ADMIN_URL+'mobile.view.personal.index.php/common/getweekofmonth',{y:year,m:month},function(data){
             if(data != null){
                 for(var i = 0; i < data.length; i++) {
                     $("[name='searchweek_week']").append('<option value="'+data[i].key+'">'+data[i].val+'</option>');

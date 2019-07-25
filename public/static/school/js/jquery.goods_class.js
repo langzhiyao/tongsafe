@@ -9,7 +9,7 @@ $(document).ready(function() {
             $(this).attr('status', 'none');
             //ajax
             $.ajax({
-                url: SITE_URL + 'index.php/Admin/Goodsclass/goods_class.html?ajax=1&gc_parent_id=' + id,
+                url: SITE_URL + 'mobile.view.personal.index.php/Admin/Goodsclass/goods_class.html?ajax=1&gc_parent_id=' + id,
                 dataType: 'json',
                 success: function(data) {
                     var src = '';

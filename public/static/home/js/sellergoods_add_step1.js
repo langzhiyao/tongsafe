@@ -14,7 +14,7 @@ function selClass($this){
     $('#t_id').val(data_str.tid);
     $('#dataLoading').show();
     var deep = parseInt(data_str.deep) + 1;
-    $.getJSON(SITE_URL+'index.php/Home/Sellergoodsadd/ajax_goods_class.html', {gc_id : data_str.gcid, deep: deep}, function(data) {
+    $.getJSON(SITE_URL+'mobile.view.personal.index.php/Home/Sellergoodsadd/ajax_goods_class.html', {gc_id : data_str.gcid, deep: deep}, function(data) {
         if (data != '') {
             $('input[nctype="buttonNextStep"]').attr('disabled', true);
 //            $('input[nctype="buttonNextStep"]').attr('disabled', false).css('cursor', 'pointer');
@@ -86,7 +86,7 @@ $(function(){
         $('.wp_category_list').addClass('blank');
         $this = $(this);
         eval('var data_str = ' + $this.parents('li').attr('data-param'));
-        $.getJSON(SITE_URL+'index.php/Home/Sellergoodsadd/ajax_show_comm.html?stapleid=' + data_str.stapleid, function(data) {
+        $.getJSON(SITE_URL+'mobile.view.personal.index.php/Home/Sellergoodsadd/ajax_show_comm.html?stapleid=' + data_str.stapleid, function(data) {
             if (data.done) {
                 $('.category_list').children('ul').empty();
                 if (data.one.length > 0) {
@@ -124,7 +124,7 @@ $(function(){
     $('#commListArea').find('a[nctype="del-comm-cate"]').on('click',function() {
         $this = $(this);
         eval('var data_str = ' + $this.parents('li').attr('data-param'));
-        $.getJSON(SITE_URL+'index.php/Home/Sellergoodsadd/ajax_stapledel?staple_id='+ data_str.stapleid, function(data) {
+        $.getJSON(SITE_URL+'mobile.view.personal.index.php/Home/Sellergoodsadd/ajax_stapledel?staple_id='+ data_str.stapleid, function(data) {
             if (data.done) {
                 $this.parents('li:first').remove();
                 if ($('#commListArea').find('li').length == 1) {

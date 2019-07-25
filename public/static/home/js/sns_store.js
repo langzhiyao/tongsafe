@@ -2,7 +2,7 @@ $(function(){
     //展示和隐藏评论列表
 	$("[nc_type='sd_commentbtn']").on('click',function(){
 		var $this = $(this);
-		$.get('index.php?act=index&op=login', function(result){
+		$.get('mobile.view.personal.index.php?act=index&op=login', function(result){
 		    if(result=='0'){
 		    	login_dialog();
 		    }else{
@@ -12,7 +12,7 @@ $(function(){
 		        $('#forward_'+data.txtid).hide();
 				if($('#tracereply_'+data.txtid).css("display")=='none'){
 					//加载评论列表
-			        $("#tracereply_"+data.txtid).load('index.php?act=store_snshome&op=commenttop&id='+data.txtid);
+			        $("#tracereply_"+data.txtid).load('mobile.view.personal.index.php?act=store_snshome&op=commenttop&id='+data.txtid);
 			        $('#tracereply_'+data.txtid).show();	
 				}else{
 					$('#tracereply_'+data.txtid).hide();
@@ -32,7 +32,7 @@ $(function(){
 				//显示验证码
 				$("#commentseccode"+data.txtid).show();
 				var nchash = $("#commentseccode"+data.txtid).find("[name='nchash']").val();
-				$("#commentseccode"+data.txtid).find("[name='codeimage']").attr('src','index.php?act=seccode&op=makecode&nchash='+nchash+'&t=' + Math.random());
+				$("#commentseccode"+data.txtid).find("[name='codeimage']").attr('src','mobile.view.personal.index.php?act=seccode&op=makecode&nchash='+nchash+'&t=' + Math.random());
 			}else if(cookienum >= MAX_RECORDNUM && $("#commentseccode"+data.txtid).find("[name='captcha']").val() == ''){
 				showDialog('请填写验证码');
 			}else{
@@ -52,7 +52,7 @@ $(function(){
 		showDialog('您确定要删除该信息吗？','confirm', '', function(){
 			var data_str = $(obj).attr('data-param');
 	        eval("data_str = "+data_str);
-	        ajax_get_confirm('','index.php?act=store_snshome&op=delcomment&scid='+data_str.scid+'&stid='+data_str.stid);
+	        ajax_get_confirm('','mobile.view.personal.index.php?act=store_snshome&op=delcomment&scid='+data_str.scid+'&stid='+data_str.stid);
 			return false;
 		});
 	});
@@ -61,7 +61,7 @@ $(function(){
 	//展示和隐藏转发表单
 	$("[nc_type='sd_forwardbtn']").on('click',function(){
 		var $this = $(this);
-		$.get('index.php?act=index&op=login', function(result){
+		$.get('mobile.view.personal.index.php?act=index&op=login', function(result){
 		    if(result=='0'){
 		    	login_dialog();
 		    }else{
@@ -121,7 +121,7 @@ $(function(){
 	                //显示验证码
 	                seccode.show();
 	                var nchash = seccode.find("[name='nchash']").val();
-	                seccode.find("[name='codeimage']").attr('src','index.php?act=seccode&op=makecode&nchash='+nchash+'&t=' + Math.random());
+	                seccode.find("[name='codeimage']").attr('src','mobile.view.personal.index.php?act=seccode&op=makecode&nchash='+nchash+'&t=' + Math.random());
 			    } else if(seccode.find("[name='captcha']").val() == ''){
 	                showDialog('请填写验证码');
 			    }
@@ -141,7 +141,7 @@ $(function(){
 	$("[nc_type='sd_del']").on('click',function(){
 		var data_str = $(this).attr('data-param');
         eval("data_str = "+data_str);
-        var url = "index.php?act=store_snshome&op=deltrace&id="+data_str.txtid;
+        var url = "mobile.view.personal.index.php?act=store_snshome&op=deltrace&id="+data_str.txtid;
 		showDialog('您确定要删除该信息吗？','confirm', '', function(){
 			ajaxget(url);
 			return false;

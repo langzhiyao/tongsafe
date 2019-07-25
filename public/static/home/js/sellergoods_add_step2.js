@@ -24,7 +24,7 @@ $(function(){
     /* 商品图片ajax上传 */
     $('#goods_image').fileupload({
         dataType: 'json',
-        url: SITE_URL + 'index.php/Home/Sellergoodsadd/image_upload.html?upload_type=uploadedfile',
+        url: SITE_URL + 'mobile.view.personal.index.php/Home/Sellergoodsadd/image_upload.html?upload_type=uploadedfile',
         formData: {name:'goods_image'},
         add: function (e,data) {
         	$('img[nctype="goods_image"]').attr('src', SHOP_TEMPLATES_URL + '/images/loading.gif');
@@ -75,7 +75,7 @@ $(function(){
     });
     $('#add_album').fileupload({
         dataType: 'json',
-        url: SITE_URL+'index.php/Home/Sellergoodsadd/image_upload.html',
+        url: SITE_URL+'mobile.view.personal.index.php/Home/Sellergoodsadd/image_upload.html',
         formData: {name:'add_album'},
         add: function (e,data) {
             $('i[nctype="add_album_i"]').removeClass('icon-upload-alt').addClass('icon-spinner icon-spin icon-large').attr('data_type', parseInt($('i[nctype="add_album_i"]').attr('data_type'))+1);
@@ -495,7 +495,7 @@ $(function(){
     // 替换图片
     $('div[nctype="mobile_pannel"]').on('click', 'a[nctype="mp_rpl"]', function(){
         $('a[nctype="meat_cancel"]').click();
-        $('div[nctype="mea_img"]').show().load('index.php?act=store_album&op=pic_list&item=mobile&type=replace');
+        $('div[nctype="mea_img"]').show().load('mobile.view.personal.index.php?act=store_album&op=pic_list&item=mobile&type=replace');
     });
     // 插图图片
     replace_mobile_img = function(data){

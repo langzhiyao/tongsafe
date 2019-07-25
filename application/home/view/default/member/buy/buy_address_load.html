@@ -14,18 +14,18 @@
 <div class="hr16"> <a id="hide_addr_list" class="dsc-btn dsc-btn-red" href="javascript:void(0);">保存收货地址</a></div>
 <script type="text/javascript">
         function delAddr(id) {
-            var url = SITE_URL+'index.php/Home/Buy/load_addr/id/'+id+'.html';
+            var url = SITE_URL+'mobile.view.personal.index.php/Home/Buy/load_addr/id/'+id+'.html';
             $('#addr_list').load(url);
         }
         $(function() {
             function addAddr() {
-                var url = SITE_URL+'index.php/Home/Buy/add_addr.html';
+                var url = SITE_URL+'mobile.view.personal.index.php/Home/Buy/add_addr.html';
                 $('#add_addr_box').load(url);
             }
             $('input[nc_type="addr"]').on('click', function() {
                 if ($(this).val() == '0') {
                     $('.address_item').removeClass('ncc-selected-item');
-                    var url = SITE_URL+'index.php/Home/Buy/add_addr.html';
+                    var url = SITE_URL+'mobile.view.personal.index.php/Home/Buy/add_addr.html';
                     $('#add_addr_box').load(url);
                 } else {
                     $('.address_item').removeClass('ncc-selected-item');

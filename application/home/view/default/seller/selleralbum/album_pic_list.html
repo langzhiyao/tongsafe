@@ -269,13 +269,13 @@ function submit_form(type){
 	if(type=='move'){
 		$('#checkboxform').append('<input type="hidden" name="form_submit" value="ok" /><input type="hidden" name="cid" value="'+$('#cid').val()+'" />');
 	}
-	$('#checkboxform').attr('action',SITE_URL+'index.php/Home/Selleralbum/album_pic_'+type+'.html');
+	$('#checkboxform').attr('action',SITE_URL+'mobile.view.personal.index.php/Home/Selleralbum/album_pic_'+type+'.html');
 	ajaxpost('checkboxform', '', '', 'onerror');
 }
 // 相册封面
 function cover(id){
 	if($('#aclass_cover').attr('src') != $('#img_'+id).attr('src')){
-		ajaxget(SITE_URL+'index.php/Home/Selleralbum/change_album_cover.html?id='+id);
+		ajaxget(SITE_URL+'mobile.view.personal.index.php/Home/Selleralbum/change_album_cover.html?id='+id);
 	}else{
 		showError('{$Think.lang.album_plist_not_set_same_image}');
 	}

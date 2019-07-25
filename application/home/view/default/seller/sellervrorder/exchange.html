@@ -78,7 +78,7 @@ $(document).ready(function(){
     Tpl += "<td class=\"bdr\">NC_ORDER_MSG</td></tr>\n";
     function exPost() {
 		$('#vr_code_waring').html('');
-	    $.getJSON(SITE_URL+'index.php/home/Sellervrorder/exchange.html?form_submit=ok&vr_code='+$("#vr_code").val(),null, function(data){
+	    $.getJSON(SITE_URL+'mobile.view.personal.index.php/home/Sellervrorder/exchange.html?form_submit=ok&vr_code='+$("#vr_code").val(),null, function(data){
 	        if (data == null) return false;
 	        if (data.error) {
 		        $('#vr_code_waring').show().html(data.error);return false;

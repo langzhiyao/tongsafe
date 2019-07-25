@@ -20,7 +20,7 @@ function get_sms_captcha(type) {
 }
 function check_captcha() {
     if ($("#sms_mobile").val().length == 11 && $("#sms_captcha").val().length == 6) {
-        var ajaxurl = 'index.php?act=connect_sms&op=check_captcha';
+        var ajaxurl = 'mobile.view.personal.index.php?act=connect_sms&op=check_captcha';
         ajaxurl += '&sms_captcha=' + $('#sms_captcha').val() + '&sms_mobile=' + $('#sms_mobile').val();
         $.ajax({
             type: "GET",
@@ -28,7 +28,7 @@ function check_captcha() {
             async: false,
             success: function(rs) {
                 if (rs == 'true') {
-                    $.getScript('index.php?act=connect_sms&op=register' + '&sms_mobile=' + $('#sms_mobile').val());
+                    $.getScript('mobile.view.personal.index.php?act=connect_sms&op=register' + '&sms_mobile=' + $('#sms_mobile').val());
                     $("#register_sms_form").show();
                     $("#post_form").hide();
                 } else {

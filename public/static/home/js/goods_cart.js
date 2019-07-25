@@ -4,7 +4,7 @@
  */
 function drop_cart_item(cart_id){
     var parent_tr = $('#cart_item_' + cart_id).parent();
-    var url = SITE_URL+'index.php/Home/Cart/del.html';
+    var url = SITE_URL+'mobile.view.personal.index.php/Home/Cart/del.html';
     showDialog('确认删除吗?', 'confirm', '', function(){
         $.get(url,{'cart_id': cart_id}, function(result){
             if(result.state){
@@ -34,7 +34,7 @@ function change_quantity(cart_id, input){
     var subtotal = $('#item' + cart_id + '_subtotal');
     //暂存为局部变量，否则如果用户输入过快有可能造成前后值不一致的问题
     var _value = input.value;
-    var url = SITE_URL+'index.php/Home/Cart/update.html';
+    var url = SITE_URL+'mobile.view.personal.index.php/Home/Cart/update.html';
     $.get(url,{'cart_id': cart_id,'quantity': _value}, function(result){
     	$(input).attr('changed', _value);
     	if(result.state == 'true'){

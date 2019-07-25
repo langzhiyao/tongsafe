@@ -90,7 +90,7 @@ function regionChange() {
     // ajax请求下级地区 --后台添加班级用，不要删！
     if (this.value > 0) {
         var _self = this;
-        var url = SITE_URL + 'index.php/School/Mlselection/index/type/region.html';
+        var url = SITE_URL + 'mobile.view.personal.index.php/School/Mlselection/index/type/region.html';
         $.getJSON(url, {'pid': this.value}, function (data) {
             var school_length = data.school_list.length;
             var school_list = data.school_list;
@@ -123,7 +123,7 @@ function regionChange() {
 function fand_schooltype(_sef) {
     var sc_id = $(_sef).val();
     if(sc_id){
-        var url = SITE_URL + 'index.php/School/Student/fand_schooltype';
+        var url = SITE_URL + 'mobile.view.personal.index.php/School/Student/fand_schooltype';
         $.post(url, {'sc_id': sc_id}, function (data) {
             data=$.parseJSON( data );
             // console.log(data);return ;
@@ -184,7 +184,7 @@ function gcategoryChange() {
     // ajax请求下级分类
     if (this.value > 0) {
         var _self = this;
-        var url = SITE_URL + 'index.php/Home/Mlselection/index/type/goodsclass.html';
+        var url = SITE_URL + 'mobile.view.personal.index.php/Home/Mlselection/index/type/goodsclass.html';
         $.getJSON(url, {'pid': this.value}, function (data) {
             if (data.code == 10000) {
                 if (data.result.length > 0) {
