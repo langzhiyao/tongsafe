@@ -336,7 +336,7 @@ class School extends AdminControl {
             $PhpQRCode->set('date', $data['classCard']);
             $PhpQRCode->set('pngTempName', $data['classCard'] . '.png');
             $qr=$PhpQRCode->init();
-            $data['qr']='/home/store/class/'.$schoolInfo['schoolCard'].'/'.$qr;
+            $data['qr']='/mobile/store/class/'.$schoolInfo['schoolCard'].'/'.$qr;
             //验证数据  END
             $result = $model_class->addClasses($data);
             if ($result) {

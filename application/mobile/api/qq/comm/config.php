@@ -31,7 +31,7 @@ $data = rkcache("config", true);
 //halt($data);
 //qq互联是否开启
 if ($data['qq_isuse'] != 1) {
-    $this->redirect('home/index/index');
+    $this->redirect('mobile/index/index');
     exit;
 }
 //申请到的appid

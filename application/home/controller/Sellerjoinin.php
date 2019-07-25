@@ -10,7 +10,7 @@ class Sellerjoinin extends BaseMember {
     public function _initialize() {
         
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/sellerjoinin.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/sellerjoinin.lang.php');
         
         $this->checkLogin();
         $model_seller = Model('seller');
@@ -400,7 +400,7 @@ class Sellerjoinin extends BaseMember {
         //上传文件保存路径
         $pic_name = '';
         
-        $upload_file = BASE_UPLOAD_PATH .DS. 'home'.DS.'store_joinin'.DS;
+        $upload_file = BASE_UPLOAD_PATH .DS. 'mobile'.DS.'store_joinin'.DS;
         if (!empty($_FILES[$file]['name'])) {
             $file = request()->file($file);
             $info = $file->validate(['ext' => 'jpg,png,gif'])->move($upload_file);

@@ -9,7 +9,7 @@ class Storesnshome extends BaseStoreSns {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH.'home/lang/zh-cn/sellersns.lang.php');
+        Lang::load(APP_PATH.'mobile/lang/zh-cn/sellersns.lang.php');
     }
 
     /**
@@ -198,9 +198,9 @@ class Storesnshome extends BaseStoreSns {
             }
             $js = "$('#content_comment" . $stid . "').html('');";
             if ($_POST['showtype'] == 1) {
-                $js .="$('#tracereply_" . $stid . "').load(SITE_URL+'home/storesnshome/commenttop?id=" . $stid . "');";
+                $js .="$('#tracereply_" . $stid . "').load(SITE_URL+'mobile/storesnshome/commenttop?id=" . $stid . "');";
             } else {
-                $js .="$('#tracereply_" . $stid . "').load(SITE_URL+'home/storesnshome/commentlist?id=" . $stid . "');";
+                $js .="$('#tracereply_" . $stid . "').load(SITE_URL+'mobile/storesnshome/commentlist?id=" . $stid . "');";
             }
             showDialog(lang('sns_comment_succ'), '', 'succ', $js);
         }
@@ -366,7 +366,7 @@ class Storesnshome extends BaseStoreSns {
      */
     private function checkLoginStatus() {
         if (session('is_login') != 1) {
-            @header("location: index.php/home/login/index?ref_url=" . urlencode('index.php/home/membersnshome/index'));
+            @header("location: index.php/mobile/login/index?ref_url=" . urlencode('index.php/mobile/membersnshome/index'));
         }
     }
 

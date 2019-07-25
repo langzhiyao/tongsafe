@@ -8,7 +8,7 @@ class BaseStoreSns extends BaseHome {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/baseseller.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/baseseller.lang.php');
         $this->template_dir = 'store/default/' . strtolower(request()->controller()) . '/';
         $this->assign('store_theme','default');
         

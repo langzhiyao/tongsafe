@@ -10,4 +10,4 @@ if($data['sina_isuse'] != 1){
 }
 define( "WB_AKEY" ,  trim($data['sina_wb_akey']));
 define( "WB_SKEY" ,  trim($data['sina_wb_skey']));
-define( "WB_CALLBACK_URL" , "http://".$_SERVER['HTTP_HOST']."/index.php?s=/home/Api/oa_sina/step/callback");
+define( "WB_CALLBACK_URL" , "http://".$_SERVER['HTTP_HOST']."/index.php?s=/mobile/Api/oa_sina/step/callback");

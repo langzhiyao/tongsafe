@@ -10,7 +10,7 @@ class Sellergoodsonline extends BaseSeller {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/sellergoodsadd.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/sellergoodsadd.lang.php');
         $this->template_dir = 'default/seller/sellergoodsadd/';
     }
 

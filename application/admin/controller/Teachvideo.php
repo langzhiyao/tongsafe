@@ -188,7 +188,7 @@ class Teachvideo extends AdminControl {
                 't_audit' => 1
             );
             if($_FILES['video_filename']['name']){
-                $data['t_picture'] = "home/videoimg/".date("YmdHis",time())."_".time().".png";
+                $data['t_picture'] = "mobile/videoimg/".date("YmdHis",time())."_".time().".png";
                 $this->image($data['t_picture']);
             }
             //验证数据  END
@@ -303,7 +303,7 @@ class Teachvideo extends AdminControl {
             $insert_array['admin_company_id'] = $admininfo['admin_company_id'];
             //上传视频封面图
             if($_FILES['video_filename']['name']){
-                $insert_array['t_picture'] = "home/videoimg/".date("YmdHis",time())."_".time().".png";
+                $insert_array['t_picture'] = "mobile/videoimg/".date("YmdHis",time())."_".time().".png";
                 $this->image($insert_array['t_picture']);
             }
             //上传视频
@@ -331,8 +331,8 @@ class Teachvideo extends AdminControl {
         //上传路径
         $uploadimg_path = substr(str_replace("\\","/",$_SERVER['SCRIPT_FILENAME']),'0','-9')."uploads/";
         //检查是否有该文件夹，如果没有就创建
-        if(!is_dir($uploadimg_path."home/videoimg/")){
-            mkdir($uploadimg_path."home/videoimg/",0777,true);
+        if(!is_dir($uploadimg_path."mobile/videoimg/")){
+            mkdir($uploadimg_path."mobile/videoimg/",0777,true);
         }
         //允许上传的文件格式
         $tp = array("image/gif","image/jpeg","image/jpg","image/png","image/*");

@@ -14,7 +14,7 @@ class Search extends BaseMall {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/search.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/search.lang.php');
     }
 
     public function index() {
@@ -201,7 +201,7 @@ class Search extends BaseMall {
         $this->assign('province_array', $province_array);
 
         /* 引用搜索相关函数 */
-        require_once(APP_PATH . '/home/common_search.php');
+        require_once(APP_PATH . '/mobile/common_search.php');
 
         // 浏览过的商品
         $viewed_goods = Model('goodsbrowse')->getViewedGoodsList(session('member_id'), 20);

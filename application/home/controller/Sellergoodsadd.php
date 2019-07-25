@@ -12,7 +12,7 @@ class Sellergoodsadd extends BaseSeller
     {
         parent::_initialize();
         error_reporting(E_ERROR | E_WARNING);
-        Lang::load(APP_PATH . 'home/lang/zh-cn/sellergoodsadd.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/sellergoodsadd.lang.php');
     }
 
     /**

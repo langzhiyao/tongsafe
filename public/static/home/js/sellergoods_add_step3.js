@@ -35,7 +35,7 @@ function ajaxFileUpload(id, o) {
     $('img[nctype="' + id + '"]').attr('src', SHOP_TEMPLATES_URL + "/images/loading.gif");
 
     $.ajaxFileUpload({
-        url : SITE_URL + 'index.php/home/Sellergoodsadd/image_upload',
+        url : SITE_URL + 'index.php/mobile/Sellergoodsadd/image_upload',
         secureuri : false,
         fileElementId : id,
         dataType : 'json',

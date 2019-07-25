@@ -8,7 +8,7 @@ use think\Validate;
 class Login extends BaseMall {
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/login.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/login.lang.php');
     }
     /**
      * 用户登录

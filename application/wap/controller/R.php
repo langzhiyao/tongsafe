@@ -19,7 +19,7 @@ class R extends MobileMall
     public function index(){
         $input = input('get.q');
         $result = db("robotreport")->field("id,ioVideo")->where(array('code'=>$input))->find();
-        $path = "http://".$_SERVER['HTTP_HOST']."/uploads/home/robotvideo/";
+        $path = "http://".$_SERVER['HTTP_HOST']."/uploads/mobile/robotvideo/";
         header("Location: ".$path.$result['ioVideo']);
     }
 

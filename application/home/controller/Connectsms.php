@@ -11,7 +11,7 @@ use think\Lang;
 class Connectsms extends BaseMall {
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/login.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/login.lang.php');
     }
     /**
      * 短信动态码
@@ -168,7 +168,7 @@ class Connectsms extends BaseMall {
                 $model_member->createSession($member); //自动登录
                 $reload = $_POST['ref_url'];
                 if (empty($reload)) {
-                    $reload = url('member/home');
+                    $reload = url('member/mobile');
                 }
                 showDialog('登录成功', $reload, 'succ');
             }

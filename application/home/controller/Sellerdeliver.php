@@ -12,7 +12,7 @@ class Sellerdeliver extends BaseSeller {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/sellerdeliver.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/sellerdeliver.lang.php');
     }
     /**
      * 发货列表
@@ -453,9 +453,9 @@ class Sellerdeliver extends BaseSeller {
                 break;
             case 'search':
                 $menu_array = array(
-                     array('name' => 'nodeliver', 'text' => lang('ds_member_path_deliverno'), 'url' => url('home/Sellerdeliver/index/state/nodeliver')),
-                     array('name' => 'delivering', 'text' => lang('ds_member_path_delivering'), 'url' => url('home/Sellerdeliver/index/state/delivering')),
-                     array('name' => 'delivered', 'text' => lang('ds_member_path_delivered'), 'url' => url('home/Sellerdeliver/index/state/delivered')),
+                     array('name' => 'nodeliver', 'text' => lang('ds_member_path_deliverno'), 'url' => url('mobile/Sellerdeliver/index/state/nodeliver')),
+                     array('name' => 'delivering', 'text' => lang('ds_member_path_delivering'), 'url' => url('mobile/Sellerdeliver/index/state/delivering')),
+                     array('name' => 'delivered', 'text' => lang('ds_member_path_delivered'), 'url' => url('mobile/Sellerdeliver/index/state/delivered')),
                      array('name' => 'search', 'text' => lang('ds_member_path_deliver_info'), 'url' => '###'),
                 );
                 break;

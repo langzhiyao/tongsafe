@@ -29,7 +29,7 @@ if (defined("QQDEBUG") && QQDEBUG)
 /**
  * session
  */
-//require_once(APP_PATH.DS.'home'.DS.'api'.DS.'qq'.DS.'comm'.DS."session.php");
+//require_once(APP_PATH.DS.'mobile'.DS.'api'.DS.'qq'.DS.'comm'.DS."session.php");
 
 //包含配置信息
 $data = rkcache("config", true);
@@ -46,7 +46,7 @@ $qq_appid = trim($data['qq_appid']);
 $qq_appkey = trim($data['qq_appkey']);
 
 //QQ登录成功后回调的地址
-$callback = "http://".$_SERVER['HTTP_HOST']."/index.php?s=/home/Api/oa_qq/step/callback";
+$callback = "http://".$_SERVER['HTTP_HOST']."/index.php?s=/mobile/Api/oa_qq/step/callback";
 
 //调用的api接口(访问用户资料get_user_info)
 $scope = "get_user_info";

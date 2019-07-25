@@ -146,7 +146,7 @@ class BaseHome extends Controller
                 showDialog('', '', 'js', "login_dialog();", 200);
             }
             else {
-                @header("location: index.php/home/login/login?ref_url=" . urlencode($ref_url));
+                @header("location: index.php/mobile/login/login?ref_url=" . urlencode($ref_url));
             }
             exit;
         }

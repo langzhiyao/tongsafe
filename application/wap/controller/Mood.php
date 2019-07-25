@@ -138,12 +138,12 @@ class Mood extends MobileMember{
             foreach ($_FILES['file']['name'] as $key => $value) {
                 $file1 = array();
                 $imgname=($key+1).date("YmdHis",time())."_".time().".".end(explode('.', $value));
-                $file1["file"]['name'] = "home/moodimg/".$imgname;
+                $file1["file"]['name'] = "mobile/moodimg/".$imgname;
                 $file1["file"]['type'] = $_FILES['file']["type"][$key];
                 $file1["file"]['tmp_name'] = $_FILES['file']["tmp_name"][$key];
                 $file1["file"]['error'] = $_FILES['file']["error"][$key];
                 $file1["file"]['size'] = $_FILES['file']["size"][$key];
-                $smallname="home/smallmood/".$imgname;
+                $smallname="mobile/smallmood/".$imgname;
                 $file1["file"]['small']=$smallname;
 
                 $info = $this->upload($file1);
@@ -224,8 +224,8 @@ class Mood extends MobileMember{
         //上传路径
         $uploadimg_path = substr(str_replace("\\","/",$_SERVER['SCRIPT_FILENAME']),'0','-9')."uploads/";
         //检查是否有该文件夹，如果没有就创建
-        if(!is_dir($uploadimg_path."home/moodimg/")){
-            mkdir($uploadimg_path."home/moodimg/",0777,true);
+        if(!is_dir($uploadimg_path."mobile/moodimg/")){
+            mkdir($uploadimg_path."mobile/moodimg/",0777,true);
         }
         //允许上传的文件格式
         $tp = array("image/gif","image/jpeg","image/jpg","image/png","image/*");
@@ -239,8 +239,8 @@ class Mood extends MobileMember{
                 $upload = move_uploaded_file($data["file"]["tmp_name"], $uploadimg_path . $data['file']['name']);
                 $image = \think\Image::open($uploadimg_path.$data['file']['name']);
                 //检查是否有该文件夹，如果没有就创建
-                if(!is_dir($uploadimg_path."home/smallmood/")){
-                    mkdir($uploadimg_path."home/smallmood/",0777,true);
+                if(!is_dir($uploadimg_path."mobile/smallmood/")){
+                    mkdir($uploadimg_path."mobile/smallmood/",0777,true);
                 }
                 // 按照原图的比例生成一个最大为600*600的缩略图替换原图
                 //p($uploadimg_path. $data['file']['small']);exit;

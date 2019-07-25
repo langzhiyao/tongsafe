@@ -9,7 +9,7 @@ class Goods extends BaseGoods {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/goods.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/goods.lang.php');
     }
 
     /**
@@ -607,7 +607,7 @@ class Goods extends BaseGoods {
             $spec_sign = implode('|', $tmp_array);
             $tpl_spec = array();
             $tpl_spec['sign'] = $spec_sign;
-            $tpl_spec['url'] = url('home/goods/index', ['goods_id' => $value['goods_id']]);
+            $tpl_spec['url'] = url('mobile/goods/index', ['goods_id' => $value['goods_id']]);
             $spec_list[] = $tpl_spec;
             $spec_list_mobile[$spec_sign] = $value['goods_id'];
             $spec_image[$value['color_id']] = thumb($value, 60);

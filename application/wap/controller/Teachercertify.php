@@ -48,19 +48,19 @@ class Teachercertify extends MobileMember
 
         //身份证正面图
         if($_FILES['idcard_front']['name']){
-            $data['cardimg'] = "home/idcard/idcardz_".date("YmdHis",time())."_".time().".png";
+            $data['cardimg'] = "mobile/idcard/idcardz_".date("YmdHis",time())."_".time().".png";
         }
         //身份证反面图
         if($_FILES['idcard_back']['name']){
-            $data['cardimg_fan'] = "home/idcard/idcardf_".date("YmdHis",time())."_".time().".png";
+            $data['cardimg_fan'] = "mobile/idcard/idcardf_".date("YmdHis",time())."_".time().".png";
         }
         //资格证正面图
         if($_FILES['certificate_front']['name']){
-            $data['certificate'] = "home/teacher/teacherz_".date("YmdHis",time())."_".time().".png";
+            $data['certificate'] = "mobile/teacher/teacherz_".date("YmdHis",time())."_".time().".png";
         }
         //资格证反面图
 //        if($_FILES['certificate_back']['name']){
-//            $data['certificate_fan'] = "home/teacher/".date("YmdHis",time())."_".time().".png";
+//            $data['certificate_fan'] = "mobile/teacher/".date("YmdHis",time())."_".time().".png";
 //        }
         //print_r($_FILES);die;
         $this->image($data,$_FILES);
@@ -184,11 +184,11 @@ class Teachercertify extends MobileMember
         //上传路径
         $uploadimg_path = substr(str_replace("\\","/",$_SERVER['SCRIPT_FILENAME']),'0','-9')."uploads/";
         //检查是否有该文件夹，如果没有就创建
-        if(!is_dir($uploadimg_path."home/idcard/")){
-            mkdir($uploadimg_path."home/idcard/",0777,true);
+        if(!is_dir($uploadimg_path."mobile/idcard/")){
+            mkdir($uploadimg_path."mobile/idcard/",0777,true);
         }
-        if(!is_dir($uploadimg_path."home/teacher/")){
-            mkdir($uploadimg_path."home/teacher/",0777,true);
+        if(!is_dir($uploadimg_path."mobile/teacher/")){
+            mkdir($uploadimg_path."mobile/teacher/",0777,true);
         }
         //允许上传的文件格式
         $tp = array("image/gif","image/jpeg","image/jpg","image/png","image/*");

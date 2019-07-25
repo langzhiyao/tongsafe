@@ -6,7 +6,7 @@ $(function() {
             headerClone = $('#header').clone();
             $('#header').remove();
             headerClone.addClass('transparent').removeClass('');
-            headerClone.prependTo('.nctouch-home-top');
+            headerClone.prependTo('.nctouch-mobile-top');
         } else {
             headerClone = $('#header').clone();
             $('#header').remove();
@@ -67,7 +67,7 @@ $(function() {
             headerClone = $('#header').clone();
             $('#header').remove();
             headerClone.addClass('transparent').removeClass('');
-            headerClone.prependTo('.nctouch-home-top');
+            headerClone.prependTo('.nctouch-mobile-top');
         } else {
             headerClone = $('#header').clone();
             $('#header').remove();

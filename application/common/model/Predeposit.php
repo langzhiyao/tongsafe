@@ -272,7 +272,7 @@ class Predeposit extends Model {
         $data_log['lg_type'] = $change_type;
 
         $data_msg['time'] = date('Y-m-d H:i:s');
-        $data_msg['pd_url'] = url('home/predeposit/pd_log_list');
+        $data_msg['pd_url'] = url('mobile/predeposit/pd_log_list');
         switch ($change_type) {
             case 'order_pay':
                 $data_log['lg_av_amount'] = -$data['amount'];

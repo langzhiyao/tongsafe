@@ -8,7 +8,7 @@ class Sellerbill extends BaseSeller {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/sellerbill.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/sellerbill.lang.php');
     }
 
     /**
@@ -435,7 +435,7 @@ class Sellerbill extends BaseSeller {
                 array(
                     'name' => 'list',
                     'text' => '实物订单结算',
-                    'url' => url('home/sellerbill/index')
+                    'url' => url('mobile/sellerbill/index')
                 ),
             );
         }else if(request()->action()=='show_bill'){
@@ -443,17 +443,17 @@ class Sellerbill extends BaseSeller {
                 array(
                     'name' => 'order_list',
                     'text' => '订单列表',
-                    'url' => url('home/sellerbill/show_bill', ['ob_no' => $ob_no])
+                    'url' => url('mobile/sellerbill/show_bill', ['ob_no' => $ob_no])
                 ),
                 array(
                     'name' => 'refund_list',
                     'text' => '退款订单',
-                    'url' => url('home/sellerbill/show_bill', ['ob_no' => $ob_no])
+                    'url' => url('mobile/sellerbill/show_bill', ['ob_no' => $ob_no])
                 ),
                 array(
                     'name' => 'cost_list',
                     'text' => '促销费用',
-                    'url' => url('home/sellerbill/show_bill', ['ob_no' => $ob_no])
+                    'url' => url('mobile/sellerbill/show_bill', ['ob_no' => $ob_no])
                 ),
                 
             );

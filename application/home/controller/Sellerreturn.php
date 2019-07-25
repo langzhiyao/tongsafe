@@ -8,7 +8,7 @@ class Sellerreturn extends BaseSeller {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/sellerreturn.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/sellerreturn.lang.php');
         //向模板页面输出退款退货状态
         $this->getRefundStateArray();
     }
@@ -288,12 +288,12 @@ class Sellerreturn extends BaseSeller {
             array(
                 'name' => '2',
                 'text' => '售前退货',
-                'url' => url('home/sellerreturn/index',['lock'=>2])
+                'url' => url('mobile/sellerreturn/index',['lock'=>2])
             ),
             array(
                 'name' => '1',
                 'text' => '售后退货',
-                'url' => url('home/sellerreturn/index',['lock'=>1])
+                'url' => url('mobile/sellerreturn/index',['lock'=>1])
             ),
         );
         return $menu_array;

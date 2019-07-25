@@ -11,7 +11,7 @@
  * @brief 本文件包含了OAuth认证过程中会用到的公用方法
  */
 
-require_once(APP_PATH . DS . 'home' . DS . 'api' . DS . 'qq' . DS . 'comm' . DS . "config.php");
+require_once(APP_PATH . DS . 'mobile' . DS . 'api' . DS . 'qq' . DS . 'comm' . DS . "config.php");
 
 function do_post($url, $data)
 {

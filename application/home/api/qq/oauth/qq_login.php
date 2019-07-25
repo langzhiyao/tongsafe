@@ -1,5 +1,5 @@
 <?php
-require_once(APP_PATH.DS.'home'.DS.'api'.DS.'qq'.DS.'comm'.DS."config.php");
+require_once(APP_PATH.DS.'mobile'.DS.'api'.DS.'qq'.DS.'comm'.DS."config.php");
 
 
 function qq_login($appid, $scope, $callback)

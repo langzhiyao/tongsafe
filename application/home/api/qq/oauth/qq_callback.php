@@ -1,6 +1,6 @@
 <?php 
-require_once(APP_PATH.DS.'home'.DS.'api'.DS.'qq'.DS.'comm'.DS."config.php");
-require_once(APP_PATH.DS.'home'.DS.'api'.DS.'qq'.DS.'comm'.DS."utils.php");
+require_once(APP_PATH.DS.'mobile'.DS.'api'.DS.'qq'.DS.'comm'.DS."config.php");
+require_once(APP_PATH.DS.'mobile'.DS.'api'.DS.'qq'.DS.'comm'.DS."utils.php");
 function qq_callback()
 {
     if(input('param.state') == session('state')) //csrf

@@ -14,7 +14,8 @@ class Test extends Controller{
 
     //将老数据导入新数据库中
     public function import(){
-        $school_id="000000005e45f959015e46b041a70001";
+//        $school_id="000000005e45f959015e46b041a70001";//太谷启航二中
+        $school_id="297edff86569e03d016574765ebe2d91";//哈尔滨山水幼儿园
         //导入班级并未绑定房间位置
             /*  //查询该学校所有班级
             $class = db('aaclassroom')->where(array('school_school_id'=>$school_id))->select();
@@ -49,7 +50,7 @@ class Test extends Controller{
                 $PhpQRCode->set('date', $classcard);
                 $PhpQRCode->set('pngTempName', $classcard . '.png');
                 $qr = $PhpQRCode->init();
-                $data['qr'] = '/home/class/' . $schoolInfo['schoolCard'] . '/' . $qr;
+                $data['qr'] = '/mobile/class/' . $schoolInfo['schoolCard'] . '/' . $qr;
                 //验证数据  END
                 $data['res_group_id'] = 0;
                 $model_classes->addClasses($data);

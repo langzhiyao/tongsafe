@@ -8,7 +8,7 @@ class Sellerorder extends BaseSeller {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/sellerorder.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/sellerorder.lang.php');
     }
 
     /**
@@ -310,32 +310,32 @@ class Sellerorder extends BaseSeller {
             array(
                 'name' => 'store_order',
                 'text' => lang('ds_member_path_all_order'),
-                'url' => url('home/sellerorder/index')
+                'url' => url('mobile/sellerorder/index')
             ),
             array(
                 'name' => 'state_new',
                 'text' => lang('ds_member_path_wait_pay'),
-                'url' => url('home/sellerorder/index', ['state_type' => 'state_new'])
+                'url' => url('mobile/sellerorder/index', ['state_type' => 'state_new'])
             ),
             array(
                 'name' => 'state_pay',
                 'text' => lang('ds_member_path_wait_send'),
-                'url' => url('home/sellerorder/index', ['state_type' => 'state_pay'])
+                'url' => url('mobile/sellerorder/index', ['state_type' => 'state_pay'])
             ),
             array(
                 'name' => 'state_send',
                 'text' => lang('ds_member_path_sent'),
-                'url' => url('home/sellerorder/index', ['state_type' => 'state_send'])
+                'url' => url('mobile/sellerorder/index', ['state_type' => 'state_send'])
             ),
             array(
                 'name' => 'state_success',
                 'text' => lang('ds_member_path_finished'),
-                'url' => url('home/sellerorder/index', ['state_type' => 'state_success'])
+                'url' => url('mobile/sellerorder/index', ['state_type' => 'state_success'])
             ),
             array(
                 'name' => 'state_cancel',
                 'text' => lang('ds_member_path_canceled'),
-                'url' => url('home/sellerorder/index', ['state_type' => 'state_cancel'])
+                'url' => url('mobile/sellerorder/index', ['state_type' => 'state_cancel'])
             ),
         );
         return $menu_array;

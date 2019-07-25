@@ -250,7 +250,7 @@ $lang['sns_trace_nohave']					= '很遗憾！<br/>TA暂无新鲜事分享~';
 
 $lang['sns_trace_originaldeleted']		= '原文已删除';
 /**
- * home
+ * mobile
  */
 $lang['sns_fansnum'] = '粉丝数';
 $lang['sns_visits'] = '访问量';

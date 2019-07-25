@@ -11,7 +11,7 @@ class BaseMall extends BaseHome {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/basemall.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/basemall.lang.php');
         $this->template_dir = 'default/mall/'.  strtolower(request()->controller()).'/';
     }
 }

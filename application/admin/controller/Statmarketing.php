@@ -305,7 +305,7 @@ class Statmarketing extends AdminControl
             foreach ($statheader as $h_k=>$h_v){
                 $tmp[$h_v['key']] = $v[$h_v['key']];
                 if ($h_v['key'] == 'goods_name'){
-                    $tmp[$h_v['key']] = '<a href="'.url('home/goods/index', array('goods_id' => $v['goods_id'])).'" target="_blank">'.$v['goods_name'].'</a>';
+                    $tmp[$h_v['key']] = '<a href="'.url('mobile/goods/index', array('goods_id' => $v['goods_id'])).'" target="_blank">'.$v['goods_name'].'</a>';
                 }
             }
             $statlist[] = $tmp;

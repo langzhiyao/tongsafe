@@ -22,7 +22,7 @@ class Mbhome extends Model {
         if (is_array($h_list)) {
             foreach ($h_list as $k => $v) {
                 if (!empty($v['h_img'])) {
-                    $h_list[$k]['h_img_url'] = UPLOAD_SITE_URL . '/' . ATTACH_MOBILE . '/home' . '/' . $v['h_img'];
+                    $h_list[$k]['h_img_url'] = UPLOAD_SITE_URL . '/' . ATTACH_MOBILE . '/mobile' . '/' . $v['h_img'];
                 }
             }
         }

@@ -13,7 +13,7 @@ class Snsalbum extends BaseSns {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/snsalbum.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/snsalbum.lang.php');
     }
 
     function test()

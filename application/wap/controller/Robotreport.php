@@ -142,7 +142,7 @@ class Robotreport extends MobileMall
         $report_model = Model("Robotreport");
         $result = $report_model->reportall_add($insertData);
         if($result){
-            /*$path = "http://".$_SERVER['HTTP_HOST']."/uploads/home/robotvideo/";
+            /*$path = "http://".$_SERVER['HTTP_HOST']."/uploads/mobile/robotvideo/";
             //打卡成功，给学生家长发送短信提醒
             $memberInfo = db("member")->field("member_mobile")->where(array('member_id'=>$studentInfo['s_ownerAccount']))->find();
             if(preg_match('/^0?(13|15|17|18|14)[0-9]{9}$/i', $memberInfo['member_mobile'])){
@@ -170,7 +170,7 @@ class Robotreport extends MobileMall
      * */
     public function ioVideo($videoInfo){
         //上传路径
-        $uploadimg_path = substr(str_replace("\\","/",$_SERVER['SCRIPT_FILENAME']),'0','-9')."uploads/home/robotvideo/";
+        $uploadimg_path = substr(str_replace("\\","/",$_SERVER['SCRIPT_FILENAME']),'0','-9')."uploads/mobile/robotvideo/";
         //检查是否有该文件夹，如果没有就创建
         if(!is_dir($uploadimg_path)){
             mkdir($uploadimg_path,0777,true);

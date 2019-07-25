@@ -8,7 +8,7 @@ class Selleraccount extends BaseSeller {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/selleraccount.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/selleraccount.lang.php');
     }
     
 
@@ -110,10 +110,10 @@ class Selleraccount extends BaseSeller {
 
         if($result) {
             $this->recordSellerLog('添加账号成功，账号编号'.$result);
-            showDialog(lang('ds_common_op_succ'), url('/home/selleraccount/account_list'), 'succ');
+            showDialog(lang('ds_common_op_succ'), url('/mobile/selleraccount/account_list'), 'succ');
         } else {
             $this->recordSellerLog('添加账号失败');
-            showDialog(lang('ds_common_save_fail'), url('/home/selleraccount/account_list'), 'error');
+            showDialog(lang('ds_common_save_fail'), url('/mobile/selleraccount/account_list'), 'error');
         }
     }
 
@@ -127,10 +127,10 @@ class Selleraccount extends BaseSeller {
         $result = $model_seller->editSeller($param, $condition);
         if($result) {
             $this->recordSellerLog('编辑账号成功，账号编号：'.input('post.seller_id'));
-            showDialog(lang('ds_common_op_succ'), url('/home/selleraccount/account_list'), 'succ');
+            showDialog(lang('ds_common_op_succ'), url('/mobile/selleraccount/account_list'), 'succ');
         } else {
             $this->recordSellerLog('编辑账号失败，账号编号：'.input('post.seller_id'), 0);
-            showDialog(lang('ds_common_save_fail'), url('/home/selleraccount/account_list'), 'error');
+            showDialog(lang('ds_common_save_fail'), url('/mobile/selleraccount/account_list'), 'error');
         }
     }
 

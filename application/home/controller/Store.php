@@ -9,7 +9,7 @@ class Store extends BaseStore {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/store.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/store.lang.php');
     }
 
 
@@ -151,7 +151,7 @@ class Store extends BaseStore {
         $this->assign('recommended_goods_list', $recommended_goods_list[1]);
         
         /* 引用搜索相关函数 */
-        require_once(APP_PATH . '/home/common_search.php');
+        require_once(APP_PATH . '/mobile/common_search.php');
 
         //输出分页
         $this->assign('show_page', $model_goods->page_info->render());

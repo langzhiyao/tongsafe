@@ -77,7 +77,7 @@ class Schooldesc extends AdminControl {
             $model_school->editSchool($data,array('schoolid'=>$school_id));
             //上传简介封面图
             if($_FILES['file']['name']){
-                $_FILES['file']['name'] = "home/schooldescimg/".date("YmdHis",time())."_".time().".".end(explode('.', $_FILES['file']['name']));
+                $_FILES['file']['name'] = "mobile/schooldescimg/".date("YmdHis",time())."_".time().".".end(explode('.', $_FILES['file']['name']));
                 $param['s_img']=$_FILES['file']['name'];
                 $this->upload($_FILES);
             }
@@ -123,8 +123,8 @@ class Schooldesc extends AdminControl {
         //上传路径
         $uploadimg_path = substr(str_replace("\\","/",$_SERVER['SCRIPT_FILENAME']),'0','-9')."uploads/";
         //检查是否有该文件夹，如果没有就创建
-        if(!is_dir($uploadimg_path."home/schooldescimg/")){
-            mkdir($uploadimg_path."home/schooldescimg/",0777,true);
+        if(!is_dir($uploadimg_path."mobile/schooldescimg/")){
+            mkdir($uploadimg_path."mobile/schooldescimg/",0777,true);
         }
         //允许上传的文件格式
         $tp = array("image/gif","image/jpeg","image/jpg","image/png");

@@ -10,8 +10,8 @@ class Index extends BaseMall {
         parent::_initialize();
         //强制跳转到商家登陆
         // $this->redirect('Sellerlogin/login');
-        Lang::load(APP_PATH . 'home/lang/zh-cn/index.lang.php');
-        Lang::load(APP_PATH . 'home/lang/zh-cn/sellergroupbuy.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/index.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/sellergroupbuy.lang.php');
     }
 
     public function index() {
@@ -59,7 +59,7 @@ class Index extends BaseMall {
     }
 
     function getFloorList($cate_id) {
-        $cache_key = 'home-index-floor-'.$cate_id;
+        $cache_key = 'mobile-index-floor-'.$cate_id;
         $result = cache($cache_key);
         if (empty($result)) {
             //获取此楼层下的所有分类

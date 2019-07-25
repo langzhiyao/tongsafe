@@ -274,11 +274,11 @@ function html_form(id, title, _html, width, model) {
 }
 //收藏店铺js
 function collect_store(fav_id, jstype, jsobj) {
-    $.get(SITE_URL+'index.php/home/Memberfavorites/checkLogin', function(result) {
+    $.get(SITE_URL+'index.php/mobile/Memberfavorites/checkLogin', function(result) {
         if (result == '0') {
             login_dialog();
         } else {
-            var url = SITE_URL+'index.php/home/Memberfavorites/favoritesstore';
+            var url = SITE_URL+'index.php/mobile/Memberfavorites/favoritesstore';
             $.getJSON(url, {'fid': fav_id}, function(data) {
                 if (data.done) {
                     showDialog(data.msg, 'succ', '', '', '', '', '', '', '', '', 2);
@@ -309,11 +309,11 @@ function collect_store(fav_id, jstype, jsobj) {
 }
 //收藏商品js
 function collect_goods(fav_id, jstype, jsobj) {
-    $.get(SITE_URL+'index.php/home/Memberfavorites/checkLogin', function(result) {
+    $.get(SITE_URL+'index.php/mobile/Memberfavorites/checkLogin', function(result) {
         if (result.done == '0') {
             login_dialog();
         } else {
-            var url = SITE_URL+'index.php/home/Memberfavorites/favoritesgoods';
+            var url = SITE_URL+'index.php/mobile/Memberfavorites/favoritesgoods';
             $.getJSON(url, {'fid': fav_id}, function(data) {
                 if (data.done)
                 {
@@ -471,7 +471,7 @@ function addcart(goods_id, quantity, callbackfunc,dir) {
                 }
                 // 头部加载购物车信息
                 load_cart_information();
-                $("#rtoolbar_cartlist").load(SITE_URL + '/index.php/home/cart/ajax_load?type=html');
+                $("#rtoolbar_cartlist").load(SITE_URL + '/index.php/mobile/cart/ajax_load?type=html');
                 if(dir) {
                     showDialog('添加购物车成功', 'succ', '', '', '', '', '', '', '', '', 2);
                 }
@@ -537,7 +537,7 @@ function delCookie(name) {
             }
             this.settings = settings;
             if ($inputArea.val() && /^\d+$/.test($inputArea.val())) {
-                $.getJSON(SITE_URL  + "/index.php/home/Index/json_area_show?area_id=" + $inputArea.val() + "&callback=?", function(data) {
+                $.getJSON(SITE_URL  + "/index.php/mobile/Index/json_area_show?area_id=" + $inputArea.val() + "&callback=?", function(data) {
                     $("#_area_span").html(data.text == null ? "无" : data.text)
                 })
             }
@@ -617,7 +617,7 @@ function delCookie(name) {
         }
         function loadAreaArray(callback) {
             if (typeof nc_a === "undefined") {
-                $.getJSON(SITE_URL  + "/index.php/home/Index/json_area?src=" + settings.src + "&callback=?", function(data) {
+                $.getJSON(SITE_URL  + "/index.php/mobile/Index/json_area?src=" + settings.src + "&callback=?", function(data) {
                     nc_a = data;
                     callback()
                 })

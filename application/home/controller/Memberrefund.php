@@ -12,8 +12,8 @@ class Memberrefund extends BaseMember {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/memberrefund.lang.php');
-        Lang::load(APP_PATH . 'home/lang/zh-cn/memberorder.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/memberrefund.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/memberorder.lang.php');
         //向模板页面输出退款退货状态
         $this->getRefundStateArray();
     }

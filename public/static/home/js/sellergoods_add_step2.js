@@ -471,7 +471,7 @@ $(function(){
     // 添加图片按钮，显示图片空间文字
     $('a[nctype="mb_add_img"]').click(function(){
         $('a[nctype="meat_cancel"]').click();
-        $('div[nctype="mea_img"]').show().load(SITE_URL+'home/selleralbum/pic_list?item=mobile');
+        $('div[nctype="mea_img"]').show().load(SITE_URL+'mobile/selleralbum/pic_list?item=mobile');
     });
     // 关闭 图片选择
     $('div[nctype="mobile_editor_area"]').on('click', 'a[nctype="meai_cancel"]', function(){

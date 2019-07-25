@@ -13,7 +13,7 @@ class BaseMember extends BaseHome {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/basemember.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/basemember.lang.php');
         /* 不需要登录就能访问的方法 */
         if (!in_array(request()->controller() ,array('cart','pointshop','pointvoucher')) && !in_array(request()->action(), array('ajax_load', 'add', 'del')) && !session('member_id')) {
             $this->error('您需要先登录',url('Login/login'));
@@ -143,7 +143,7 @@ class BaseMember extends BaseHome {
                     array('name' => 'member_snshome', 'text' => '个人主页', 'url' => url('Home/membersnshome/index'),),
                     array('name' => 'member_article', 'text' => '我的CMS', 'url' => url('Home/memberarticle/index'),),
                     array('name' => 'p_center', 'text' => '我的圈子', 'url' => url('Home/pcenter/index'),),
-                    array('name' => 'home', 'text' => '我的微商城', 'url' => url('Home/home/index'),),
+                    array('name' => 'mobile', 'text' => '我的微商城', 'url' => url('Home/mobile/index'),),
                 )
             ),*/
 

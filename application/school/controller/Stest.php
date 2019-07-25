@@ -869,7 +869,7 @@ DELETE FROM x_packagesorder WHERE `order_id`>2028;
         $PhpQRCode->set('date', $classcard);
         $PhpQRCode->set('pngTempName', $classcard . '.png');
         $qr=$PhpQRCode->init();
-        $qr='/home/store/class/'.$qr;
+        $qr='/mobile/store/class/'.$qr;
         return $qr;
     }
 

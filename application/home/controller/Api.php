@@ -9,17 +9,17 @@ class Api
     public function oa_qq()
     {
         if (input('param.step') == 'callback') {
-            include APP_PATH.'home/api/qq/oauth/qq_callback.php';
+            include APP_PATH.'mobile/api/qq/oauth/qq_callback.php';
         }else{
-            include APP_PATH.'home/api/qq/oauth/qq_login.php';
+            include APP_PATH.'mobile/api/qq/oauth/qq_login.php';
         }
     }
     /*sina Login*/
     public function oa_sina(){
         if (input('param.step') == 'callback'){
-            include APP_PATH.'home/api/sina/callback.php';
+            include APP_PATH.'mobile/api/sina/callback.php';
         }else{
-            include APP_PATH.'home/api/sina/index.php';
+            include APP_PATH.'mobile/api/sina/index.php';
         }
     }
 

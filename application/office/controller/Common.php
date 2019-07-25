@@ -599,7 +599,7 @@ class Common extends AdminControl
         $PhpQRCode->set('date', $classcard);
         $PhpQRCode->set('pngTempName', $classcard . '.png');
         $qr=$PhpQRCode->init();
-        $qr='/home/store/class/'.$schoolCard.'/'.$qr;
+        $qr='/mobile/store/class/'.$schoolCard.'/'.$qr;
         return $qr;
     }
 

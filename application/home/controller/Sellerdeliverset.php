@@ -15,7 +15,7 @@ class Sellerdeliverset extends BaseSeller
     public function _initialize()
     {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/sellerdeliver.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/sellerdeliver.lang.php');
     }
 
     /**
@@ -315,27 +315,27 @@ class Sellerdeliverset extends BaseSeller
             array(
                 'name' => 'daddress',
                 'text' => '地址库',
-                'url' => url('home/Sellerdeliverset/index')
+                'url' => url('mobile/Sellerdeliverset/index')
             ),
             array(
                 'name' => 'express',
                 'text' => '默认物流公司',
-                'url' => url('home/Sellerdeliverset/express')
+                'url' => url('mobile/Sellerdeliverset/express')
             ),
             array(
                 'name' => 'free_freight',
                 'text' => '免运费额度',
-                'url' => url('home/Sellerdeliverset/free_freight')
+                'url' => url('mobile/Sellerdeliverset/free_freight')
             ),
             array(
                 'name' => 'deliver_region',
                 'text' => '默认配送地区',
-                'url' => url('home/Sellerdeliverset/deliver_region')
+                'url' => url('mobile/Sellerdeliverset/deliver_region')
             ),
             array(
                 'name' => 'print_set',
                 'text' => '发货单打印设置',
-                'url' => url('home/Sellerdeliverset/print_set')
+                'url' => url('mobile/Sellerdeliverset/print_set')
             )
         );
         return $menu_array;

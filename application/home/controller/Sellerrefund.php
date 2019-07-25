@@ -8,7 +8,7 @@ class Sellerrefund extends BaseSeller {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/sellerreturn.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/sellerreturn.lang.php');
         $this->getRefundStateArray();
     }
 
@@ -215,12 +215,12 @@ class Sellerrefund extends BaseSeller {
             array(
                 'name' => '2',
                 'text' => '售前退款',
-                'url' => url('home/sellerrefund/index',['lock'=>2])
+                'url' => url('mobile/sellerrefund/index',['lock'=>2])
             ),
             array(
                 'name' => '1',
                 'text' => '售后退款',
-                'url' => url('home/sellerrefund/index',['lock'=>1])
+                'url' => url('mobile/sellerrefund/index',['lock'=>1])
             ),
         );
         return $menu_array;

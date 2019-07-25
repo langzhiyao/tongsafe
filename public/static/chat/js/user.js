@@ -41,7 +41,7 @@
 									'<span class="show"></span>我的好友</dt><dd id="chat_friends" style="display: none;"></dd></dl>'+
 									'<dl id="chat_user_recent"><dt onclick="chat_show_user_list(\'recent\');"><span class="show"></span>最近联系人</dt><dd id="chat_recent" style="display: none;"></dd></dl></div></div>'+
 									'</div></div>';
-			var ajaxurl = SITE_URL+'index.php/home/Webchat/get_user_list?n=99&f_id='+user['u_id'];
+			var ajaxurl = SITE_URL+'index.php/mobile/Webchat/get_user_list?n=99&f_id='+user['u_id'];
 			$.ajax({
 				type: "GET",
 				url: ajaxurl,
@@ -61,7 +61,7 @@
 					$("#web_chat_dialog").prepend(chat_user_list);
 					$('#chat_user_list').perfectScrollbar();
 					setInterval( function () {
-						$.get(SITE_URL+'index.php/home/webchat/get_session?key=member_id');
+						$.get(SITE_URL+'index.php/mobile/webchat/get_session?key=member_id');
 					}, time_max*60000);
 					$("#chat_show_user").click(function() {
 					    chat_show_list();
@@ -70,7 +70,7 @@
 			});
 
 	        if (act_op == 'Goods_index' ) {//异步调用商品信息
-				var ajaxurl = SITE_URL+'index.php/home/webchat/get_goods_info?goods_id='+chat_goods_id;
+				var ajaxurl = SITE_URL+'index.php/mobile/webchat/get_goods_info?goods_id='+chat_goods_id;
 				$.ajax({
 					type: "GET",
 					url: ajaxurl,
@@ -294,7 +294,7 @@
 		}
 		$.ajax({
 			type: "POST",
-			url: SITE_URL+'/index.php/home/Webchat/send_msg',
+			url: SITE_URL+'/index.php/mobile/Webchat/send_msg',
 			dataType:"jsonp",
 			data: msg,
 			async: false,
@@ -345,7 +345,7 @@
 				if ( user_info['online'] > 0 ) set_user_info(u_id,"online",1);
 			}
 			if ( typeof user_list[u_id]['avatar'] === "undefined" ) {//当没获得会员信息时调用一次
-				var ajaxurl = SITE_URL+'/index.php/home/Webchat/get_info?t=member&u_id='+u_id;
+				var ajaxurl = SITE_URL+'/index.php/mobile/Webchat/get_info?t=member&u_id='+u_id;
 				$.ajax({
 					type: "GET",
 					url: ajaxurl,
@@ -430,7 +430,7 @@
 		}
 	}
 	function get_chat_msg(t){
-		var ajaxurl = SITE_URL+'/index.php/home/Webchat/get_chat_log?page=30&f_id='+user['u_id']+'&t_id='+chat_log['u_id']+'&t='+chat_log['time_from'];
+		var ajaxurl = SITE_URL+'/index.php/mobile/Webchat/get_chat_log?page=30&f_id='+user['u_id']+'&t_id='+chat_log['u_id']+'&t='+chat_log['time_from'];
 		if(chat_log['now_page'] > 0) ajaxurl += '&curpage='+(chat_log['now_page']+1);
 		$.ajax({
 			type: "GET",
@@ -468,7 +468,7 @@
 	        }
     	    if ( goods_id > 0 ) {
     	        if ( typeof goods_list[goods_id] === "undefined" ) {
-    				var ajaxurl = SITE_URL+'/index.php/home/Webchat/get_goods_info?goods_id='+goods_id;
+    				var ajaxurl = SITE_URL+'/index.php/mobile/Webchat/get_goods_info?goods_id='+goods_id;
     				$.ajax({
     					type: "GET",
     					url: ajaxurl,
@@ -505,7 +505,7 @@
 	        $("#chat_goods_list").show();
 	        return ;
 	    }
-		var ajaxurl = SITE_URL+'/index.php/home/Webchat/get_goods_list?s_id='+s_id;
+		var ajaxurl = SITE_URL+'/index.php/mobile/Webchat/get_goods_list?s_id='+s_id;
 		$.ajax({
 			type: "GET",
 			url: ajaxurl,
@@ -546,7 +546,7 @@
 		}
 		if(u_id == user['u_id']) return ;
 		if ( typeof user_list[u_id] === "undefined" || typeof user_list[u_id]['avatar'] === "undefined" ) {
-			var ajaxurl = SITE_URL+'/index.php/home/Webchat/get_info?t=member&u_id='+u_id;
+			var ajaxurl = SITE_URL+'/index.php/mobile/Webchat/get_info?t=member&u_id='+u_id;
 			$.ajax({
 				type: "GET",
 				url: ajaxurl,

@@ -13,7 +13,7 @@ class Storelist extends BaseMall {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/storelist.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/storelist.lang.php');
     }
 
     /**

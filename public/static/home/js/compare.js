@@ -1,12 +1,12 @@
 //加载对比商品
 function loadCompare(isrefresh) {
-    $("#comparelist").load(SITE_URL + 'index.php/home/compare/showcompare');
+    $("#comparelist").load(SITE_URL + 'index.php/mobile/compare/showcompare');
     return;
     if (!$("#comparelist").html()) {
         isrefresh = true;
     }
     if (isrefresh == true) {
-        $("#comparelist").load(SITE_URL + 'index.php/home/compare/showcompare');
+        $("#comparelist").load(SITE_URL + 'index.php/mobile/compare/showcompare');
     }
 }
 //添加对比商品
@@ -16,7 +16,7 @@ function addCompare(gid) {
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: SITE_URL + 'index.php/home/compare/addcompare?id=' + gid,
+            url: SITE_URL + 'index.php/mobile/compare/addcompare?id=' + gid,
             async: false,
             success: function (data) {
                 if (data.done == true) {
@@ -38,7 +38,7 @@ function delCompare(gid, type) {
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: SITE_URL + 'index.php/home/compare/delcompare?gid=' + gid + '&type=' + type,
+        url: SITE_URL + 'index.php/mobile/compare/delcompare?gid=' + gid + '&type=' + type,
         async: false,
         success: function (data) {
             if (data.done == true) {
@@ -56,7 +56,7 @@ function delCompare(gid, type) {
                     loadCompare(true);
                     $("#content-compare").animate({right: '40px'});
                 } else {
-                    go(SITE_URL + 'index.php/home/compare/index/gids/' + data.gid_str);
+                    go(SITE_URL + 'index.php/mobile/compare/index/gids/' + data.gid_str);
                 }
             }
             $("#lockcompare").val('unlock');//解除加入对比按钮的锁定
@@ -86,7 +86,7 @@ function initCompare() {
     });
 
     //根据是否已加入对比，显示不同样式
-    $.getJSON(SITE_URL + 'index.php/home/compare/checkcompare', function (data) {
+    $.getJSON(SITE_URL + 'index.php/mobile/compare/checkcompare', function (data) {
         if (data) {
             $.each(data, function (i, val) {
                 $("[nc_type='compare_" + val + "']").addClass('selected');

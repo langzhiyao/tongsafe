@@ -2,7 +2,7 @@ var Domain = window.location.href;
 var si=Domain.indexOf('wap');
 var SiteDomain =Domain.substring(7,si-1);
 var http = 'https:' == document.location.protocol ? 'https://': 'http://';
-var SiteUrl = http+SiteDomain+"/index.php/home";
+var SiteUrl = http+SiteDomain+"/index.php/mobile";
 var ApiUrl = http+SiteDomain+"/index.php/mobile";
 var pagesize = 10;
 var WapSiteUrl = http+SiteDomain+"/wap";

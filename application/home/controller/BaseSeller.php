@@ -14,8 +14,8 @@ class BaseSeller extends BaseMall {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/basemember.lang.php');
-        Lang::load(APP_PATH . 'home/lang/zh-cn/baseseller.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/basemember.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/baseseller.lang.php');
         //卖家中心模板路径
         $this->template_dir = 'default/seller/' . strtolower(request()->controller()) . '/';
         if (request()->controller() != 'Sellerlogin') {

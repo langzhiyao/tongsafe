@@ -33,7 +33,7 @@ class Robotrecord extends MobileMember
         $where = "student_id=".$student_id." and ioTime>=".$startTime." and ioTime<=".$endTime;
         $SNNumberInfo = $robot_model->getReportList($where);
         $weekarray=array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
-        $path = "http://".$_SERVER['HTTP_HOST']."/uploads/home/robotvideo/";
+        $path = "http://".$_SERVER['HTTP_HOST']."/uploads/mobile/robotvideo/";
         foreach($SNNumberInfo as $k=>$v){
             $SNNumberInfo[$k]['ioDate'] = date("Y-m-d",$v['ioTime']);
             $SNNumberInfo[$k]['ioTime'] = date("H:i:s",$v['ioTime']);

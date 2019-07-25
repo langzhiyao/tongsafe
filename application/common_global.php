@@ -32,7 +32,7 @@ define('DIR_WAP','wap');
 define('DIR_RESOURCE','data/resource');
 define('DIR_UPLOAD','public/uploads');
 
-define('ATTACH_PATH','home');
+define('ATTACH_PATH','mobile');
 define('ATTACH_COMMON',ATTACH_PATH.'/common');
 define('ATTACH_AVATAR',ATTACH_PATH.'/avatar');
 define('ATTACH_CARD',ATTACH_PATH.'/card');
@@ -135,7 +135,7 @@ define('ORDER_EVALUATE_TIME', 1296000);
 define('OFFLINE_ORDER_CANCEL_TIME', 3);//单位为天
 
 define('MOBILE_SITE_URL', 'http://'.$_SERVER['HTTP_HOST'].substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php')).'mobile');
-define('SHOP_SITE_URL', 'http://'.$_SERVER['HTTP_HOST'].substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php')).'home');
+define('SHOP_SITE_URL', 'http://'.$_SERVER['HTTP_HOST'].substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php')).'mobile');
 define('WAP_SITE_URL', 'http://'.$_SERVER['HTTP_HOST'].substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php')).'wap');
 
 define('APP_SITE_URL', 'http://'.$_SERVER['HTTP_HOST'].substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php')).'app');

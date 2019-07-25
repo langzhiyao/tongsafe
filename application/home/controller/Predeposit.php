@@ -13,7 +13,7 @@ class Predeposit extends BaseMember {
 
     public function _initialize() {
         parent::_initialize();
-        Lang::load(APP_PATH . 'home/lang/zh-cn/predeposit.lang.php');
+        Lang::load(APP_PATH . 'mobile/lang/zh-cn/predeposit.lang.php');
     }
 
     /**

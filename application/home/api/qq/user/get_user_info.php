@@ -1,6 +1,6 @@
 <?php
-require_once(APP_PATH.DS.'home'.DS.'api'.DS.'qq'.DS.'comm'.DS."config.php");
-require_once(APP_PATH.DS.'home'.DS.'api'.DS.'qq'.DS.'comm'.DS."utils.php");
+require_once(APP_PATH.DS.'mobile'.DS.'api'.DS.'qq'.DS.'comm'.DS."config.php");
+require_once(APP_PATH.DS.'mobile'.DS.'api'.DS.'qq'.DS.'comm'.DS."utils.php");
 
 function get_user_info()
 {
