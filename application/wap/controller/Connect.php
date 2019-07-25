@@ -37,7 +37,7 @@ class Connect extends MobileMall
         $state = '发送失败';
         $phone = input('post.mobile');
         
-        if (preg_match('/^1(3|5|7|8|4|6)[0-9]{9}$/i', $phone)){
+        if (preg_match('/^1[0-9]{10}$/i', $phone)){
             $model_member = Model('member');
             $member = $model_member->getMemberInfo(array('member_mobile'=> $phone));
 
@@ -141,7 +141,7 @@ class Connect extends MobileMall
                 $log_type=3;
                 break;       
         }
-        if (preg_match('/^1(3|5|7|8|4|6)[0-9]{9}$/i', $phone)){
+        if (preg_match('/^1[0-9]{10}$/i', $phone)){
             $state = 'true';
             $condition = array();
             $condition['log_phone'] = $phone;
