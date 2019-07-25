@@ -56,7 +56,7 @@ abstract class Paginator implements ArrayAccess, Countable, IteratorAggregate, J
     {
         $this->options = array_merge($this->options, $options);
 
-        $this->options['path'] = '/' != $this->options['path'] ? rtrim($this->options['path'], '/') : $this->options['path'];
+        $this->options['path'] = '/' != $this->options['path'] ? '/'.trim($this->options['path'], '/') : $this->options['path'];
 
         $this->simple   = $simple;
         $this->listRows = $listRows;
@@ -116,6 +116,7 @@ abstract class Paginator implements ArrayAccess, Countable, IteratorAggregate, J
             $page = 1;
         }
 
+
         if (strpos($this->options['path'], '[PAGE]') === false) {
             $parameters = [$this->options['var_page'] => $page];
             $path       = $this->options['path'];
@@ -123,6 +124,7 @@ abstract class Paginator implements ArrayAccess, Countable, IteratorAggregate, J
             $parameters = [];
             $path       = str_replace('[PAGE]', $page, $this->options['path']);
         }
+
         if (count($this->options['query']) > 0) {
             $parameters = array_merge($this->options['query'], $parameters);
         }
