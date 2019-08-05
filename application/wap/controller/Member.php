@@ -264,7 +264,7 @@ class Member extends MobileMember
         if(empty($type_id)){
             output_error('缺少参数type_id');
         }
-        $where = ' o.buyer_id = "'.$member_id.'" AND o.delete_state = 0 ';
+        $where = ' o.buyer_id = "'.$member_id.'" AND o.delete_state = 0 AND o.order_state > 10';
         $order ='';
         switch ($type_id){
             case 1:
@@ -293,6 +293,7 @@ class Member extends MobileMember
                 $order[$key]['add_time']=date('Y-m-d',$value['add_time']);
             }
         }
+        halt($order);
         output_data($order);
 
 

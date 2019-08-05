@@ -104,6 +104,8 @@ $lang['member_index_talk_deny']		= '禁止发表言论';
 $lang['member_index_login_deny']	= '禁止登录';
 $lang['member_index_login']			= '登录';
 $lang['student_index_id']			= '学生ID';
+$lang['access_card']			    = '门禁卡号';
+$lang['bind_access_card']			    = '绑定门禁卡号';
 /**
  * 编辑
  */
@@ -162,9 +164,11 @@ $lang['school_idcard_length']     = '请输入正确的身份证号';
 $lang['school_add_phone_null']		= '电话不能为空';
 $lang['school_add_name_null']		= '联系人不能为空';
 $lang['position_add_name_exists']		= '房间名已存在，请重新输入';
+$lang['position_add_access_card_exists']		= '门禁卡号已被绑定，请重新输入';
 $lang['class_add_name_exists']		= '班级名已存在，请重新输入';
 $lang['class_add_cards_exists']		= '身份证号已存在，请重新输入';
 $lang['school_add_position_null']		= '房间名不能为空';
+$lang['school_add_access_card_null']		= '门禁卡号不能为空';
 $lang['school_add_class_null']		= '班级名不能为空';
 $lang['school_classcard_null']		= '班级识别码不能为空';
 $lang['school_dieline_null']		= '合同截止日期不能为空';

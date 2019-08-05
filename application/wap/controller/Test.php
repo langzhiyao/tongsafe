@@ -51,7 +51,7 @@ class Test extends Controller{
                 $PhpQRCode->set('date', $classcard);
                 $PhpQRCode->set('pngTempName', $classcard . '.png');
                 $qr = $PhpQRCode->init();
-                $data['qr'] = '/mobile/class/' . $schoolInfo['schoolCard'] . '/' . $qr;
+                $data['qr'] = '/class/' . $schoolInfo['schoolCard'] . '/' . $qr;
                 //验证数据  END
                 $data['res_group_id'] = 0;
                 $model_classes->addClasses($data);

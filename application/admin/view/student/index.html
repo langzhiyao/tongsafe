@@ -93,9 +93,10 @@
             <th class="align-center">{$Think.lang.school_index_classname}</th>
             <th class="align-center">{$Think.lang.school_index_name}</th>
             <th class="align-center">{$Think.lang.school_index_region}</th>
-            <th class="align-center">{$Think.lang.school_index_time}</th>
+            <th class="align-center">{$Think.lang.access_card}</th>
             <th class="align-center">{$Think.lang.school_index_status}</th>
             <th class="align-center">{$Think.lang.school_index_desc}</th>
+            <th class="align-center">{$Think.lang.school_index_time}</th>
             <?php  if(session('admin_is_super') ==1 || (in_array('4',$action) || in_array('3',$action) || in_array('2',$action))){?>
             <th class="align-center">{$Think.lang.ds_handle}</th>
             <?php } ?>
@@ -111,9 +112,10 @@
             <td class="align-center"><?php echo $v['typename']; ?>-<?php echo $v['classname']; ?></td>
             <td class="align-center"><?php echo $v['schoolname']; ?></td>
             <td class="align-center"><?php echo $v['s_region']; ?></td>
-            <td class="align-center"><?php echo $v['s_createtime']; ?></td>
-            <td class="align-center"><?php if(empty($v['s_ownerAccount'])){echo "未绑定";}else{echo "已绑定";} ?></td>
+            <td class="align-center"><?php if(empty($v['access_card'])){echo "暂未绑定";}else{echo $v['access_card'];} ?></td>
+            <td class="align-center"><?php if(empty($v['s_ownerAccount'])){echo "未绑定家长";}else{echo "已绑定家长";} ?></td>
             <td class="align-center"><?php echo $v['s_remark']; ?></td>
+            <td class="align-center"><?php echo $v['s_createtime']; ?></td>
             <td class="align-center">
                 <?php if(session('admin_is_super') ==1 || in_array('4',$action)){ ?>
                 <a href="javascript:dd({$v.s_id})" class="layui-btn layui-btn-xs">{$Think.lang.ds_view}</a>
@@ -121,6 +123,7 @@
                 <?php if(session('admin_is_super') ==1 || in_array('3',$action)){ ?>
                 <a href="{:url('/admin/student/edit',['student_id'=>$v.s_id])}" class="layui-btn layui-btn-xs">{$Think.lang.ds_edit}</a>
                 <?php } ?>
+                <a href="{:url('/admin/student/access_card',['s_id'=>$v.s_id])}" class="layui-btn layui-btn-xs">{$Think.lang.bind_access_card}</a>
                 <?php if(session('admin_is_super') ==1 || in_array('2',$action)){ ?>
                 <a href="javascript:void(0)" onclick="if(confirm('{$Think.lang.ds_ensure_del}'))
                 location.href='{:url('/admin/student/drop',['student_id'=>$v.s_id])}';" class="layui-btn layui-btn-xs">{$Think.lang.ds_del}</a>
@@ -330,6 +333,8 @@
 
         });
     }
+
+
 
     $(function() {
         regionInit("region");

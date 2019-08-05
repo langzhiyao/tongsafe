@@ -207,6 +207,22 @@ class Student extends AdminControl {
                     exit;
                 }
                 break;
+            /**
+             * 验证门禁卡是否重复
+             */
+            case 'check_access_card':
+                $model_student = model('Student');
+                $condition['access_card'] = input('param.access_card');
+                $condition['s_id'] = array('neq',input('param.s_id'));
+                $list = $model_student->getStudentInfo($condition);
+                if (empty($list)) {
+                    echo 'true';
+                    exit;
+                } else {
+                    echo 'false';
+                    exit;
+                }
+                break;
         }
     }
 
@@ -250,6 +266,49 @@ class Student extends AdminControl {
             echo json_encode($classList);
         }
     }
+
+    /**
+     * @desc 绑定或修改学生门禁卡
+     * @author langzhiyao
+     * @time 2019/8/4 11:42
+     */
+    public function access_card() {
+    if(session('admin_is_super') !=1 && !in_array(10,$this->action )){
+        $this->error(lang('ds_assign_right'));
+    }
+    $s_id = input('param.s_id');
+    $model_student = model('Student');
+    if (empty($s_id)) {
+        $this->error(lang('param_error'));
+    }
+
+    $student_info = $model_student->getStudentInfo(array('s_id'=>$s_id));
+    if (empty($student_info)) {
+        $this->error('会员不存在');
+    }
+    if(!request()->isPost()){
+
+        $this->assign('student_id'.$s_id);
+        $this->assign('student_info',$student_info);
+        return $this->fetch();
+    }else{
+        $s_id = input('param.s_id');
+        $data = array(
+          'access_card' => trim(input('param.access_card')),
+          'update_time' => time()
+        );
+        $result = $model_student->editStudent($data,array('s_id'=>$s_id));
+
+        if ($result) {
+            $this->success('绑定成功', 'Student/index');
+        } else {
+            $this->error('删除失败');
+        }
+
+    }
+
+    return $this->fetch();
+}
 
     /**
      * 获取卖家栏目列表,针对控制器下的栏目
