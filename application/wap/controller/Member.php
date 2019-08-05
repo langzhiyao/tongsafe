@@ -293,7 +293,7 @@ class Member extends MobileMember
                 $order[$key]['add_time']=date('Y-m-d',$value['add_time']);
             }
         }
-        halt($order);
+        
         output_data($order);
 
 
