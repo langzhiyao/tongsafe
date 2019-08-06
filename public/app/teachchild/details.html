@@ -25,21 +25,20 @@
             <a href="javascript:;" class="back_btn" onClick="historyback()">
                 <i class="icon iconfont icon-jiantou3"></i>
             </a>
-            <p class="collectBtn" id="collect" onclick="collectVideo()" >收藏</p>
-            <p class="collectBtn" id="qxCollect" onclick="qxCollectVideo()" style="display: none;">取消收藏</p>
+<!--            <p class="collectBtn" id="collect" onclick="collectVideo()" >收藏</p>-->
+<!--            <p class="collectBtn" id="qxCollect" onclick="qxCollectVideo()" style="display: none;">取消收藏</p>-->
         </div>
     </header>
-    <div class="video_box">
+    <div class="video_box" id="Flash1">
         <div class="video_box_inner">
             <div class="upload_video">
                 <div class="videoimg_box">
                     <img id="video_image" src="" />
                     <a href="javascript:;" class="video_play_btn"></a>
                 </div>
-                <div id="video" style="width: 750px; height: auto;margin:0 auto 30px">
+                <div id="video" style="width: 750px; height: auto;margin:0 auto 30px;" >
                 </div>
-
-               </div>
+            </div>
         </div>
     </div>
 
@@ -101,10 +100,14 @@
     }
 
     $(".video_play_btn").click(function() {
-        if(!user_token){
-            $.toast("请前往登陆", 'forbidden');
-        }else{
-            $.ajax({
+        $('.video_play_btn').parent().hide();
+        $("#video").show();
+        $('#video_true').get(0).play();
+
+        // if(!user_token){
+        //     $.toast("请前往登陆", 'forbidden');
+        // }else{
+            /*$.ajax({
                 type:'POST',
                 url:api+'/Teacherdecide/decide.html',
                 data:{
@@ -125,9 +128,8 @@
                         $.toast('系统错误','forbidden');
                     }
                 }
-            })
-
-        }
+            })*/
+        // }
     });
 
 </script>
