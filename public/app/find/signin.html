@@ -133,30 +133,30 @@
                         </div>
                     </div>
                     <div class="sn_status_r">
-                        <div class="signin yes"><i class="icon iconfont icon-yuandianzhong"></i><span>已签到</span></div>
-                        <div class="signinoff"><i class="icon iconfont icon-yuandianzhong"></i><span>未签离</span></div>
+                        <div class="signin off" id="in"><i class="icon iconfont icon-yuandianzhong"></i><span>未签到</span></div>
+                        <div class="signin off" id="out"><i class="icon iconfont icon-yuandianzhong"></i><span>未签离</span></div>
                     </div>
                 </div>
 
                 <div class="sn_videos">
                     <div class="sn_videos_t">
                         <span>打卡记录</span>
-                        <a href="signinmore.html">更多记录 <i class="icon iconfont icon-jiantou"></i></a>
+<!--                        <a href="signinmore.html">更多记录 <i class="icon iconfont icon-jiantou"></i></a>-->
                     </div>
                     <div class="sn_videos_b">
                         <dl class="sn_videos_list">
-                            <dt>签到视频<span>—</span><span class="sndate">2019年06月17日</span></dt>
+                            <dt>签到视频<span>—</span><span class="sndate"></span></dt>
                             <dd>
-                                <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
-                                    <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                <video id="video_in" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                    <source src="" type="video/mp4">
                                 </video>
                             </dd>
                         </dl>
                         <dl class="sn_videos_list">
-                            <dt>签离视频<span>—</span><span class="sndate">2019年06月17日</span></dt>
+                            <dt>签离视频<span>—</span><span class="sndate"></span></dt>
                             <dd>
-                                <video id="video_true" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
-                                    <source src="../video/wangxiaoya.mp4" type="video/mp4">
+                                <video id="video_out" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" onplay="full_video($(this))">
+                                    <source src="" type="video/mp4">
                                 </video>
                             </dd>
                         </dl>
@@ -175,30 +175,102 @@
     <script src="../content/plugins/layui/layui.js"></script>
     <script src="../content/scripts/commom.js"></script>
     <script>
-        //新增 start
-        layui.use('laydate', function() {
-            var laydate = layui.laydate;
-            laydate.render({
-                elem: '#signindate',
-                position: 'static',
-                min: -6,
-                max: 0,
-                showBottom: false,
-                ready: function(date) {
-                    console.log(date); //得到初始的日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
-                    $("#snday").text(date.date);
-                    $("#snmonth").text(date.month);
-                    $("#snyear").text(date.year);
-                },
-                done: function(value, date) {
-                    $("#snday").text(date.date);
-                    $("#snmonth").text(date.month);
-                    $("#snyear").text(date.year);
-                }
+        // 10000611
+        // _initialize('5264');
+        function _initialize(s_id){
+            layui.use(['laydate','layer'], function() {
+                var laydate = layui.laydate;
+                laydate.render({
+                    elem: '#signindate',
+                    position: 'static',
+                    min: -6,
+                    max: 0,
+                    showBottom: false,
+                    ready: function(date) {
+                        // console.log(date); //得到初始的日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
+                        $("#snday").text(date.date);
+                        $("#snmonth").text(date.month);
+                        $("#snyear").text(date.year);
+                        var sign_date = $("#snyear").text()+'年'+$("#snmonth").text()+'月'+ $("#snday").text()+'日';
+                        var startTime = $("#snyear").text()+'-'+$("#snmonth").text()+'-'+ $("#snday").text();
+                        f(s_id,sign_date,startTime);
+                    },
+                    done: function(value, date) {
+                        $('#signindate').change();
+                        $("#snday").text(date.date);
+                        $("#snmonth").text(date.month);
+                        $("#snyear").text(date.year);
+                        var sign_date = $("#snyear").text()+'年'+$("#snmonth").text()+'月'+ $("#snday").text()+'日';
+                        var startTime = $("#snyear").text()+'-'+$("#snmonth").text()+'-'+ $("#snday").text();
+                        f(s_id,sign_date,startTime);
+                    }
+                });
+
             });
-        })
+        }
+        //新增 start
 
         //新增 end
+
+        function f(s_id,sign_date,startTime) {
+            $.ajax({
+                type:'POST',
+                url:api+'/Sign/get_sign.html',
+                data:{s_id:s_id,startTime:startTime,endTime:startTime},
+                dataType:'json',
+                success: function (response) {
+                    $('.sndate').html(sign_date);
+                    if(response.code == 0){
+                        if(response.result.count == 0){
+                            //未签到 也未签离
+                            $('.signin').removeClass('yes');
+                            $('.signin').addClass('off');
+                            $('#in').find('span').html('未签到');
+                            $('#out').find('span').html('未签离');
+                            $('#video_in source').attr('src','');
+                            $('#video_in').attr('poster','');
+                            $('#video_out source').attr('src','');
+                            $('#video_out').attr('poster','');
+                        }else if(response.result.count == 1){
+                            if(response.result.results[0].status == 0){
+                                $('#in').removeClass('off');
+                                $('#in').addClass('yes');
+                                $('#in').find('span').html('已签到');
+                                $('#out').removeClass('yes');
+                                $('#out').addClass('off');
+                                $('#out').find('span').html('未签离');
+                                $('#video_in').attr('poster',response.result.results[0].thumbnail);
+                                $('#video_in source').attr('src',response.result.results[0].url);
+                                $('#video_out source').attr('src','');
+                                $('#video_out').attr('poster','');
+                            }else{
+                                $('#out').removeClass('off');
+                                $('#out').addClass('yes');
+                                $('#out').find('span').html('已签离');
+                                $('#in').removeClass('yes');
+                                $('#in').addClass('off');
+                                $('#in').find('span').html('未签到');
+                                $('#video_out').attr('poster',response.result.results[0].thumbnail);
+                                $('#video_out source').attr('src',response.result.results[0].url);
+                                $('#video_in source').attr('src','');
+                                $('#video_in').attr('poster','');
+                            }
+                        }else{
+                            $('.signin').removeClass('off');
+                            $('.signin').addClass('yes');
+                            $('#in').find('span').html('已签到');
+                            $('#out').find('span').html('已签离');
+                            $('#video_in source').attr('src',response.result.results[1].url);
+                            $('#video_in').attr('poster',response.result.results[1].thumbnail);
+                            $('#video_out source').attr('src',response.result.results[0].url);
+                            $('#video_out').attr('poster',response.result.results[0].thumbnail);
+                        }
+                    }else{
+                        $.toast(response.codemsg,'forbidden');return false;
+                    }
+                }
+            });
+        }
 
         // 播放器大小控制
         function full_video(video_obj) {

@@ -9,6 +9,7 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+
 namespace think;
 
 use think\exception\ValidateException;
@@ -48,7 +49,12 @@ class Controller
      */
     public function __construct(Request $request = null)
     {
-        header("Access-Control-Allow-Origin: *");
+        // 指定允许其他域名访问
+        header('Access-Control-Allow-Origin:*');
+        // 响应类型
+        header('Access-Control-Allow-Methods:*');
+        // 响应头设置
+        header('Access-Control-Allow-Headers:x-requested-with,content-type');
         if (is_null($request)) {
             $request = Request::instance();
         }
