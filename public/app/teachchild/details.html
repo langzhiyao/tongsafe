@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../content/style/teachchild/details.css" type="text/css" />
     <link rel="shortcut icon" href="../content/images/ico.ico" type="image/x-icon" />
     <script src="../content/scripts/mobile-util.js"></script>
+    <link rel="stylesheet" href="../content/plugins/share/sharestyle.css" type="text/css" />
 </head>
 
 <body>
@@ -44,7 +45,26 @@
 
     <div id="related">
     </div>
-
+    <!-- 分享 -->
+    <div class="gb_resLay" id="gb_resLay">
+        <div class="gb_res_t"><span>分享到</span><i></i><span class="icon iconfont icon-guanbi"></span></div>
+        <div class="bdsharebuttonbox">
+            <ul class="gb_resItms">
+                <li>
+                    <a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a>微信好友 </li>
+                <li>
+                    <a title="分享到QQ好友" href="#" class="bds_sqq" data-cmd="sqq"></a>QQ好友 </li>
+                <li>
+                    <a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a>QQ空间 </li>
+                <li>
+                    <a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a>腾讯微博 </li>
+                <li>
+                    <a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a>新浪微博 </li>
+                <li>
+                    <a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a>人人网 </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 <script src="../content/scripts/jquery.min.js"></script>
@@ -54,7 +74,7 @@
 <script src="../content/scripts/commom.js"></script>
 <script src="../content/plugins/ckplayer/ckplayer.js"></script>
 <script src="../content/scripts/teachchild/details.js"></script>
-
+<script src="../content/plugins/share/share.js"></script>
 <script>
     // 播放视频
     if(user_token){

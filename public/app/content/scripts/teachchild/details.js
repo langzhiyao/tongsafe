@@ -178,14 +178,14 @@ $(function() {
             '<div class="related2">' ;
             if(data[0]['data']['myself'] == 0){
                 if (data[0]['data']['t_price'] == 0 && data[0]['data']['buy'] == 0) {
-                    template +='<button type="button" >' + price + '</button>'
+                    template +='<button type="button" onclick="share()">' + price + '</button>'
                 } else if(data[0]['data']['t_price'] != 0 && data[0]['data']['buy'] == 0){
-                    template +='<button type="button" onclick="pay(' + data[0]['data']['t_id'] + ');">' + price + '</button>';
+                    template +='<button type="button" onclick="share()" onclick="pay(' + data[0]['data']['t_id'] + ');">' + price + '</button>';
                 } else if(data[0]['data']['t_price'] != 0 && data[0]['data']['buy'] != 0){
-                    template +='<button type="button" >' + price + '</button>'
+                    template +='<button type="button" onclick="share()">' + price + '</button>'
                 }
             }else{
-                template +='<button type="button" >' + price + '</button>'
+                template +='<button type="button" onclick="share()">' + price + '</button>'
             }
             template +=   '</div>' +
                 '</div>' +
@@ -206,6 +206,16 @@ function pay(t_id){
 
 function msg_switch(obj) {
     obj.toggleClass("open");
+}
+
+function share(){
+    if ($("#gb_resLay").hasClass("open")) {
+        $("#gb_resLay").removeClass("open");
+        document.documentElement.style.overflow = "visible";
+    } else {
+        $("#gb_resLay").addClass("open");
+        document.documentElement.style.overflow = "hidden";
+    }
 }
 
 
