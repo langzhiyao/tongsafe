@@ -147,17 +147,13 @@
                         <dl class="sn_videos_list">
                             <dt>签到视频<span>—</span><span class="sndate"></span></dt>
                             <dd>
-                                <video id="video_in" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" >
-                                    <source src="" type="video/mp4">
-                                </video>
+                                <video id="video_in" controls="controls" controlslist ="nodownload"  src=""  width="100%" height="100%"  preload="none"  poster=""></video>
                             </dd>
                         </dl>
                         <dl class="sn_videos_list">
                             <dt>签离视频<span>—</span><span class="sndate"></span></dt>
                             <dd>
-                                <video id="video_out" controls="controls" controlsList="nodownload" width="100%" height="100%" preload="none" poster="" >
-                                    <source src="" type="video/mp4">
-                                </video>
+                                <video id="video_out" controls="controls" controlslist ="nodownload"  src=""  width="100%" height="100%"  preload="none"  poster=""></video>
                             </dd>
                         </dl>
                     </div>
@@ -176,7 +172,7 @@
     <script src="../content/scripts/commom.js"></script>
     <script>
         // 10000611
-        // _initialize('5264');
+        _initialize('4915');
         function _initialize(s_id){
             layui.use(['laydate','layer'], function() {
                 var laydate = layui.laydate;
@@ -227,9 +223,9 @@
                             $('.signin').addClass('off');
                             $('#in').find('span').html('未签到');
                             $('#out').find('span').html('未签离');
-                            $('#video_in source').attr('src','');
+                            $('#video_in').attr('src','');
                             $('#video_in').attr('poster','');
-                            $('#video_out source').attr('src','');
+                            $('#video_out').attr('src','');
                             $('#video_out').attr('poster','');
                         }else if(response.result.count == 1){
                             if(response.result.results[0].status == 0){
@@ -240,8 +236,8 @@
                                 $('#out').addClass('off');
                                 $('#out').find('span').html('未签离');
                                 $('#video_in').attr('poster',response.result.results[0].thumbnail);
-                                $('#video_in source').attr('src',response.result.results[0].url);
-                                $('#video_out source').attr('src','');
+                                $('#video_in').attr('src',response.result.results[0].url);
+                                $('#video_out').attr('src','');
                                 $('#video_out').attr('poster','');
                             }else{
                                 $('#out').removeClass('off');
@@ -251,8 +247,8 @@
                                 $('#in').addClass('off');
                                 $('#in').find('span').html('未签到');
                                 $('#video_out').attr('poster',response.result.results[0].thumbnail);
-                                $('#video_out source').attr('src',response.result.results[0].url);
-                                $('#video_in source').attr('src','');
+                                $('#video_out').attr('src',response.result.results[0].url);
+                                $('#video_in').attr('src','');
                                 $('#video_in').attr('poster','');
                             }
                         }else{
@@ -260,9 +256,9 @@
                             $('.signin').addClass('yes');
                             $('#in').find('span').html('已签到');
                             $('#out').find('span').html('已签离');
-                            $('#video_in source').attr('src',response.result.results[1].url);
+                            $('#video_in').attr('src',response.result.results[1].url);
                             $('#video_in').attr('poster',response.result.results[1].thumbnail);
-                            $('#video_out source').attr('src',response.result.results[0].url);
+                            $('#video_out').attr('src',response.result.results[0].url);
                             $('#video_out').attr('poster',response.result.results[0].thumbnail);
                         }
                     }else{
@@ -270,18 +266,6 @@
                     }
                 }
             });
-        }
-
-        // 播放器大小控制
-        function full_video(video_obj) {
-            video_obj.addClass("video_full");
-            $(document.body).append("<span class='video_close' onclick='videoclose()'>X</span>");
-        }
-
-        function videoclose() {
-            $("video").get(0).pause();
-            $("video").eq(0).removeClass("video_full");
-            $(".video_close").hide();
         }
     </script>
 </body>
