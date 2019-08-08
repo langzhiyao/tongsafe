@@ -102,14 +102,6 @@
 <!--<script src="../content/plugins/share/share.js"></script>-->
 <script src="../content/plugins/soshm-master/dist/soshm.min.js"></script>
 <script>
-    window.onload = function(){
-        document.getElementById('shareBtn').on("click",function () {
-            soshm.popIn({
-                title: '弹窗分享',
-                sites: ['weixin', 'weixintimeline', 'yixin', 'weibo', 'qq', 'qzone']
-            });
-        }, false);
-    };
     // 播放视频
     if(user_token){
         $.ajax({
