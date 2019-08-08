@@ -90,9 +90,8 @@
             </ul>
         </div>
     </div>-->
+    <div class="soshm"></div>
 </body>
-<!-- 分享 -->
-<div class="soshm"></div>
 <script src="../content/scripts/jquery.min.js"></script>
 <script src="../content/plugins/jqweui/js/jquery-weui.min.js"></script>
 <script src="../content/scripts/juqery.cookie.js"></script>
@@ -103,12 +102,14 @@
 <!--<script src="../content/plugins/share/share.js"></script>-->
 <script src="../content/plugins/soshm-master/dist/soshm.min.js"></script>
 <script>
-    document.getElementById('shareBtn').addEventListener('click', function() {
-        soshm.popIn({
-            title: '弹窗分享',
-            sites: ['weixin', 'weixintimeline', 'yixin', 'weibo', 'qq', 'qzone']
-        });
-    }, false);
+    window.onload = function(){
+        document.getElementById('shareBtn').addEventListener('click', function() {
+            soshm.popIn({
+                title: '弹窗分享',
+                sites: ['weixin', 'weixintimeline', 'yixin', 'weibo', 'qq', 'qzone']
+            });
+        }, false);
+    }
     // 播放视频
     if(user_token){
         $.ajax({
