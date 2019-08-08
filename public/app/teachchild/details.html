@@ -17,7 +17,32 @@
     <link rel="stylesheet" href="../content/style/teachchild/details.css" type="text/css" />
     <link rel="shortcut icon" href="../content/images/ico.ico" type="image/x-icon" />
     <script src="../content/scripts/mobile-util.js"></script>
-    <link rel="stylesheet" href="../content/plugins/share/sharestyle.css" type="text/css" />
+<!--    <link rel="stylesheet" href="../content/plugins/share/sharestyle.css" type="text/css" />-->
+    <style>
+        .soshm-pop-sites {
+            top: auto !important;
+            bottom: 0 !important;
+            -webkit-transform: translateY(0%) !important;
+            transform: translateY(0%) !important;
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 0 20px inset #aaa;
+        }
+        .soshm-group {
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-around !important;
+        }
+        .soshm-item {
+            width: 150px !important;
+            text-align: center !important;
+        }
+        .soshm-item-text {
+            display: block !important;
+            font-size: 22px !important;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,8 +70,8 @@
 
     <div id="related">
     </div>
-    <!-- 分享 -->
-    <div class="gb_resLay" id="gb_resLay">
+
+    <!--<div class="gb_resLay" id="gb_resLay">
         <div class="gb_res_t"><span>分享到</span><i></i><span class="icon iconfont icon-guanbi"></span></div>
         <div class="bdsharebuttonbox">
             <ul class="gb_resItms">
@@ -64,9 +89,10 @@
                     <a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a>人人网 </li>
             </ul>
         </div>
-    </div>
+    </div>-->
 </body>
-
+<!-- 分享 -->
+<div class="soshm"></div>
 <script src="../content/scripts/jquery.min.js"></script>
 <script src="../content/plugins/jqweui/js/jquery-weui.min.js"></script>
 <script src="../content/scripts/juqery.cookie.js"></script>
@@ -74,8 +100,15 @@
 <script src="../content/scripts/commom.js"></script>
 <script src="../content/plugins/ckplayer/ckplayer.js"></script>
 <script src="../content/scripts/teachchild/details.js"></script>
-<script src="../content/plugins/share/share.js"></script>
+<!--<script src="../content/plugins/share/share.js"></script>-->
+<script src="../content/plugins/soshm-master/dist/soshm.min.js"></script>
 <script>
+    document.getElementById('shareBtn').addEventListener('click', function() {
+        soshm.popIn({
+            title: '弹窗分享',
+            sites: ['weixin', 'weixintimeline', 'yixin', 'weibo', 'qq', 'qzone']
+        });
+    }, false);
     // 播放视频
     if(user_token){
         $.ajax({
