@@ -103,10 +103,7 @@
 <script src="../content/plugins/soshm-master/dist/soshm.min.js"></script>
 <script>
     window.onload = function(){
-        $('#shareBtn').click(function () {
-            alert('aaa');
-        });
-        document.getElementById('shareBtn').onclick(function () {
+        document.getElementById('shareBtn').on("click",function () {
             soshm.popIn({
                 title: '弹窗分享',
                 sites: ['weixin', 'weixintimeline', 'yixin', 'weibo', 'qq', 'qzone']
