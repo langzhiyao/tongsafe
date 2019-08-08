@@ -176,17 +176,16 @@ $(function() {
             '<p class="content" style="line-height: 40px;height: 40px;">作者：' + data[0]['data']['t_author'] + '</p>' +
             '</div>' +
             '<div class="related2">' ;
-
             if(data[0]['data']['myself'] == 0){
                 if (data[0]['data']['t_price'] == 0 && data[0]['data']['buy'] == 0) {
-                    template +='<button type="button" id="shareBtn" >' + price + '</button>'
+                    template +='<button type="button" onclick="share()">' + price + '</button>'
                 } else if(data[0]['data']['t_price'] != 0 && data[0]['data']['buy'] == 0){
-                    template +='<button type="button"  id="shareBtn" >' + price + '</button>';// onclick="pay(' + data[0]['data']['t_id'] + ');"onclick="share()"
+                    template +='<button type="button" onclick="share()" >' + price + '</button>';//onclick="pay(' + data[0]['data']['t_id'] + ');"
                 } else if(data[0]['data']['t_price'] != 0 && data[0]['data']['buy'] != 0){
-                    template +='<button type="button" id="shareBtn" >' + price + '</button>'
+                    template +='<button type="button" onclick="share()">' + price + '</button>'
                 }
             }else{
-                template +='<button type="button" id="shareBtn" >' + price + '</button>'
+                template +='<button type="button" onclick="share()">' + price + '</button>'
             }
             template +=   '</div>' +
                 '</div>' +
@@ -210,13 +209,17 @@ function msg_switch(obj) {
 }
 
 function share(){
-    if ($("#gb_resLay").hasClass("open")) {
+    /*if ($("#gb_resLay").hasClass("open")) {
         $("#gb_resLay").removeClass("open");
         document.documentElement.style.overflow = "visible";
     } else {
         $("#gb_resLay").addClass("open");
         document.documentElement.style.overflow = "hidden";
-    }
+    }*/
+    soshm.popIn({
+        title: '弹窗分享',
+        sites: ['weixin', 'weixintimeline', 'yixin', 'weibo', 'qq', 'qzone']
+    });
 }
 
 
