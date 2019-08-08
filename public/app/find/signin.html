@@ -18,9 +18,43 @@
     <link rel="shortcut icon" href="../content/images/ico.ico" type="image/x-icon" />
     <script src="../content/scripts/mobile-util.js"></script>
     <style>
+        .weui-cells_radio {
+            padding: 30px 40px;
+        }
+
+        .weui-check_label {
+            font-size: 28px;
+            line-height: 80px;
+        }
 
         .weui-cells_radio .weui-check:checked+.weui-icon-checked:before {
             font-size: 30px;
+        }
+
+        .video_full {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            background: rgba(0, 0, 0, 1);
+        }
+
+        .video_close {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            background: rgba(0, 0, 0, .4);
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            z-index: 100;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            border-radius: 50%;
         }
         
         .laydatebox {
@@ -69,9 +103,8 @@
             border-radius: 50%;
         }
 
-        video::-webkit-media-controls {
-            -webkit-transform: matrix(.95, 0, 0, 1, -20, 0);
-            transform: matrix(.95, 0, 0, 1, -20, 0);
+        .layui-laydate-header {
+            display: none !important;
         }
     </style>
 </head>
