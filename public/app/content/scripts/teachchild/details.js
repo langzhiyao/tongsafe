@@ -176,7 +176,7 @@ $(function() {
             '<p class="content" style="line-height: 40px;height: 40px;">作者：' + data[0]['data']['t_author'] + '</p>' +
             '</div>' +
             '<div class="related2">' ;
-            /*if(data[0]['data']['myself'] == 0){
+            if(data[0]['data']['myself'] == 0){
                 if (data[0]['data']['t_price'] == 0 && data[0]['data']['buy'] == 0) {
                     template +='<button type="button" onclick="share()">' + price + '</button>'
                 } else if(data[0]['data']['t_price'] != 0 && data[0]['data']['buy'] == 0){
@@ -186,7 +186,7 @@ $(function() {
                 }
             }else{
                 template +='<button type="button" onclick="share()">' + price + '</button>'
-            }*/
+            }
             template +=   '</div>' +
                 '</div>' +
                 '<div class="video_detail" onclick="msg_switch($(this))"><p>' + data[0]['data']['t_profile'] + '</p><a class="video_detail_icon" href="javascript:;"><i class="icon iconfont icon-iconfontjiantou"></i></a></div>'+
