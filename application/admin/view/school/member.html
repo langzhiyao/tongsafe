@@ -109,10 +109,10 @@
                 <?php if(session('admin_is_super') ==1 || in_array('3',$action)){ ?>
                 <a href="{:url('/admin/school/edit',['school_id'=>$v.schoolid])}" class="layui-btn layui-btn-xs">{$Think.lang.ds_edit}</a>
                 <?php } ?>
-                <?php if(session('admin_is_super') ==1 || in_array('2',$action)){ ?>
+                <!--<?php if(session('admin_is_super') ==1 || in_array('2',$action)){ ?>
                 <a href="javascript:void(0)" onclick="if(confirm('{$Think.lang.ds_ensure_del}'))
                 location.href='{:url('/admin/school/drop',['school_id'=>$v.schoolid])}';" class="layui-btn layui-btn-xs">{$Think.lang.ds_del}</a>
-                <?php } ?>
+                <?php } ?>-->
                 <?php if(session('admin_is_super') ==1 || in_array('18',$action)){ ?>
                 <a href="{:url('/admin/school/addposition',['school_id'=>$v.schoolid])}" class="layui-btn layui-btn-xs">{$Think.lang.school_position_add}</a>
                 <?php } ?>
