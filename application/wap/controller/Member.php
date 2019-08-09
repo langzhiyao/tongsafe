@@ -490,14 +490,17 @@ class Member extends MobileMember
         }
         $where = ' member_id = "'.$member_id.'"';
 
-        $member = db('member')->field('member_id,member_paypwd,is_owner,member_mobile')->where($where)->find();
+        $member = db('member')->field('member_id,member_paypwd,is_owner,member_mobile,is_auth')->where($where)->find();
         if(empty($member)){
             output_error('会员不存在，请联系管理员');
         }
         if($member['is_owner'] != 0){
             output_error('该手机号为副账号，不允许绑定孩子');
         }
-        
+
+        if($member['is_auth'] == 0){
+            output_error('该会员未进行实名认证，不允许绑定孩子');
+        }
         
         $name        = trim(input('post.name'));//姓名
         $sex         = intval(input('post.sex'));//性别
