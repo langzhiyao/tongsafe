@@ -607,6 +607,7 @@ class Member extends MobileMember
                 if ($packageInfo) {
                     unset($packageInfo['pkg_sort']);
                     unset($packageInfo['pkg_enabled']);
+                    output_data(array('message'=>'绑定成功','sid'=>$sid,'member_id'=>$member_id));
                 }else{
                     halt('没有此套餐的信息！');
                 }
