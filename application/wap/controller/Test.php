@@ -351,15 +351,13 @@ class Test extends Controller{
 //        echo $i;
 
 
-       /* $in_student = array(5124,5122,
-5121, 5120, 5119, 5117, 5116, 5114, 5113, 5112, 5111, 5110, 5109, 5108, 5107, 5106, 5105, 5103, 5102, 5101, 5100, 5099, 5097, 5096, 5095, 5094,
-5092, 5091, 5090, 5089, 5084, 5083, 5074, 5073);*/
-        /*$in_student = array(5125);
+       /* $in_student = array(5338);
+//        halt($in_student);
         //生成订单
         foreach ($in_student as $k=>$v){
             $where = ' s.s_ownerAccount != ""';
             $where .= ' AND s.s_id = "'.$v.'"';
-            $where .= ' AND s.s_schoolid=2 ';
+//            $where .= ' AND s.s_schoolid=2 ';
             $student_list = db('student')->alias('s')
                 ->field('s.s_id,s.s_name,m.member_id,m.member_mobile,m.member_name')
                 ->join('member m','m.member_id=s.s_ownerAccount')
@@ -424,7 +422,7 @@ class Test extends Controller{
                     $packagetime = $PkgTime->getOnePkg($condition);
                     $order_info['finnshed_time'] = empty($order_info['finnshed_time'])?time():$order_info['finnshed_time'];
 //                        $end_time = CalculationTime($order_info,$packagetime);
-                    $end_time = strtotime('2019-11-25 12:00:00');
+                    $end_time = strtotime('2020-11-25 12:00:00');
                     $pkgtype = '视频云';
                     $pdata = array(
                         'end_time' => $end_time,
@@ -459,7 +457,6 @@ class Test extends Controller{
                 }
             }
         }*/
-
 
 
     }

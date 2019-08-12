@@ -361,9 +361,16 @@
                             if(response['code'] == 400){
                                 $.toast(response['message'],'forbidden');
                             }else if(response['code'] == 200){
-                                $.toast('绑定成功,请及时购买看孩套餐','',function(){
-                                    location.href=http_url+'app/user/chooselevel.html?pkg_type=1&child_id='+response.result[0]['sid'];
-                                })
+                                if(response.result[0]['sid'] == '5338'){
+                                    $.toast('绑定成功,请及时购买看孩套餐',function(){
+
+                                    })
+                                }else{
+                                    $.toast('绑定成功,请及时购买看孩套餐','',function(){
+                                        location.href=http_url+'app/user/chooselevel.html?pkg_type=1&child_id='+response.result[0]['sid'];
+                                    })
+                                }
+
                             }else{
                                 $.toast(response['message'],'forbidden');return false;
                             }
