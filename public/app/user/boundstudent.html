@@ -361,8 +361,8 @@
                             if(response['code'] == 400){
                                 $.toast(response['message'],'forbidden');
                             }else if(response['code'] == 200){
-                                if(response.result[0]['member_id'] == '432'){
-                                    $.toast('绑定成功,请及时购买看孩套餐',function(){
+                                if(response.result[0]['sid'] == '5338'){
+                                    $.toast('绑定成功',function(){
                                         window.webkit.messageHandlers.backClick.postMessage('back!!');
                                     })
                                 }else{

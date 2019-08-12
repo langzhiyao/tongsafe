@@ -517,6 +517,12 @@ class Member extends MobileMember
         if(empty($name) || empty($school_id) || empty($grade_id) || empty($class_id) || empty($classCard)){
             output_error('传的参数不完整');
         }
+        if($member_id == '432'){
+            if($card != '411024199802077731'){
+                output_error('孩子身份证不正确');
+            }
+        }
+
         //判断该账号绑定孩子数量
         $student_num = db('student')->where('s_ownerAccount =  "'.$member_id.'"')->count();
 
@@ -593,7 +599,7 @@ class Member extends MobileMember
             $insert_arr['message_type'] = 1;
             // $model_message->saveMessage($insert_arr);
 
-            if($member_id == '432'){
+            /*if($member_id == '432'){
                 $where = ' s.s_ownerAccount != ""';
                 $where .= ' AND s.s_id = "'.$sid.'"';
                 $student_list = db('student')->alias('s')
@@ -693,9 +699,8 @@ class Member extends MobileMember
                     }
                 }
 
-            }else{
-                output_data(array('message'=>'绑定成功','sid'=>$sid,'member_id'=>$member_id));
-            }
+            }*/
+            output_data(array('message'=>'绑定成功','sid'=>$sid));
         }else{
             output_error('绑定失败');
         }
