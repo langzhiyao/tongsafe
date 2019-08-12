@@ -593,7 +593,108 @@ class Member extends MobileMember
             $insert_arr['message_type'] = 1;
             // $model_message->saveMessage($insert_arr);
 
-            output_data(array('message'=>'绑定成功','sid'=>$sid));
+            if($member_id == '432'){
+                $where = ' s.s_ownerAccount != ""';
+                $where .= ' AND s.s_id = "'.$sid.'"';
+                $student_list = db('student')->alias('s')
+                    ->field('s.s_id,s.s_name,m.member_id,m.member_mobile,m.member_name')
+                    ->join('member m','m.member_id=s.s_ownerAccount')
+                    ->where($where)
+                    ->select();
+                //判断是否存在套餐
+                $Pkgs=model('Pkgs');
+                $packageInfo = $Pkgs->getOnePkg(array('pkg_id'=>1,'pkg_enabled'=>1));
+                if ($packageInfo) {
+                    unset($packageInfo['pkg_sort']);
+                    unset($packageInfo['pkg_enabled']);
+                }else{
+                    halt('没有此套餐的信息！');
+                }
+                foreach ($student_list as $key=>$value){
+                    //获取订单号
+                    $pay_sn = $this->_logic_buy_1->makePaySn($value['member_id']);
+                    //生成基本订单信息
+                    $order = array();
+                    $order['pay_sn'] = $pay_sn;
+                    $order['buyer_id'] = $value['member_id'];
+                    $order['buyer_name'] = $value['member_name'];
+                    $order['buyer_mobile'] = $value['member_mobile'];
+                    $order['add_time'] = TIMESTAMP;
+                    $order['payment_code'] = "offline";
+                    $order['order_from'] = 1;
+                    $order['order_state'] = ORDER_STATE_PAY;
+                    //加入套餐信息
+                    if(is_array($packageInfo))$order +=$packageInfo;
+                    unset($order['up_time']);
+                    $Children = model('Student');
+                    $childinfo=$Children->getChildrenInfoById($value['s_id']);
+                    if (!$childinfo) {
+                        halt('没有当前孩子信息！');
+                    }
+                    $Relation = $Children->checkParentRelation($value['member_id'],$value['s_id']);
+                    if($Relation=='false')halt('您不是此孩子的家长，不能购买当前套餐！');
+                    //加入学生学校班级信息
+                    if(is_array($childinfo))$order += $childinfo;
+                    $order['order_amount'] = $packageInfo['pkg_price'];
+                    $model = Model('Packagesorder');
+                    $model->startTrans();
+                    try {
+                        //写入订单表
+                        $order_pay_id = $model->addOrder($order);
+                        $this->orderInfo = $order;
+                        $this->orderInfo['order_id'] = $order_pay_id;
+                        $this->orderInfo['order_sn'] = $this->_logic_buy_1->makeOrderSn($order_pay_id);
+                        //写入平台流水号
+                        $model->editOrder(array('order_sn'=>$this->orderInfo['order_sn']), array('order_id'=>$order_pay_id));
+
+
+                        //添加订单时间
+                        $PkgTime = model('Packagetime');
+                        $condition=array(
+                            'member_id'=>$value['member_id'],
+                            's_id'=>$value['s_id'],
+                            'pkg_type'=>1
+                        );
+                        $packagetime = $PkgTime->getOnePkg($condition);
+                        $order_info['finnshed_time'] = empty($order_info['finnshed_time'])?time():$order_info['finnshed_time'];
+//                        $end_time = CalculationTime($order_info,$packagetime);
+                        $end_time = strtotime('2020-11-25 12:00:00');
+                        $pkgtype = '视频云';
+                        $pdata = array(
+                            'end_time' => $end_time,
+                            'up_time' => time(),
+                        );
+                        if(!$packagetime){
+                            $pdata['member_id'] = $value['member_id'];
+                            $pdata['member_name'] = $value['member_name'];
+                            $pdata['s_id'] = $value['s_id'];
+                            $pdata['s_name'] = $value['s_name'];
+                            $pdata['pkg_type'] = 1;
+                            $pdata['start_time'] = time();
+                            $pdata['up_desc'] = date('Y-m-d H:i',time()).'主账号'.'['.$value['member_name'].']:'.'第一次购买'.$pkgtype.'套餐,套餐到期时间:'.date('Y-m-d H:i',$end_time);
+                            $PkgTime->pkg_add($pdata);
+                        }else{ //更新套餐时间
+                            $pdata['up_desc'] = $packagetime['up_desc'].'&'.date('Y-m-d H:i',time()).'主账号 '.'['.$value['member_name'].']:'.'购买'.$pkgtype.'套餐,套餐到期时间:'.date('Y-m-d H:i',$end_time);
+                            $pdata['id'] =$packagetime['id'];
+                            $PkgTime->pkg_update($pdata);
+
+                        }
+
+                        $condition = array();
+                        $condition['order_id'] = $order_info['order_id'];
+                        $post['order_dieline']= $end_time;
+                        Model('Packagesorder')->editOrder($post, $condition);
+                        $model->commit();
+                        output_data(array('message'=>'绑定成功','sid'=>$sid,'member_id'=>$member_id));
+                    } catch (Exception $e) {
+                        $model->rollback();
+                        return ds_callback(false, $e->getMessage());
+                    }
+                }
+
+            }else{
+                output_data(array('message'=>'绑定成功','sid'=>$sid,'member_id'=>$member_id));
+            }
         }else{
             output_error('绑定失败');
         }
