@@ -37,7 +37,8 @@ class Member extends AdminControl {
         $search_field_value = input('search_field_value');
         $search_field_name = input('search_field_name');
         if ($search_field_value != '') {
-            switch ($search_field_name) {
+            $condition['member_mobile'] = array('like', '%' . trim($search_field_value) . '%');
+            /*switch ($search_field_name) {
                 case 'member_name':
                     $condition['member_name'] = array('like', '%' . trim($search_field_value) . '%');
                     break;
@@ -50,7 +51,7 @@ class Member extends AdminControl {
                 case 'member_truename':
                     $condition['member_truename'] = array('like', '%' . trim($search_field_value) . '%');
                     break;
-            }
+            }*/
         }
         $search_state = input('search_state');
         switch ($search_state) {
