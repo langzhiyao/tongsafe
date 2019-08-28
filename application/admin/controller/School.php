@@ -162,12 +162,14 @@ class School extends AdminControl {
             if($school_array['res_group_id'] == ''){
                 $this->error('物盟学校不存在');
             }
-            $vlink = new Vomont();
-            $res= $vlink->SetLogin();
-            $accountid=$res['accountid'];
-            $vlinker=$vlink->ModifyResources($accountid,$data['name'],$school_array['res_group_id']);
-            if($vlinker['result'] != 0){
-                $this->error('修改失败，物盟学校名称修改失败');
+            if($data['name'] != $school_array['name']){
+                $vlink = new Vomont();
+                $res= $vlink->SetLogin();
+                $accountid=$res['accountid'];
+                $vlinker=$vlink->ModifyResources($accountid,$data['name'],$school_array['res_group_id']);
+                if($vlinker['result'] != 0){
+                    $this->error('修改失败，物盟学校名称修改失败');
+                }
             }
             //验证数据  END
             $result = $model_school->editSchool($data,array('schoolid'=>$school_id));
