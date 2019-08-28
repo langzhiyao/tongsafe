@@ -463,17 +463,17 @@ class Camera extends AdminControl
             foreach($list as $key=>$v){
                 $datainfo = json_encode($v);
                 $html .= "<tr class='hover' id='tr_".$v['cid']."' datainfo='".$datainfo."'>";
-                $html .= "<td class='align-center'><input type='checkbox' lay-skin='primary' name='cityId' class='cityId' lay-filter='c_one'  value='".$v['cid']."' ></td>";
+//                $html .= "<td class='align-center'><input type='checkbox' lay-skin='primary' name='cityId' class='cityId' lay-filter='c_one'  value='".$v['cid']."' ></td>";
                 $html .= '<td class="align-center">'.$v["name"].'</td>';
                 $html .= '<td class="align-center">'.$v["channelid"].'</td>';
                 $html .= '<td class="align-center">'.$v["deviceid"].'</td>';
                 $html .= '<td class="align-center">'.$v["id"].'</td>';
+                $html .= '<td class="align-center">'.$v["parentid"].'</td>';
                 if($v['statuses'] == 1){
                     $html .= '<td class="align-center"><b style="color:green;">在线</b></td>';
                 }else if($v['statuses'] == 2){
                     $html .= '<td class="align-center"><b style="color:red;">离线</b></td>';
                 }
-                $html .= '<td class="align-center">'.$v["parentid"].'</td>';
 //                $html .= '<td class="align-center"><img src="'.$v["imageurl"].'" width="120" height="50"></td>';
                 //if($v['is_rtmp']==2){
                     //$html .= '<td class="align-center">有人正在观看中▪▪▪</td>';
@@ -482,36 +482,36 @@ class Camera extends AdminControl
                 //}
                 //<img onClick="rtmplay('.$v['cid'].')" src="'.$v["imageurl"].'" width="120" height="50">
                 if($v['is_public_area'] == 2){
-                    $html .= '<td class="align-center"><a id="dpss_'.$v['cid'].'" statu="'.$v['is_public_area'].'" class="layui-unselect layui-form-checkbox " onclick="makedefaultss('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
+                    $html .= '<td class="align-center"><a id="dpss_'.$v['cid'].'" status="'.$v['is_public_area'].'" class="layui-unselect layui-form-checkbox " onclick="makedefaultss('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
                 }else if($v['is_public_area'] == 1){
-                    $html .= '<td class="align-center"><a id="dpss_'.$v['cid'].'" statu="'.$v['is_public_area'].'" class="layui-unselect layui-form-checkbox layui-form-checked" onclick="makedefaultss('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
+                    $html .= '<td class="align-center"><a id="dpss_'.$v['cid'].'" status="'.$v['is_public_area'].'" class="layui-unselect layui-form-checkbox layui-form-checked" onclick="makedefaultss('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
                 }
-                if($v['is_default'] == 1){
-                    $html .= '<td class="align-center"><a id="dpsss_'.$v['cid'].'" statu="'.$v['is_default'].'" class="layui-unselect layui-form-checkbox" onclick="makedefaultsss('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
-                }else if($v['is_default'] == 2){
-                    $html .= '<td class="align-center"><a id="dpsss_'.$v['cid'].'" statu="'.$v['is_default'].'" class="layui-unselect layui-form-checkbox layui-form-checked" onclick="makedefaultsss('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
-                }
+//                if($v['is_default'] == 1){
+//                    $html .= '<td class="align-center"><a id="dpsss_'.$v['cid'].'" statu="'.$v['is_default'].'" class="layui-unselect layui-form-checkbox" onclick="makedefaultsss('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
+//                }else if($v['is_default'] == 2){
+//                    $html .= '<td class="align-center"><a id="dpsss_'.$v['cid'].'" statu="'.$v['is_default'].'" class="layui-unselect layui-form-checkbox layui-form-checked" onclick="makedefaultsss('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
+//                }
 //                if($v['is_classroom'] == 1){
 //                    $html .= '<td class="align-center"><a id="dp_'.$v['cid'].'" statu="'.$v['is_classroom'].'" class="layui-unselect layui-form-checkbox" onclick="makedefault('.$v['cid'].','.$v['id'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
 //                }else if($v['is_classroom'] == 2){
 //                    $html .= '<td class="align-center"><a id="dp_'.$v['cid'].'" statu="'.$v['is_classroom'].'" class="layui-unselect layui-form-checkbox layui-form-checked" onclick="makedefault('.$v['cid'].','.$v['id'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
 //                }
-                if($v['status'] == 1){
-                    $html .= '<td class="align-center"><a id="dps_'.$v['cid'].'" statu="'.$v['status'].'" class="layui-unselect layui-form-checkbox layui-form-checked" onclick="makedefaults('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
-                }else if($v['status'] == 2){
-                    $html .= '<td class="align-center"><a id="dps_'.$v['cid'].'" statu="'.$v['status'].'" class="layui-unselect layui-form-checkbox" onclick="makedefaults('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
-                }
-                $html .= '<td class="align-left">'.date('Y-m-d H:i:s',$v["sq_time"]).'</td>';
-                $start = trim($v['cid'].'_Start');
-                $end = trim($v['cid'].'_End');
-                $defulbegin =empty($v["begintime"])?'':date('H:i:s',$v["begintime"]);
-                $defulend   =empty($v["endtime"])?'':date('H:i:s',$v["endtime"]);
-                $html .= "<td class='align-center'>
-                    开启时间：<input type='text' class='pictime' id='picktimeStart".$v['cid']."' onfocus='timesss(".'"'.$start.'"'.")' value='".$defulbegin."'/> <hr>
-                    关闭时间：<input type='text' class='pictime' id='picktimeEnd".$v['cid']."' onfocus='timesss(".'"'.$end.'"'.")' value='".$defulend."' />
-                    <input type='hidden' id='date".$v['cid']."' value='".$v['datetime']."'>
-                    </td>";
-                $html .='<td class="align-center"><a href="javascript:del('.$v["cid"].')" class="layui-btn layui-btn-xs">删除</a></td>';
+//                if($v['status'] == 1){
+//                    $html .= '<td class="align-center"><a id="dps_'.$v['cid'].'" statu="'.$v['status'].'" class="layui-unselect layui-form-checkbox layui-form-checked" onclick="makedefaults('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
+//                }else if($v['status'] == 2){
+//                    $html .= '<td class="align-center"><a id="dps_'.$v['cid'].'" statu="'.$v['status'].'" class="layui-unselect layui-form-checkbox" onclick="makedefaults('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
+//                }
+//                $html .= '<td class="align-left">'.date('Y-m-d H:i:s',$v["sq_time"]).'</td>';
+//                $start = trim($v['cid'].'_Start');
+//                $end = trim($v['cid'].'_End');
+//                $defulbegin =empty($v["begintime"])?'':date('H:i:s',$v["begintime"]);
+//                $defulend   =empty($v["endtime"])?'':date('H:i:s',$v["endtime"]);
+//                $html .= "<td class='align-center'>
+//                    开启时间：<input type='text' class='pictime' id='picktimeStart".$v['cid']."' onfocus='timesss(".'"'.$start.'"'.")' value='".$defulbegin."'/> <hr>
+//                    关闭时间：<input type='text' class='pictime' id='picktimeEnd".$v['cid']."' onfocus='timesss(".'"'.$end.'"'.")' value='".$defulend."' />
+//                    <input type='hidden' id='date".$v['cid']."' value='".$v['datetime']."'>
+//                    </td>";
+//                $html .='<td class="align-center"><a href="javascript:del('.$v["cid"].')" class="layui-btn layui-btn-xs">删除</a></td>';
                 $html .= '</tr>';
             }
         }
@@ -575,7 +575,6 @@ class Camera extends AdminControl
                 if(!empty($datas['resources'])){
                     $data = array_merge($data,$datas['resources']);
                 }
-
             }
         }
         //上方合并所有视频资源
@@ -588,6 +587,9 @@ class Camera extends AdminControl
             $data[$k]['sq_time']=time();
             $data[$k]['status']=1;
             $data[$k]['is_classroom']=1;
+            //获取学校ID  添加进去
+            $result_school = db('class')->where(array('res_group_id'=>$v['parentid']))->field('schoolid')->find();
+            $datas[$k]['school_id'] = $result_school['schoolid'];
         }
         $model_camera=Model('camera');
 //        $result=$model_camera->getCameraList('','','id,name');

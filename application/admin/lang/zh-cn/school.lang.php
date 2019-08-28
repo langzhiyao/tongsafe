@@ -53,6 +53,7 @@ $lang['school_index_type']			= '学校类型';
 $lang['school_index_checktype']			= '选择学校类型';
 $lang['school_index_allschool']			= '全部学校';
 $lang['school_index_status']			= '绑定状态';
+$lang['school_index_public']			= '公共区域';
 $lang['school_index_id']			= '序号';
 $lang['school_index_names']			= '会员账号';
 $lang['school_index_extend']			= '绑定学生';

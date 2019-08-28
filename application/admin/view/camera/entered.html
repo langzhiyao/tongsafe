@@ -78,7 +78,7 @@
                 <th colspan="13">
                     <div class="layui-inline" style="float: right;">
                         <a href="javascript:update()" class="layui-btn" data-type="auto" data-method="offset">{$Think.lang.look_camera_update}</a>
-                        <input type='botton' class="layui-btn" data-type="reload" id='' onclick='timess1()' value='批量设置开启关闭时间'/>
+<!--                        <input type='botton' class="layui-btn" data-type="reload" id='' onclick='timess1()' value='批量设置开启关闭时间'/>-->
                     </div>
                     <p class="layui-table-tool-temp" >{$Think.lang.look_camera_wait_an_number}：<span style="font-size: 24px;color: #D90909" id="count"></span> </p>
                 </th>
@@ -86,22 +86,22 @@
             </thead>
             <thead>
             <tr class="thead">
-                <th class="align-center"><input type="checkbox" lay-skin="primary" id="c_all" lay-filter="c_all"></th>
+<!--                <th class="align-center"><input type="checkbox" lay-skin="primary" id="c_all" lay-filter="c_all"></th>-->
                 <th class="align-center">{$Think.lang.look_camera_name}</th>
                 <th class="align-center">{$Think.lang.look_camera_channelid}</th>
                 <th class="align-center">{$Think.lang.look_camera_deviceid}</th>
                 <th class="align-center">{$Think.lang.look_camera_id}</th>
-                <th class="align-center">{$Think.lang.look_camera_online}</th>
                 <th class="align-center">{$Think.lang.look_camera_parentid}</th>
+                <th class="align-center">{$Think.lang.look_camera_online}</th>
                 <th class="align-center">{$Think.lang.look_camera_is_public_area}</th>
-                <th class="align-center">{$Think.lang.look_camera_is_default}</th>
+<!--                <th class="align-center">{$Think.lang.look_camera_is_default}</th>-->
                 <!--<th class="align-center">{$Think.lang.look_camera_pimageurl}</th>-->
                 <!--<th class="align-center">{$Think.lang.look_camera_rtmpplayurl}</th>-->
                 <!--<th class="align-center">{$Think.lang.look_camera_classroom}</th>-->
-                <th class="align-center">{$Think.lang.look_camera_cstatus}</th>
-                <th class="align-center">{$Think.lang.look_camera_sqtime}</th>
-                <th class="align-center">{$Think.lang.look_camera_begintime}</th>
-                <th class="align-center">{$Think.lang.operation}</th>
+<!--                <th class="align-center">{$Think.lang.look_camera_cstatus}</th>-->
+<!--                <th class="align-center">{$Think.lang.look_camera_sqtime}</th>-->
+<!--                <th class="align-center">{$Think.lang.look_camera_begintime}</th>-->
+<!--                <th class="align-center">{$Think.lang.operation}</th>-->
             </tr>
             </thead>
             <tbody id="html">
@@ -427,7 +427,7 @@
         });
     }
     function makedefaultss(cid) {
-        var is_public_area = $('#dpss_'+cid).attr('statu');
+        var is_public_area = $('#dpss_'+cid).attr('status');
         if(is_public_area ==1){
             is_public_area = 2;
             var msg = '确认禁用该公共区域？';
@@ -436,7 +436,7 @@
             var msg = '确认设置为公共区域？';
         }
         layer.confirm(msg, {
-            btn: ['再考虑一下','确定'] //按钮
+            btn: ['取消','确定'] //按钮
             ,title:'{$Think.lang.admin_index_title}'}, function(){
             layer.msg('取消操作', {time: 2000,icon: 2});
         }, function() {
@@ -452,7 +452,6 @@
                     $('#dpss_'+cid).attr('status',is_public_area);
                 }
             }, 'json');
-            //console.log(statu)
         });
     }
     function makedefaultsss(cid) {

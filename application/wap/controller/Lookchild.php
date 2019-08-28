@@ -64,7 +64,7 @@ class Lookchild extends MobileMall
                             $data['status']=0;
                         }
                     }
-                    $schoolid = $result[0]['res_group_id'];
+                    $schoolid = $result[0]['schoolid'];
                     $classid=$result[0]['clres_group_id'];
                 }else{
                     $condition['s_id']=$sid;
@@ -82,7 +82,7 @@ class Lookchild extends MobileMall
                         }
                     }
                     $str=$student->getChildrenInfoByIdes($sid);
-                    $schoolid=$str['res_group_id'];
+                    $schoolid=$str['schoolid'];
                     $classid=$str['clres_group_id'];
                 }
 
@@ -93,9 +93,10 @@ class Lookchild extends MobileMall
                 $camera_model=Model('camera');
                 $condition=array();
                 $condition['parentid']=$classid;
-                $conditions['parentid']=$schoolid;
-//                halt($conditions);
-                $html=$camera_model->getCameras($condition,$conditions,'ability,channelid,companyid,deviceid,id,name,online,parentid,privilege,type,usernum,is_classroom,status,begintime,endtime');
+//                $conditions['parentid']=$schoolid;
+//                halt($condition);
+//                halt($conditions);$conditions,
+                $html=$camera_model->getCameras($condition,'ability,channelid,companyid,deviceid,id,name,online,parentid,privilege,type,usernum,is_classroom,status,begintime,endtime');
 //                halt($html);
                 //                $html=$camera_model->getCameras($condition,$conditions,'ability,channelid,companyid,deviceid,id,name,online,parentid,type,is_classroom,status,begintime,endtime');
                 $date=date('H:i',time());
@@ -122,6 +123,12 @@ class Lookchild extends MobileMall
                         }
                     }
                 }
+                //获取该学校的公共区域
+                $public_condition['school_id'] = $schoolid;
+                $public_condition['is_public_area'] = 1;
+//                halt($public_condition);
+                $html2=$camera_model->getCameras($public_condition,'ability,channelid,companyid,deviceid,id,name,online,parentid,privilege,type,usernum,is_classroom,status,begintime,endtime');
+                $html = array_merge($html,$html2);
                 $data['camera']=!empty($html)?$html:[];
                 $data['logo']=$user;
                 $data = !empty($data)?[$data]:$data;

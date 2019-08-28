@@ -981,7 +981,7 @@ class Member extends MobileMember
                 ->join('__SCHOOLTYPE__ st','st.sc_id = s.s_sctype','LEFT')
                 ->join('__CLASS__ c','c.classid = s.s_classid','LEFT')
                 ->join('__PACKAGETIME__ p','p.s_id = s.s_id','LEFT')
-                ->where('s.s_ownerAccount = "'.$member_id.'"')
+                ->where('s.s_ownerAccount = "'.$member_id.'" AND s.s_del = 1')
                 ->group('s.s_id')
                 ->select();
         }else{
@@ -992,7 +992,7 @@ class Member extends MobileMember
                 ->join('__SCHOOLTYPE__ st','st.sc_id = s.s_sctype','LEFT')
                 ->join('__CLASS__ c','c.classid = s.s_classid','LEFT')
                 ->join('__PACKAGETIME__ p','p.s_id = s.s_id','LEFT')
-                ->where('s.s_ownerAccount = "'.$member['is_owner'].'"')
+                ->where('s.s_ownerAccount = "'.$member['is_owner'].'" AND s.s_del = 1')
                 ->group('s.s_id')
                 ->select();
         }
@@ -1041,7 +1041,7 @@ class Member extends MobileMember
                 ->join('__SCHOOLTYPE__ st','st.sc_id = s.s_sctype',LEFT)
                 ->join('__CLASS__ c','c.classid = s.s_classid',LEFT)
                 ->join('__PACKAGETIME__ p','p.s_id = s.s_id',LEFT)
-                ->where('s.s_id = "'.$sid.'"')
+                ->where('s.s_id = "'.$sid.'" AND s.s_del = 1')
                 ->group('s.s_id')
                 ->find();
         if(!empty($student)){

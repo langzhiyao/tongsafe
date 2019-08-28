@@ -157,12 +157,14 @@ class Position extends AdminControl {
             if($position_array['res_group_id'] == ''){
                 $this->error('物盟房间位置不存在');
             }
-            $vlink = new Vomont();
-            $res= $vlink->SetLogin();
-            $accountid=$res['accountid'];
-            $vlinker=$vlink->ModifyResources($accountid,$data['position'],$position_array['res_group_id']);
-            if($vlinker['result'] != 0){
-                $this->error('修改失败，物盟房间位置修改失败');
+            if($data['position'] != $position_array['position']){
+                $vlink = new Vomont();
+                $res= $vlink->SetLogin();
+                $accountid=$res['accountid'];
+                $vlinker=$vlink->ModifyResources($accountid,$data['position'],$position_array['res_group_id']);
+                if($vlinker['result'] != 0){
+                    $this->error('修改失败，物盟房间位置修改失败');
+                }
             }
             //验证数据  END
             $result = $model_position->where(array('position_id'=>$position_id))->update($data);
