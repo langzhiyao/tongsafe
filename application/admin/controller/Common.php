@@ -606,8 +606,9 @@ class Common extends AdminControl
             $position_where['school_id'] = $school_id;
 //            $position_where['type_id'] = $grade_id;
 //            $position_where['is_bind'] = 1;
-            $position_where['is_public'] = 1;
+//            $position_where['is_public'] = 1;
             $position =  db('position')->field('position_id,position,is_bind')->where($position_where)->select();
+//            halt($position);
             if(!empty($position)){
                 foreach($position as $key=>$value){
                     if($value['position_id'] == $position_id){

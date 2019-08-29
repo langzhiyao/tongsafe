@@ -116,6 +116,7 @@
         //学校 年级 班级
         var school = '<?php if(!empty($class_array["schoolid"])){echo $class_array["schoolid"];}?>';
         var grade = '<?php if(!empty($class_array["typeid"])){echo $class_array["typeid"];}?>';
+        var position_id = '<?php if(!empty($class_array["position_id"])){echo $class_array["position_id"];}?>';
         if(province != 0){
             $.ajax({
                 type:'POST',
@@ -140,7 +141,7 @@
         if(school != 0){
             $.ajax({
                 type:'POST',
-                url:ADMIN_URL+'Common/get_school_info2?school='+school+'&grade='+grade,
+                url:ADMIN_URL+'Common/get_school_info2?school='+school+'&grade='+grade+'&position='+position_id,
                 success:function(data){
                     data = jQuery.parseJSON(data);
                     //改变年级
