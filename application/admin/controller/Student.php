@@ -154,7 +154,6 @@ class Student extends AdminControl {
                 's_remark' => input('post.student_desc'),
                 's_createtime' => date('Y-m-d H:i:s',time())
             );
-            halt($data);
             //获取班级识别码
             $class = db('class')->where(array('classid'=>input('post.class')))->field('classCard')->find();
             $data['classCard'] = $class['classCard'];
