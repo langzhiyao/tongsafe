@@ -15,18 +15,19 @@ class Test extends Controller{
     //将老数据导入新数据库中
     public function import(){
 //        $school_id="000000005e45f959015e46b041a70001";//太谷启航二中
-        $school_id="297edff86569e03d016574765ebe2d91";//哈尔滨山水幼儿园
+//        $school_id="297edff86569e03d016574765ebe2d91";//哈尔滨山水幼儿园
+        $school_id="bbb1af9e5e9e5721015ea7154bd10281";//太原龙之源
         //导入班级并未绑定房间位置
               //查询该学校所有班级
 /*            $class = db('aaclassroom')->where(array('school_school_id'=>$school_id))->select();
 //            halt($class);
             //获取新平台学校ID级类型ID及公司ID
-            $schoolid = 2;
+            $schoolid = 8;
             $schoolInfo=db('school')->where(array('schoolid'=>$schoolid))->find();
             foreach($class as $key=>$val){
                 $data = array(
                     'schoolid' => $schoolid,
-                    'typeid' => 2,
+                    'typeid' => 6,
                     'position_id' => 0,
                     'classname' => $val['name'],
                     'desc' => '批量导入旧班级',
@@ -54,13 +55,12 @@ class Test extends Controller{
                 $data['qr'] = '/class/' . $schoolInfo['schoolCard'] . '/' . $qr;
                 //验证数据  END
                 $data['res_group_id'] = 0;
+//                halt($data);
                 $model_classes->addClasses($data);
             }*/
         //导入家长信息
-            /* //查询该学校家长->where(array('school_school_id'=>$school_id))
-            $w = ' password != "" ';
-            $a = 'bbb1af9e5e92c9f2015e92e39d0d0012';
-            $w .= ' and id= "'.$a.'"';
+             //查询该学校家长->where(array('school_school_id'=>$school_id))
+/*            $w = ' password != "" ';
             $member = db('aamember')->where($w)->select();
 //            halt($member);
             $model_member = Model('member');
@@ -85,9 +85,9 @@ class Test extends Controller{
             }*/
         //导入学生信息
                //查询该学校家长
-       /* $schoolid = 2;
+/*        $schoolid = 8;
         $schoolInfo=db('school')->where(array('schoolid'=>$schoolid))->find();
-        $student = db('aastudent')->where(array('school_school_id'=>$school_id))->select();//1200
+        $student = db('aastudent')->where(array('school_school_id'=>$school_id))->select();
 //            halt($student);
         $model_student = model('Student');
         foreach($student as $key=>$value){
@@ -103,13 +103,13 @@ class Test extends Controller{
                 if(empty($member_id)){
                     $member_id['member_id']='';
                 }
-//                halt($member_id);
+//                halt($member_id['member_id']);
                 $data = array(
                     's_name' => $value['name'],
                     's_sex' => 1,
                     's_classid' => $class_id['classid'],
                     's_schoolid' => $schoolid,
-                    's_sctype' => 2,
+                    's_sctype' => 6,
                     's_birthday' => $value['birthday'],
                     's_card' => $value['idCard'],
                     's_provinceid' => $schoolInfo['provinceid'],
@@ -124,9 +124,9 @@ class Test extends Controller{
                     's_createtime' => date('Y-m-d H:i:s',time())
                 );
                 //获取班级识别码
-                $class = db('class')->where(array('classid'=>input('post.class')))->field('classCard')->find();
+                $class = db('class')->where(array('classid'=>$class_id['classid']))->field('classCard')->find();
                 $data['classCard'] = $class['classCard'];
-
+//                halt($data);
                 //验证数据  END
                 $model_student->addStudent($data);
             }
@@ -136,7 +136,7 @@ class Test extends Controller{
            //获取需要生成的订单组合
 /*            $where = ' s.s_ownerAccount != ""';
 //            $where .= ' AND s.s_id <= 4927 AND s.s_id >= 4923';
-            $where .= ' AND s.s_schoolid=2 ';
+            $where .= ' AND s.s_schoolid=8 ';
             $student_list = db('student')->alias('s')
                 ->field('s.s_id,s.s_name,m.member_id,m.member_mobile,m.member_name')
                 ->join('member m','m.member_id=s.s_ownerAccount')
@@ -201,7 +201,7 @@ class Test extends Controller{
                         $packagetime = $PkgTime->getOnePkg($condition);
                         $order_info['finnshed_time'] = empty($order_info['finnshed_time'])?time():$order_info['finnshed_time'];
 //                        $end_time = CalculationTime($order_info,$packagetime);
-                        $end_time = strtotime('2019-11-25 12:00:00');
+                        $end_time = strtotime('2019-10-15 12:00:00');
                         $pkgtype = '视频云';
                         $pdata = array(
                             'end_time' => $end_time,
@@ -236,31 +236,7 @@ class Test extends Controller{
                     }
                 }*/
 
-
-
         echo '结束了';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 
