@@ -463,7 +463,7 @@ class Camera extends AdminControl
             foreach($list as $key=>$v){
                 $datainfo = json_encode($v);
                 $html .= "<tr class='hover' id='tr_".$v['cid']."' datainfo='".$datainfo."'>";
-//                $html .= "<td class='align-center'><input type='checkbox' lay-skin='primary' name='cityId' class='cityId' lay-filter='c_one'  value='".$v['cid']."' ></td>";
+                $html .= "<td class='align-center'><input type='checkbox' lay-skin='primary' name='cityId' class='cityId' lay-filter='c_one'  value='".$v['cid']."' ></td>";
                 $html .= '<td class="align-center">'.$v["name"].'</td>';
                 $html .= '<td class="align-center">'.$v["channelid"].'</td>';
                 $html .= '<td class="align-center">'.$v["deviceid"].'</td>';
@@ -496,21 +496,21 @@ class Camera extends AdminControl
 //                }else if($v['is_classroom'] == 2){
 //                    $html .= '<td class="align-center"><a id="dp_'.$v['cid'].'" statu="'.$v['is_classroom'].'" class="layui-unselect layui-form-checkbox layui-form-checked" onclick="makedefault('.$v['cid'].','.$v['id'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
 //                }
-//                if($v['status'] == 1){
-//                    $html .= '<td class="align-center"><a id="dps_'.$v['cid'].'" statu="'.$v['status'].'" class="layui-unselect layui-form-checkbox layui-form-checked" onclick="makedefaults('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
-//                }else if($v['status'] == 2){
-//                    $html .= '<td class="align-center"><a id="dps_'.$v['cid'].'" statu="'.$v['status'].'" class="layui-unselect layui-form-checkbox" onclick="makedefaults('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
-//                }
-//                $html .= '<td class="align-left">'.date('Y-m-d H:i:s',$v["sq_time"]).'</td>';
-//                $start = trim($v['cid'].'_Start');
-//                $end = trim($v['cid'].'_End');
-//                $defulbegin =empty($v["begintime"])?'':date('H:i:s',$v["begintime"]);
-//                $defulend   =empty($v["endtime"])?'':date('H:i:s',$v["endtime"]);
-//                $html .= "<td class='align-center'>
-//                    开启时间：<input type='text' class='pictime' id='picktimeStart".$v['cid']."' onfocus='timesss(".'"'.$start.'"'.")' value='".$defulbegin."'/> <hr>
-//                    关闭时间：<input type='text' class='pictime' id='picktimeEnd".$v['cid']."' onfocus='timesss(".'"'.$end.'"'.")' value='".$defulend."' />
-//                    <input type='hidden' id='date".$v['cid']."' value='".$v['datetime']."'>
-//                    </td>";
+                if($v['status'] == 1){
+                    $html .= '<td class="align-center"><a id="dps_'.$v['cid'].'" statu="'.$v['status'].'" class="layui-unselect layui-form-checkbox layui-form-checked" onclick="makedefaults('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
+                }else if($v['status'] == 2){
+                    $html .= '<td class="align-center"><a id="dps_'.$v['cid'].'" statu="'.$v['status'].'" class="layui-unselect layui-form-checkbox" onclick="makedefaults('.$v['cid'].');" ><span>启用</span><i class="layui-icon layui-icon-ok"></i></a></td>';
+                }
+                $html .= '<td class="align-left">'.date('Y-m-d H:i:s',$v["sq_time"]).'</td>';
+                $start = trim($v['cid'].'_Start');
+                $end = trim($v['cid'].'_End');
+                $defulbegin =empty($v["begintime"])?'':date('H:i:s',$v["begintime"]);
+                $defulend   =empty($v["endtime"])?'':date('H:i:s',$v["endtime"]);
+                $html .= "<td class='align-center'>
+                    开启时间：<input type='text' class='pictime' id='picktimeStart".$v['cid']."' onfocus='timesss(".'"'.$start.'"'.")' value='".$defulbegin."'/> <hr>
+                    关闭时间：<input type='text' class='pictime' id='picktimeEnd".$v['cid']."' onfocus='timesss(".'"'.$end.'"'.")' value='".$defulend."' />
+                    <input type='hidden' id='date".$v['cid']."' value='".$v['datetime']."'>
+                    </td>";
 //                $html .='<td class="align-center"><a href="javascript:del('.$v["cid"].')" class="layui-btn layui-btn-xs">删除</a></td>';
                 $html .= '</tr>';
             }
