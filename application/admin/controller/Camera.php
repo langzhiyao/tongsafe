@@ -589,7 +589,7 @@ class Camera extends AdminControl
             $data[$k]['is_classroom']=1;
             //获取学校ID  添加进去
             $result_school = db('class')->where(array('res_group_id'=>$v['parentid']))->field('schoolid')->find();
-            $datas[$k]['school_id'] = $result_school['schoolid'];
+            $data[$k]['school_id'] = $result_school['schoolid'];
         }
         $model_camera=Model('camera');
 //        $result=$model_camera->getCameraList('','','id,name');
