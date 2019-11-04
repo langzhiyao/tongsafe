@@ -18,7 +18,7 @@ function CalculationTime($order_info,$packagetime){
     if(!empty($packagetime['end_time']) && $packagetime['end_time']>time()){
         $nowTime = $packagetime['end_time'];
     }else{
-        $nowTime = $order_info['finnshed_time'];
+        $nowTime = time();
     }
     $pkg_length = $order_info['pkg_length'];    
     switch ($order_info['pkg_axis']) {
