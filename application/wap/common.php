@@ -14,8 +14,12 @@ function AvatarFormat($avatar){
 
 
 function CalculationTime($order_info,$packagetime){
-    $nowTime = !empty($packagetime['end_time'])?$packagetime['end_time']:$order_info['finnshed_time'];
-    
+//    $nowTime = !empty($packagetime['end_time'])?$packagetime['end_time']:$order_info['finnshed_time'];
+    if(!empty($packagetime['end_time']) && $packagetime['end_time']>time()){
+        $nowTime = $packagetime['end_time'];
+    }else{
+        $nowTime = $order_info['finnshed_time'];
+    }
     $pkg_length = $order_info['pkg_length'];    
     switch ($order_info['pkg_axis']) {
         case 'hour':
